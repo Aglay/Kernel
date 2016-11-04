@@ -185,10 +185,8 @@ CcPinRead (
             ASSERT(iBcb->Pinned == FALSE);
 
             iBcb->Pinned = TRUE;
-            if (InterlockedIncrement(&iBcb->Vacb->PinCount) == 1)
-            {
-                KeReleaseMutex(&iBcb->Vacb->Mutex, FALSE);
-            }
+            iBcb->Vacb->PinCount++;
+            CcRosReleaseVacbLock(iBcb->Vacb);
 
             if (Flags & PIN_EXCLUSIVE)
             {
@@ -281,14 +279,8 @@ CcUnpinDataForThread (
     {
         ExReleaseResourceForThreadLite(&iBcb->Lock, ResourceThreadId);
         iBcb->Pinned = FALSE;
-        if (InterlockedDecrement(&iBcb->Vacb->PinCount) == 0)
-        {
-            KeWaitForSingleObject(&iBcb->Vacb->Mutex,
-                                  Executive,
-                                  KernelMode,
-                                  FALSE,
-                                  NULL);
-        }
+        CcRosAcquireVacbLock(iBcb->Vacb, NULL);
+        iBcb->Vacb->PinCount--;
     }
 
     CcRosReleaseVacb(iBcb->Vacb->SharedCacheMap,
@@ -339,11 +331,7 @@ CcUnpinRepinnedBcb (
         IoStatus->Information = 0;
         if (WriteThrough)
         {
-            KeWaitForSingleObject(&iBcb->Vacb->Mutex,
-                                  Executive,
-                                  KernelMode,
-                                  FALSE,
-                                  NULL);
+            CcRosAcquireVacbLock(iBcb->Vacb, NULL);
             if (iBcb->Vacb->Dirty)
             {
                 IoStatus->Status = CcRosFlushVacb(iBcb->Vacb);
@@ -352,7 +340,7 @@ CcUnpinRepinnedBcb (
             {
                 IoStatus->Status = STATUS_SUCCESS;
             }
-            KeReleaseMutex(&iBcb->Vacb->Mutex, FALSE);
+            CcRosReleaseVacbLock(iBcb->Vacb);
         }
         else
         {
@@ -363,14 +351,8 @@ CcUnpinRepinnedBcb (
         {
             ExReleaseResourceLite(&iBcb->Lock);
             iBcb->Pinned = FALSE;
-            if (InterlockedDecrement(&iBcb->Vacb->PinCount) == 0)
-            {
-                KeWaitForSingleObject(&iBcb->Vacb->Mutex,
-                                      Executive,
-                                      KernelMode,
-                                      FALSE,
-                                      NULL);
-            }
+            CcRosAcquireVacbLock(iBcb->Vacb, NULL);
+            iBcb->Vacb->PinCount--;
         }
         ExDeleteResourceLite(&iBcb->Lock);
         ExFreeToNPagedLookasideList(&iBcbLookasideList, iBcb);
