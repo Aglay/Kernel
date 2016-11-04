@@ -93,8 +93,6 @@ REM Parse command line parameters
             set CMAKE_GENERATOR="Eclipse CDT4 - MinGW Makefiles"
         ) else if /I "%1" == "Makefiles" (
             set CMAKE_GENERATOR="MinGW Makefiles"
-        ) else if /I "%1" == "clang" (
-            set MINGW_TOOCHAIN_FILE=toolchain-clang.cmake
         ) else (
             goto continue
         )
