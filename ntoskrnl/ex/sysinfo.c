@@ -1614,9 +1614,7 @@ QSI_DEF(SystemExceptionInformation)
         {
             AlignmentFixupCount += Prcb->KeAlignmentFixupCount;
             ExceptionDispatchCount += Prcb->KeExceptionDispatchCount;
-#ifndef _M_ARM
             FloatingEmulationCount += Prcb->KeFloatingEmulationCount;
-#endif // _M_ARM
         }
     }
 
@@ -1869,7 +1867,7 @@ QSI_DEF(SystemProcessorIdleInformation)
     {
         return STATUS_INFO_LENGTH_MISMATCH;
     }
-    
+
     /* FIXME */
     DPRINT1("NtQuerySystemInformation - SystemPowerInformation not implemented\n");
     return STATUS_NOT_IMPLEMENTED;

@@ -371,11 +371,7 @@ SIZE_T MmMinimumStackCommitInBytes = 0;
 
 /* Internal setting used for debugging memory descriptors */
 BOOLEAN MiDbgEnableMdDump =
-#ifdef _ARM_
-TRUE;
-#else
 FALSE;
-#endif
 
 /* Number of memory descriptors in the loader block */
 ULONG MiNumberDescriptors = 0;

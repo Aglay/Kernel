@@ -33,14 +33,6 @@
 #define KdpGetParameterThree(Context)  ((Context)->R8)
 #define KdpGetParameterFour(Context)   ((Context)->R9)
 
-#elif defined(_ARM_)
-
-//
-// R3/R4 on ARM
-//
-#define KdpGetParameterThree(Context)  ((Context)->R3)
-#define KdpGetParameterFour(Context)   ((Context)->R4)
-
 #else
 #error Unsupported Architecture
 #endif

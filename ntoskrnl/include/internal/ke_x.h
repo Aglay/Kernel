@@ -6,7 +6,6 @@
 * PROGRAMMERS:     Alex Ionescu (alex.ionescu@reactos.org)
 */
 
-#ifndef _M_ARM
 FORCEINLINE
 KPROCESSOR_MODE
 KeGetPreviousMode(VOID)
@@ -14,7 +13,6 @@ KeGetPreviousMode(VOID)
     /* Return the current mode */
     return KeGetCurrentThread()->PreviousMode;
 }
-#endif
 
 //
 // Enters a Guarded Region

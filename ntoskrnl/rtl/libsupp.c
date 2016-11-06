@@ -314,7 +314,7 @@ RtlpHandleDpcStackException(IN PEXCEPTION_REGISTRATION_RECORD RegistrationFrame,
     return FALSE;
 }
 
-#if !defined(_ARM_) && !defined(_AMD64_)
+#if !defined(_AMD64_)
 
 BOOLEAN
 NTAPI
@@ -385,8 +385,6 @@ RtlWalkFrameChain(OUT PVOID *Callers,
 #elif defined(_MSC_VER)
     __asm mov Stack, ebp
 #endif
-#elif defined(_M_ARM)
-    __asm__("mov sp, %0" : "=r"(Stack) : );
 #else
 #error Unknown architecture
 #endif
@@ -500,7 +498,7 @@ RtlWalkFrameChain(OUT PVOID *Callers,
 
 #endif
 
-#if defined(_M_AMD64) || defined(_M_ARM)
+#if defined(_M_AMD64)
 VOID
 NTAPI
 RtlpGetStackLimits(

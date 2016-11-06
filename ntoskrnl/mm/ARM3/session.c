@@ -488,9 +488,7 @@ MiSessionInitializeWorkingSetList(VOID)
     if (PointerPde->u.Hard.Valid == 1)
     {
         /* Nope, we'll have to do it */
-#ifndef _M_ARM
         ASSERT(PointerPde->u.Hard.Global == 0);
-#endif
         AllocatedPageTable = FALSE;
     }
     else

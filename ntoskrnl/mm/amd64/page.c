@@ -54,7 +54,7 @@ MmProtectToPteMask[32] =
     PTE_EXECUTE_READWRITE   | PTE_DISABLE_CACHE,
     PTE_EXECUTE_WRITECOPY   | PTE_DISABLE_CACHE,
     //
-    // These OR in the MM_DECOMMIT flag, which doesn't seem supported on x86/64/ARM
+    // These OR in the MM_DECOMMIT flag, which doesn't seem supported on x86/64
     //
     0,
     PTE_READONLY            | PTE_ENABLE_CACHE,

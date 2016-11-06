@@ -15,10 +15,8 @@
 
 #ifdef _NTOSKRNL_
 
-#ifndef _ARM_
 #define KeGetCurrentThread  _KeGetCurrentThread
 #define KeGetPreviousMode   _KeGetPreviousMode
-#endif
 #undef  PsGetCurrentProcess
 #define PsGetCurrentProcess _PsGetCurrentProcess
 
@@ -128,7 +126,7 @@ typedef struct _INFORMATION_CLASS_INFO
  * Use IsPointerOffset to test whether a pointer should be interpreted as an offset
  * or as a pointer
  */
-#if defined(_X86_) || defined(_M_AMD64) || defined(_ARM_)
+#if defined(_X86_) || defined(_M_AMD64)
 
 /* for x86 and x86-64 the MSB is 1 so we can simply test on that */
 #define IsPointerOffset(Ptr) ((LONG_PTR)(Ptr) >= 0)
