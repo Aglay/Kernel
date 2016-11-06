@@ -726,7 +726,7 @@ KiSetAffinityThread(IN PKTHREAD Thread,
 //     programs/trk_case4_process-thread_management.pdf
 //
 // We need this per-arch because sometimes it's Prcb and sometimes PrcbData, and
-// because on x86 it's FS, and on x64 it's GS (not sure what it is on ARM/PPC).
+// because on x86 it's FS, and on x64 it's GS.
 //
 #ifdef _M_IX86
 #define KiGetCurrentReadySummary() __readfsdword(FIELD_OFFSET(KIPCR, PrcbData.ReadySummary))

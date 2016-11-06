@@ -385,10 +385,6 @@ RtlWalkFrameChain(OUT PVOID *Callers,
 #elif defined(_MSC_VER)
     __asm mov Stack, ebp
 #endif
-#elif defined(_M_MIPS)
-        __asm__("move $sp, %0" : "=r" (Stack) : );
-#elif defined(_M_PPC)
-    __asm__("mr %0,1" : "=r" (Stack) : );
 #elif defined(_M_ARM)
     __asm__("mov sp, %0" : "=r"(Stack) : );
 #else
@@ -432,8 +428,6 @@ RtlWalkFrameChain(OUT PVOID *Callers,
             StackEnd = (ULONG_PTR)Teb->NtTib.StackBase;
 #ifdef _M_IX86
             Stack = TrapFrame->Ebp;
-#elif defined(_M_PPC)
-            Stack = TrapFrame->Gpr1;
 #else
 #error Unknown architecture
 #endif

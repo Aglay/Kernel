@@ -4,7 +4,7 @@
  * FILE:            ntoskrnl/kd/i386/kdbg.c
  * PURPOSE:         Serial i/o functions for the kernel debugger.
  * PROGRAMMER:      Alex Ionescu
- *                  Hervé Poussineau
+ *                  Hervï¿½ Poussineau
  */
 
 /* INCLUDES *****************************************************************/
@@ -18,10 +18,6 @@
 
 #if defined(_M_IX86) || defined(_M_AMD64)
 const ULONG BaseArray[] = {0, 0x3F8, 0x2F8, 0x3E8, 0x2E8};
-#elif defined(_M_PPC)
-const ULONG BaseArray[] = {0, 0x800003F8};
-#elif defined(_M_MIPS)
-const ULONG BaseArray[] = {0, 0x80006000, 0x80007000};
 #elif defined(_M_ARM)
 const ULONG BaseArray[] = {0, 0xF1012000};
 #else
