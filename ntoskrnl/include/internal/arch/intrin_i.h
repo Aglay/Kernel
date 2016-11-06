@@ -21,8 +21,6 @@
 
 #ifdef _M_IX86
 #include <internal/i386/intrin_i.h>
-#elif defined(_M_MIPS)
-#include <internal/mips/intrin_i.h>
 #elif defined(_M_ARM)
 #include <internal/arm/intrin_i.h>
 #elif defined(_M_AMD64)
