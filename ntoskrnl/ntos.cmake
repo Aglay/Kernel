@@ -344,22 +344,6 @@ elseif(ARCH STREQUAL "arm")
         ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/ARM3/arm/init.c
         ${REACTOS_SOURCE_DIR}/ntoskrnl/ps/arm/psctx.c
         ${REACTOS_SOURCE_DIR}/ntoskrnl/rtl/arm/rtlexcpt.c)
-elseif(ARCH STREQUAL "powerpc")
-    list(APPEND ASM_SOURCE
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/main_asm.S
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/ctxhelp.S)
-    list(APPEND SOURCE
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/config/powerpc/cmhardwr.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/cpu.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/exp.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/kiinit.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/ppc_irq.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/stubs.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/systimer.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/thrdini.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/powerpc/ctxswitch.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/powerpc/pfault.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/powerpc/page.c)
 endif()
 
 if(NOT _WINKD_)
@@ -385,8 +369,6 @@ if(NOT _WINKD_)
         endif()
     elseif(ARCH STREQUAL "arm")
         list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd/arm/kdbg.c)
-    elseif(ARCH STREQUAL "powerpc")
-        list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd/wrappers/gdbstub_powerpc.c)
     endif()
 
     if(KDBG)
