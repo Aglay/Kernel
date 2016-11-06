@@ -323,27 +323,6 @@ elseif(ARCH STREQUAL "amd64")
         ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/amd64/init.c
         ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/amd64/page.c
         ${REACTOS_SOURCE_DIR}/ntoskrnl/ps/amd64/psctx.c)
-elseif(ARCH STREQUAL "arm")
-    list(APPEND ASM_SOURCE
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ex/arm/ioport.s
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/boot.s
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/ctxswtch.s
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/stubs_asm.s
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/trap.s)
-    list(APPEND SOURCE
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/config/arm/cmhardwr.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/kd/arm/kdbg.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/cpu.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/exp.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/interrupt.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/kiinit.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/thrdini.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/trapc.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ke/arm/usercall.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/arm/page.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/mm/ARM3/arm/init.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/ps/arm/psctx.c
-        ${REACTOS_SOURCE_DIR}/ntoskrnl/rtl/arm/rtlexcpt.c)
 endif()
 
 if(NOT _WINKD_)
@@ -367,8 +346,6 @@ if(NOT _WINKD_)
                 ${REACTOS_SOURCE_DIR}/ntoskrnl/kdbg/amd64/i386-dis.c
                 ${REACTOS_SOURCE_DIR}/ntoskrnl/kdbg/amd64/kdb.c)
         endif()
-    elseif(ARCH STREQUAL "arm")
-        list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd/arm/kdbg.c)
     endif()
 
     if(KDBG)
@@ -403,8 +380,6 @@ else() # _WINKD_
         list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd64/i386/kdx86.c)
     elseif(ARCH STREQUAL "amd64")
         list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd64/amd64/kdx64.c)
-    elseif(ARCH STREQUAL "arm")
-        list(APPEND SOURCE ${REACTOS_SOURCE_DIR}/ntoskrnl/kd64/arm/kdarm.c)
     endif()
 
 endif()

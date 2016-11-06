@@ -21,8 +21,6 @@
 
 #ifdef _M_IX86
 #include <internal/i386/mm.h>
-#elif defined(_M_ARM)
-#include <internal/arm/mm.h>
 #elif defined(_M_AMD64)
 #include <internal/amd64/mm.h>
 #else
