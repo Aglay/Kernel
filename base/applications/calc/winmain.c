@@ -228,13 +228,13 @@ static void load_config(void)
 {
     DWORD tmp;
     HKEY hKey;
-
+    
     /* If no settings are found in the registry, then use the default options */
     calc.layout = CALC_LAYOUT_STANDARD;
     calc.usesep = FALSE;
 
     /* Get the configuration based on what version of OS that's being used */
-    if (RegOpenKeyEx(HKEY_CURRENT_USER, TEXT("SOFTWARE\\Microsoft\\Calc"), 0, KEY_QUERY_VALUE, &hKey) == ERROR_SUCCESS)
+    if (RegOpenKeyEx(HKEY_CURRENT_USER, TEXT("SOFTWARE\\Microsoft\\Calc"), 0, KEY_QUERY_VALUE, &hKey) == ERROR_SUCCESS) 
     {
         /* Try to load last selected layout */
         tmp = sizeof(calc.layout);
@@ -291,7 +291,7 @@ static void save_config(void)
     {
         return;
     }
-
+    
     sepValue = (calc.usesep) ? 1 : 0;
 
     RegSetValueEx(hKey, TEXT("layout"), 0, REG_DWORD, (const BYTE*)&calc.layout, sizeof(calc.layout));
@@ -435,7 +435,7 @@ KeyboardHookProc(int nCode, WPARAM wParam, LPARAM lParam)
 static void update_lcd_display(HWND hwnd)
 {
     /*
-     * muliply size of calc.buffer by 2 because it may
+     * multiply size of calc.buffer by 2 because it may
      * happen that separator is used between each digit.
      * Also added little additional space for dot and '\0'.
      */
@@ -815,7 +815,7 @@ static void update_memory_flag(HWND hWnd, BOOL mem_flag)
 
 static void update_n_stats_items(HWND hWnd, TCHAR *buffer)
 {
-    unsigned int n = SendDlgItemMessage(hWnd, IDC_LIST_STAT, LB_GETCOUNT, 0, 0);
+    unsigned int n = SendDlgItemMessage(hWnd, IDC_LIST_STAT, LB_GETCOUNT, 0, 0); 
 
     _stprintf(buffer, TEXT("n=%d"), n);
     SendDlgItemMessage(hWnd, IDC_TEXT_NITEMS, WM_SETTEXT, 0, (LPARAM)buffer);
@@ -1179,7 +1179,7 @@ static void handle_context_menu(HWND hWnd, WPARAM wp, LPARAM lp)
 #else
     (void)idm;
 #endif
-}
+} 
 
 static void run_canc(calc_number_t *c)
 {
