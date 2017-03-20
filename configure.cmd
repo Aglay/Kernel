@@ -43,7 +43,7 @@ cmd /c cmake --version 2>&1 | find "cmake version" > NUL || goto cmake_notfound
 
 REM Detect build environment (MinGW, VS, WDK, ...)
 if defined ROS_ARCH (
-    echo Detected RosBE for %ROS_ARCH%
+    echo Detected MinGW for %ROS_ARCH%
     set BUILD_ENVIRONMENT=MinGW
     set ARCH=%ROS_ARCH%
     set MINGW_TOOCHAIN_FILE=toolchain-gcc.cmake
@@ -52,7 +52,6 @@ if defined ROS_ARCH (
     REM VS command prompt does not put this in environment vars
     cl 2>&1 | find "x86" > NUL && set ARCH=i386
     cl 2>&1 | find "x64" > NUL && set ARCH=amd64
-    cl 2>&1 | find "ARM" > NUL && set ARCH=arm
     cl 2>&1 | find "15.00." > NUL && set VS_VERSION=9
     cl 2>&1 | find "16.00." > NUL && set VS_VERSION=10
     cl 2>&1 | find "17.00." > NUL && set VS_VERSION=11
@@ -204,7 +203,7 @@ if "%NEW_STYLE_BUILD%"=="0" (
 
 )
 
-echo Preparing reactos...
+echo Preparing...
 
 if "%NEW_STYLE_BUILD%"=="0" (
     cd reactos
