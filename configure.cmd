@@ -42,10 +42,10 @@ REM Detect presence of cmake
 cmd /c cmake --version 2>&1 | find "cmake version" > NUL || goto cmake_notfound
 
 REM Detect build environment (MinGW, VS, WDK, ...)
-if defined ROS_ARCH (
-    echo Detected MinGW for %ROS_ARCH%
+if defined GOS_ARCH (
+    echo Detected MinGW for %GOS_ARCH%
     set BUILD_ENVIRONMENT=MinGW
-    set ARCH=%ROS_ARCH%
+    set ARCH=%GOS_ARCH%
     set MINGW_TOOCHAIN_FILE=toolchain-gcc.cmake
 
 ) else if defined VCINSTALLDIR (
