@@ -1,4 +1,4 @@
-if not defined TOOLS set TOOLS=C:\RosBE
+if not defined TOOLS set TOOLS=C:\Flame
 
 color 0A
 set CURRENT=%cd%
