@@ -21,7 +21,7 @@ project(REACTOS)
 # Versioning
 include(sdk/include/reactos/version.cmake)
 
-# Don't escape preprocessor definition values added via add_definitions
+# Dont escape preprocessor definition values added via add_definitions
 cmake_policy(SET CMP0005 OLD)
 cmake_policy(SET CMP0002 NEW)
 if(POLICY CMP0018)
@@ -56,8 +56,6 @@ if(ARCH STREQUAL "i386")
     include(sdk/cmake/config.cmake)
 elseif(ARCH STREQUAL "amd64")
     include(sdk/cmake/config-amd64.cmake)
-elseif(ARCH STREQUAL "arm")
-    include(sdk/cmake/config-arm.cmake)
 endif()
 
 # Compiler flags handling
@@ -69,7 +67,7 @@ if(MSVC_IDE)
     add_compile_flags("/MP")
 endif()
 
-# We don't need CMake importlib handling.
+# We dont need CMake importlib handling.
 # FIXME: Remove the MSVC_IDE condition when the upcoming RosBE lands.
 if(NOT MSVC_IDE)
     unset(CMAKE_IMPORT_LIBRARY_SUFFIX)
@@ -183,20 +181,12 @@ else()
         add_definitions(-D_M_IX86 -D_X86_ -D__i386__ -Di386)
     elseif(ARCH STREQUAL "amd64")
         add_definitions(-D_M_AMD64 -D_AMD64_ -D__x86_64__ -D_WIN64)
-    elseif(ARCH STREQUAL "arm")
-        # _M_ARM is already defined by toolchain
-        add_definitions(-D_ARM_ -D__arm__ -DWIN32)
-        if(SARCH STREQUAL "omap-zoom2")
-            add_definitions(-D_ZOOM2_)
-        endif()
     endif()
 
     # Other
     if(ARCH STREQUAL "i386")
         add_definitions(-DUSE_COMPILER_EXCEPTIONS -D_USE_32BIT_TIME_T)
     elseif(ARCH STREQUAL "amd64")
-        add_definitions(-DUSE_COMPILER_EXCEPTIONS -DNO_UNDERSCORE_PREFIX)
-    elseif(ARCH STREQUAL "arm")
         add_definitions(-DUSE_COMPILER_EXCEPTIONS -DNO_UNDERSCORE_PREFIX)
     endif()
 
@@ -223,7 +213,7 @@ else()
     include(sdk/cmake/CMakeMacros.cmake)
 
     # IDL macros for widl/midl
-    # We're using widl now for both MSVC and GCC builds
+    # We are using widl now for both MSVC and GCC builds
     include(sdk/cmake/widl-support.cmake)
 
     include_directories(
@@ -240,10 +230,6 @@ else()
         sdk/include/ndk
         sdk/include/reactos
         sdk/include/reactos/libs)
-
-    if(ARCH STREQUAL "arm")
-        include_directories(${REACTOS_SOURCE_DIR}/sdk/include/reactos/arm)
-    endif()
 
     add_dependency_header()
 
