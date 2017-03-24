@@ -885,6 +885,7 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONDOWN:
         WINE_TRACE("WM_LBUTTONDOWN\n");
+	// It's more comfortable to play with touchpad using Shift key then LClick+RClick	    
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONDOWN;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
@@ -893,6 +894,7 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONUP:
         WINE_TRACE("WM_LBUTTONUP\n");
+	// It's more comfortable to play with touchpad using Shift key then LClick+RClick
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONUP;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
