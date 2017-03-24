@@ -344,8 +344,8 @@ static void PlaceMines ( BOARD *p_board, int selected_col, int selected_row )
     /* create mines */
     i = 0;
     while( (unsigned) i < p_board->mines ) {
-        col = (int) (p_board->cols * (float) rand() / RAND_MAX + 1);
-        row = (int) (p_board->rows * (float) rand() / RAND_MAX + 1);
+        col = rand() % p_board->cols + 1;
+        row = rand() % p_board->rows + 1;
 
         if( !p_board->box[col][row].IsMine ) {
             i++;
@@ -885,7 +885,8 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONDOWN:
         WINE_TRACE("WM_LBUTTONDOWN\n");
-        if( wParam & MK_RBUTTON )
+	// It's more comfortable to play with touchpad using Shift key then LClick+RClick	    
+        if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONDOWN;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
         SetCapture( hWnd );
@@ -893,7 +894,8 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONUP:
         WINE_TRACE("WM_LBUTTONUP\n");
-        if( wParam & MK_RBUTTON )
+	// It's more comfortable to play with touchpad using Shift key then LClick+RClick
+        if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONUP;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
         ReleaseCapture();
