@@ -2,7 +2,7 @@ if not defined TOOLS set TOOLS=C:\Flame
 
 color 0A
 set CURRENT=%cd%
-set PATH=%PATH%;%TOOLS%;%TOOLS%\bin;%TOOLS%\i386;%TOOLS%\i386\bin;%CURRENT%
+set PATH=%TOOLS%;%TOOLS%\bin;%TOOLS%\i386;%TOOLS%\i386\bin;%CURRENT%;%PATH%
 set C_INCLUDE_PATH=
 set CPLUS_INCLUDE_PATH=
 set LIBRARY_PATH=
