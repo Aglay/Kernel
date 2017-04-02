@@ -77,7 +77,7 @@ Severity=Warning
 Facility=System
 SymbolicName=BUGCHECK_MESSAGE_INTRO
 Language=English
-A problem has been detected and Greentea OS has been shut down to prevent damage
+A problem has been detected and Greentea has been shut down to prevent damage
 to your computer.
 .
 
