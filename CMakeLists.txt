@@ -164,7 +164,7 @@ else()
     endif()
 
     if(CMAKE_VERSION MATCHES "ReactOS")
-        set(PCH 1 CACHE BOOL "Whether to use precompiled headers")
+        set(PCH 0 CACHE BOOL "Whether to use precompiled headers")
     else()
         set(PCH 0 CACHE BOOL "Whether to use precompiled headers")
     endif()
