@@ -82,7 +82,7 @@ END
 
 IDD_SUMMARYPAGE DIALOGEX 0, 0, 317, 143
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "ReactOS Setup"
+CAPTION "Setup"
 FONT 8, "MS Shell Dlg"
 BEGIN
     LTEXT "Click Next to start the installation process.", IDC_STATIC, 7, 180, 303, 20
@@ -126,7 +126,7 @@ BEGIN
     IDS_ABORTSETUP "ReactOS is not completely installed on your computer. If you quit Setup now, you will need to run Setup again to install ReactOS. Really quit?"
     IDS_ABORTSETUP2 "Abort installation?"
     IDS_NO_TXTSETUP_SIF "Unable to find 'txtsetup.sif'\nSetup is unable to continue."
-    IDS_CAPTION "ReactOS Setup"
+    IDS_CAPTION "Setup"
 END
 
 STRINGTABLE

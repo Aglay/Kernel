@@ -533,7 +533,7 @@ OwnerPageDlgProc(HWND hwndDlg,
                     {
                         if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, sizeof(Title) / sizeof(Title[0])))
                         {
-                            wcscpy(Title, L"ReactOS Setup");
+                            wcscpy(Title, L"Setup");
                         }
                         if (0 == LoadStringW(hDllInstance, IDS_WZD_NAME, ErrorName, sizeof(ErrorName) / sizeof(ErrorName[0])))
                         {
@@ -587,7 +587,7 @@ WriteComputerSettings(WCHAR * ComputerName, HWND hwndDlg)
         {
             if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, sizeof(Title) / sizeof(Title[0])))
             {
-                wcscpy(Title, L"ReactOS Setup");
+                wcscpy(Title, L"Setup");
             }
             if (0 == LoadStringW(hDllInstance, IDS_WZD_SETCOMPUTERNAME, ErrorComputerName,
                                  sizeof(ErrorComputerName) / sizeof(ErrorComputerName[0])))
@@ -700,7 +700,7 @@ ComputerPageDlgProc(HWND hwndDlg,
 
     if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, sizeof(Title) / sizeof(Title[0])))
     {
-        wcscpy(Title, L"ReactOS Setup");
+        wcscpy(Title, L"Setup");
     }
 
     switch (uMsg)
@@ -936,7 +936,7 @@ RunControlPanelApplet(HWND hwnd, PCWSTR pwszCPLParameters)
         }
 
         while((MsgWaitForMultipleObjects(1, &ProcessInformation.hProcess, FALSE, INFINITE, QS_ALLINPUT|QS_ALLPOSTMESSAGE )) != WAIT_OBJECT_0)
-        { 
+        {
            while(PeekMessageW(&msg, NULL, 0, 0, PM_REMOVE))
            {
                TranslateMessage(&msg);
@@ -1533,7 +1533,7 @@ WriteDateTimeSettings(HWND hwndDlg, PSETUPDATA SetupData)
     {
         if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP, Title, sizeof(Title) / sizeof(Title[0])))
         {
-            wcscpy(Title, L"ReactOS Setup");
+            wcscpy(Title, L"Setup");
         }
         if (0 == LoadStringW(hDllInstance, IDS_WZD_LOCALTIME, ErrorLocalTime,
                              sizeof(ErrorLocalTime) / sizeof(ErrorLocalTime[0])))
@@ -1977,7 +1977,7 @@ ProcessPageDlgProc(HWND hwndDlg,
                 if (0 == LoadStringW(hDllInstance, IDS_REACTOS_SETUP,
                                      Title, sizeof(Title) / sizeof(Title[0])))
                 {
-                    wcscpy(Title, L"ReactOS Setup");
+                    wcscpy(Title, L"Setup");
                 }
                 MessageBoxW(hwndDlg, RegistrationNotify->ErrorMessage,
                             Title, MB_ICONERROR | MB_OK);
@@ -2408,7 +2408,7 @@ InstallWizard(VOID)
         LogItem(NULL, L"SetupData allocation failed!");
         MessageBoxW(NULL,
                     L"Setup failed to allocate global data!",
-                    L"ReactOS Setup",
+                    L"Setup",
                     MB_ICONERROR | MB_OK);
         goto done;
     }
@@ -2437,7 +2437,7 @@ InstallWizard(VOID)
         LogItem(NULL, L"Page array allocation failed!");
         MessageBoxW(NULL,
                     L"Setup failed to allocate page array!",
-                    L"ReactOS Setup",
+                    L"Setup",
                     MB_ICONERROR | MB_OK);
         goto done;
     }

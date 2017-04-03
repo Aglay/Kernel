@@ -628,7 +628,7 @@ ConDrvInitConsole(OUT PHANDLE NewConsoleHandle,
         // }
         // else
         // {
-            // ConsoleCreateUnicodeString(&Console->Title, L"ReactOS Console");
+            // ConsoleCreateUnicodeString(&Console->Title, L"Console");
         // }
     // }
     // else

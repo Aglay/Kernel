@@ -22,5 +22,5 @@ BEGIN
     IDS_SCROLLUP "Прокрутити догори"
     IDS_SCROLLDOWN "Прокрутити донизу"
 */
-    IDS_TERMINAL_TITLE "ReactOS Console"
+    IDS_TERMINAL_TITLE "Console"
 END

@@ -20,5 +20,5 @@ BEGIN
     IDS_SCROLLUP "Gulung Naik"
     IDS_SCROLLDOWN "Gulung Turun"
 */
-    IDS_TERMINAL_TITLE "ReactOS Console"
+    IDS_TERMINAL_TITLE "Console"
 END

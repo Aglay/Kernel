@@ -22,5 +22,5 @@ BEGIN
     IDS_SCROLLUP "Posunout nahoru"
     IDS_SCROLLDOWN "Posunout dolů"
 */
-    IDS_TERMINAL_TITLE "ReactOS Console"
+    IDS_TERMINAL_TITLE "Console"
 END

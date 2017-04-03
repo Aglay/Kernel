@@ -78,7 +78,7 @@ END
 
 IDD_NETWORKSETTINGSPAGE DIALOGEX 0, 0, 317, 143
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "ReactOS Setup"
+CAPTION "Setup"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
@@ -91,7 +91,7 @@ END
 
 IDD_NETWORKCOMPONENTPAGE DIALOGEX 0, 0, 317, 143
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "ReactOS Setup"
+CAPTION "Setup"
 FONT 8, "MS Shell Dlg"
 BEGIN
     LTEXT "Für Gerät:", IDC_STATIC, 33, 2, 100, 20
@@ -106,7 +106,7 @@ END
 
 IDD_NETWORKDOMAINPAGE DIALOGEX 0, 0, 317, 143
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "ReactOS Setup"
+CAPTION "Setup"
 FONT 8, "MS Shell Dlg"
 BEGIN
     LTEXT "Soll dieser Computer einer Domäne oder Arbeitsgruppe hinzugefügt werden?\n\
@@ -171,6 +171,6 @@ BEGIN
     IDS_NETWORKCOMPONENTSUBTITLE "Wählen Sie die Netzwerkkomponenten, die aktiviert werden sollen. Klicken Sie auf ""Installieren"", um eine Komponente hinzuzufügen."
     IDS_NETWORKDOMAINTITLE "Arbeitsgruppe oder Computerdomäne"
     IDS_NETWORKDOMAINSUBTITLE "Eine Arbeitsgruppe besteht aus Computern mit gleichem Arbeitsgruppennamen.\nEine Domäne ist eine vom Netzwerkadministrator vorgegebene Computergruppe."
-    IDS_REACTOS_SETUP "ReactOS Setup"
+    IDS_REACTOS_SETUP "Setup"
     IDS_WZD_DOMAIN_NAME "Setup kann nicht fortgesetzt werden bevor Sie den Namen der Domäne oder Arbeitsgruppe festgelegt haben."
 END

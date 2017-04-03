@@ -22,5 +22,5 @@ BEGIN
     IDS_SCROLLUP "Scorri sù"
     IDS_SCROLLDOWN "Scorri giù"
 */
-    IDS_TERMINAL_TITLE "ReactOS Console"
+    IDS_TERMINAL_TITLE "Console"
 END

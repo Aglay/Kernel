@@ -126,7 +126,7 @@ BEGIN
     IDS_ABORTSETUP "ReactOS ist nicht vollständig auf Ihrem Computer installiert. Wenn Sie das Setup verlassen, dann müssen Sie das Setup nochmals ausführen, um ReactOS zu installieren. Wirklich beenden?"
     IDS_ABORTSETUP2 "Installation abbrechen?"
     IDS_NO_TXTSETUP_SIF "Die Datei 'txtsetup.sif' konnte nicht gefunden werden.\nSetup kann nicht fortfahren."
-    IDS_CAPTION "ReactOS Setup"
+    IDS_CAPTION "Setup"
 END
 
 STRINGTABLE
