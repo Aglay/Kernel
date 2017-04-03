@@ -80,7 +80,7 @@ static void LoadBoard( BOARD *p_board )
 
     size = sizeof( p_board->pos.x );
     if( RegQueryValueExW( hkey, xposW, NULL, &type, (BYTE*) &p_board->pos.x, &size ) )
-	p_board->pos.x = 0;
+    p_board->pos.x = 0;
 
     size = sizeof( p_board->pos.y );
     if( RegQueryValueExW( hkey, yposW, NULL, &type, (BYTE*) &p_board->pos.y, &size ) )
@@ -153,7 +153,7 @@ static void SaveBoard( BOARD *p_board )
     WCHAR key_name[8];
 
     if( RegCreateKeyExW( HKEY_CURRENT_USER, registry_key,
-	        0, NULL,
+            0, NULL,
                 REG_OPTION_NON_VOLATILE, KEY_WRITE, NULL,
                 &hkey, NULL ) != ERROR_SUCCESS)
         return;
@@ -228,12 +228,12 @@ static void SetDifficulty( BOARD *p_board, DIFFICULTY difficulty )
 static void ShiftBetween(LONG* x, LONG* y, LONG a, LONG b)
 {
     if (*x < a) {
-	*y += a - *x;
-	*x = a;
+    *y += a - *x;
+    *x = a;
     }
     else if (*y > b) {
-	*x -= *y - b;
-	*y = b;
+    *x -= *y - b;
+    *y = b;
     }
 }
 
@@ -321,11 +321,11 @@ static void CreateBoard( BOARD *p_board )
     /* Make sure the window is completely on the screen */
     MoveOnScreen(&wnd_rect);
     MoveWindow( p_board->hWnd, wnd_rect.left, wnd_rect.top,
-		wnd_rect.right - wnd_rect.left,
-		wnd_rect.bottom - wnd_rect.top,
-		TRUE );
+        wnd_rect.right - wnd_rect.left,
+        wnd_rect.bottom - wnd_rect.top,
+        TRUE );
     RedrawWindow( p_board->hWnd, NULL, 0,
-		  RDW_INVALIDATE | RDW_UPDATENOW | RDW_ERASE);
+          RDW_INVALIDATE | RDW_UPDATENOW | RDW_ERASE);
 }
 
 
@@ -744,6 +744,10 @@ static void TestMines( BOARD *p_board, POINT pt, int msg )
     case WM_RBUTTONDOWN:
         AddFlag( p_board, col, row );
         break;
+
+    case WM_RBUTTONUP:
+        break;
+
     default:
         WINE_TRACE("Unknown message type received in TestMines\n");
         break;
@@ -878,14 +882,14 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
     case WM_TIMER:
         if( board.status == PLAYING ) {
             board.time++;
-	    RedrawWindow( hWnd, &board.timer_rect, 0,
-			  RDW_INVALIDATE | RDW_UPDATENOW );
+        RedrawWindow( hWnd, &board.timer_rect, 0,
+              RDW_INVALIDATE | RDW_UPDATENOW );
         }
         return 0;
 
     case WM_LBUTTONDOWN:
         WINE_TRACE("WM_LBUTTONDOWN\n");
-	// It's more comfortable to play with touchpad using Shift key then LClick+RClick	    
+    // It's more comfortable to play with touchpad using Shift key then LClick+RClick       
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONDOWN;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
@@ -894,7 +898,7 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONUP:
         WINE_TRACE("WM_LBUTTONUP\n");
-	// It's more comfortable to play with touchpad using Shift key then LClick+RClick
+    // It's more comfortable to play with touchpad using Shift key then LClick+RClick
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONUP;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
@@ -1033,7 +1037,7 @@ int WINAPI wWinMain( HINSTANCE hInst, HINSTANCE hPrevInst, LPWSTR cmdline, int c
 
     if (!RegisterClassExW(&wc)) ExitProcess(1);
     hWnd = CreateWindowW( appname, appname,
-	wnd_style,
+    wnd_style,
         CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
         0, 0, hInst, NULL );
 
