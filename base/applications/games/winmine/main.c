@@ -80,7 +80,7 @@ static void LoadBoard( BOARD *p_board )
 
     size = sizeof( p_board->pos.x );
     if( RegQueryValueExW( hkey, xposW, NULL, &type, (BYTE*) &p_board->pos.x, &size ) )
-    p_board->pos.x = 0;
+        p_board->pos.x = 0;
 
     size = sizeof( p_board->pos.y );
     if( RegQueryValueExW( hkey, yposW, NULL, &type, (BYTE*) &p_board->pos.y, &size ) )
@@ -228,12 +228,12 @@ static void SetDifficulty( BOARD *p_board, DIFFICULTY difficulty )
 static void ShiftBetween(LONG* x, LONG* y, LONG a, LONG b)
 {
     if (*x < a) {
-    *y += a - *x;
-    *x = a;
+        *y += a - *x;
+        *x = a;
     }
     else if (*y > b) {
-    *x -= *y - b;
-    *y = b;
+        *x -= *y - b;
+        *y = b;
     }
 }
 
@@ -268,12 +268,12 @@ static void CreateBoard( BOARD *p_board )
      * so special care doesn't have to be taken on the edges
      */
     for( col = 0; col <= p_board->cols + 1; col++ )
-      for( row = 0; row <= p_board->rows + 1; row++ ) {
-        p_board->box[col][row].IsPressed = FALSE;
-        p_board->box[col][row].IsMine = FALSE;
-        p_board->box[col][row].FlagType = NORMAL;
-        p_board->box[col][row].NumMines = 0;
-      }
+        for( row = 0; row <= p_board->rows + 1; row++ ) {
+            p_board->box[col][row].IsPressed = FALSE;
+            p_board->box[col][row].IsMine = FALSE;
+            p_board->box[col][row].FlagType = NORMAL;
+            p_board->box[col][row].NumMines = 0;
+        }
 
     p_board->width = p_board->cols * MINE_WIDTH + BOARD_WMARGIN * 2;
 
@@ -455,9 +455,9 @@ static void DrawMines ( HDC hdc, HDC hMemDC, BOARD *p_board )
     hOldObj = SelectObject (hMemDC, p_board->hMinesBMP);
 
     for( row = 1; row <= p_board->rows; row++ ) {
-      for( col = 1; col <= p_board->cols; col++ ) {
-        DrawMine( hdc, hMemDC, p_board, col, row, FALSE );
-      }
+        for( col = 1; col <= p_board->cols; col++ ) {
+            DrawMine( hdc, hMemDC, p_board, col, row, FALSE );
+        }
     }
     SelectObject( hMemDC, hOldObj );
 }
@@ -591,9 +591,9 @@ static void UnpressBoxes( BOARD *p_board, unsigned col, unsigned row )
     int i, j;
 
     for( i = -1; i <= 1; i++ )
-      for( j = -1; j <= 1; j++ ) {
-        UnpressBox( p_board, col + i, row + j );
-      }
+        for( j = -1; j <= 1; j++ ) {
+            UnpressBox( p_board, col + i, row + j );
+        }
 }
 
 
@@ -620,22 +620,22 @@ static void PressBoxes( BOARD *p_board, unsigned col, unsigned row )
     int i, j;
 
     for( i = -1; i <= 1; i++ )
-      for( j = -1; j <= 1; j++ ) {
-        p_board->box[col + i][row + j].IsPressed = TRUE;
-        PressBox( p_board, col + i, row + j );
-    }
+        for( j = -1; j <= 1; j++ ) {
+            p_board->box[col + i][row + j].IsPressed = TRUE;
+            PressBox( p_board, col + i, row + j );
+        }
 
     for( i = -1; i <= 1; i++ )
-      for( j = -1; j <= 1; j++ ) {
-        if( !p_board->box[p_board->press.x + i][p_board->press.y + j].IsPressed )
-            UnpressBox( p_board, p_board->press.x + i, p_board->press.y + j );
-    }
+        for( j = -1; j <= 1; j++ ) {
+            if( !p_board->box[p_board->press.x + i][p_board->press.y + j].IsPressed )
+                UnpressBox( p_board, p_board->press.x + i, p_board->press.y + j );
+        }
 
     for( i = -1; i <= 1; i++ )
-      for( j = -1; j <= 1; j++ ) {
-        p_board->box[col + i][row + j].IsPressed = FALSE;
-        PressBox( p_board, col + i, row + j );
-    }
+        for( j = -1; j <= 1; j++ ) {
+            p_board->box[col + i][row + j].IsPressed = FALSE;
+            PressBox( p_board, col + i, row + j );
+        }
 
     p_board->press.x = col;
     p_board->press.y = row;
@@ -676,17 +676,17 @@ static void CompleteBoxes( BOARD *p_board, unsigned col, unsigned row )
 
     if( p_board->box[col][row].FlagType == COMPLETE ) {
         for( i = -1; i <= 1; i++ )
-          for( j = -1; j <= 1; j++ ) {
-            if( p_board->box[col+i][row+j].FlagType == FLAG )
-                numFlags++;
-          }
+            for( j = -1; j <= 1; j++ ) {
+                if( p_board->box[col+i][row+j].FlagType == FLAG )
+                    numFlags++;
+            }
 
         if( numFlags == p_board->box[col][row].NumMines ) {
             for( i = -1; i <= 1; i++ )
-              for( j = -1; j <= 1; j++ ) {
-                if( p_board->box[col+i][row+j].FlagType != FLAG )
-                    CompleteBox( p_board, col+i, row+j );
-              }
+                for( j = -1; j <= 1; j++ ) {
+                    if( p_board->box[col+i][row+j].FlagType != FLAG )
+                        CompleteBox( p_board, col+i, row+j );
+                }
         }
     }
 }
@@ -889,7 +889,7 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONDOWN:
         WINE_TRACE("WM_LBUTTONDOWN\n");
-    // It's more comfortable to play with touchpad using Shift key then LClick+RClick       
+        // It's more comfortable to play with touchpad using Shift key then LClick+RClick       
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONDOWN;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
@@ -898,7 +898,7 @@ static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 
     case WM_LBUTTONUP:
         WINE_TRACE("WM_LBUTTONUP\n");
-    // It's more comfortable to play with touchpad using Shift key then LClick+RClick
+        // It's more comfortable to play with touchpad using Shift key then LClick+RClick
         if( wParam & ( MK_RBUTTON | MK_SHIFT ) )
             msg = WM_MBUTTONUP;
         TestBoard( hWnd, &board, (short)LOWORD(lParam), (short)HIWORD(lParam), msg );
