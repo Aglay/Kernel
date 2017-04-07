@@ -18,7 +18,7 @@ IDI_HARDWARE ICON "resources/110.ico"
 IDI_LOCKICON ICON "resources/115.ico"
 
 /* Bitmaps */
-IDI_ROSLOGO BITMAP "resources/reactos.bmp"
+IDI_ROSLOGO BITMAP "resources/header.bmp"
 
 #include <reactos/manifest_dll.rc>
 
