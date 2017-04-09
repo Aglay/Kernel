@@ -1,3 +1,4 @@
+@echo off
 if not defined TOOLS set TOOLS=C:\Flame
 
 color 0A
