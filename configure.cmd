@@ -226,7 +226,7 @@ if "%NEW_STYLE_BUILD%"=="0" (
 
 echo Configure script complete^^! Execute appropriate build commands (ex: ninja, make, nmake, etc...).
 endlocal
-exit /b
+exit /b 0
 
 :cmake_notfound
 echo Unable to find cmake, if it is installed, check your PATH variable.

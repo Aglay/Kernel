@@ -9,5 +9,6 @@ set LIBRARY_PATH=
 set GOS_ARCH=i386
 if not exist "output-MinGW-i386" (
     call "configure.cmd"
+    cmd /c "exit /b 0"
 )
 cd output-MinGW-i386
