@@ -1,4 +1,4 @@
 @echo off
-call "environment.cmd"
 echo Building Greentea...
+cd output-MinGW-i386
 ninja calc
