@@ -67,6 +67,50 @@ void CheckLevel( BOARD *p_board )
         p_board->mines = ( p_board->cols - 1 ) * ( p_board->rows - 1 );
 }
 
+void ResetResults( BOARD *p_board )
+{
+    unsigned i;
+
+    for( i = 0; i < 3; i++ ) {
+        LoadStringW( p_board->hInst, IDS_NOBODY, p_board->best_name[i], MAX_PLAYER_NAME_SIZE+1 );
+        p_board->best_time[i] = 999;
+    }
+}
+
+void SaveBoard( BOARD *p_board )
+{
+    HKEY hkey;
+    unsigned i;
+    WCHAR data[MAX_PLAYER_NAME_SIZE+1];
+    WCHAR key_name[8];
+
+    if( RegCreateKeyExW( HKEY_CURRENT_USER, registry_key,
+            0, NULL,
+                REG_OPTION_NON_VOLATILE, KEY_WRITE, NULL,
+                &hkey, NULL ) != ERROR_SUCCESS)
+        return;
+
+    RegSetValueExW( hkey, xposW, 0, REG_DWORD, (LPBYTE) &p_board->pos.x, sizeof(p_board->pos.x) );
+    RegSetValueExW( hkey, yposW, 0, REG_DWORD, (LPBYTE) &p_board->pos.y, sizeof(p_board->pos.y) );
+    RegSetValueExW( hkey, difficultyW, 0, REG_DWORD, (LPBYTE) &p_board->difficulty, sizeof(p_board->difficulty) );
+    RegSetValueExW( hkey, heightW, 0, REG_DWORD, (LPBYTE) &p_board->rows, sizeof(p_board->rows) );
+    RegSetValueExW( hkey, widthW, 0, REG_DWORD, (LPBYTE) &p_board->cols, sizeof(p_board->cols) );
+    RegSetValueExW( hkey, minesW, 0, REG_DWORD, (LPBYTE) &p_board->mines, sizeof(p_board->mines) );
+    RegSetValueExW( hkey, markW, 0, REG_DWORD, (LPBYTE) &p_board->IsMarkQ, sizeof(p_board->IsMarkQ) );
+
+    for( i = 0; i < 3; i++ ) {
+        wsprintfW( key_name, nameW, i+1 );
+        lstrcpynW( data, p_board->best_name[i], sizeof(data)/sizeof(WCHAR) );
+        RegSetValueExW( hkey, key_name, 0, REG_SZ, (LPBYTE) data, (lstrlenW(data)+1) * sizeof(WCHAR) );
+    }
+
+    for( i = 0; i < 3; i++ ) {
+        wsprintfW( key_name, timeW, i+1 );
+        RegSetValueExW( hkey, key_name, 0, REG_DWORD, (LPBYTE) &p_board->best_time[i], sizeof(p_board->best_time[i]) );
+    }
+    RegCloseKey( hkey );
+}
+
 static void LoadBoard( BOARD *p_board )
 {
     DWORD size;
@@ -143,40 +187,6 @@ static void InitBoard( BOARD *p_board )
     else
         CheckMenuItem( hMenu, IDM_MARKQ, MF_UNCHECKED );
     CheckLevel( p_board );
-}
-
-static void SaveBoard( BOARD *p_board )
-{
-    HKEY hkey;
-    unsigned i;
-    WCHAR data[MAX_PLAYER_NAME_SIZE+1];
-    WCHAR key_name[8];
-
-    if( RegCreateKeyExW( HKEY_CURRENT_USER, registry_key,
-            0, NULL,
-                REG_OPTION_NON_VOLATILE, KEY_WRITE, NULL,
-                &hkey, NULL ) != ERROR_SUCCESS)
-        return;
-
-    RegSetValueExW( hkey, xposW, 0, REG_DWORD, (LPBYTE) &p_board->pos.x, sizeof(p_board->pos.x) );
-    RegSetValueExW( hkey, yposW, 0, REG_DWORD, (LPBYTE) &p_board->pos.y, sizeof(p_board->pos.y) );
-    RegSetValueExW( hkey, difficultyW, 0, REG_DWORD, (LPBYTE) &p_board->difficulty, sizeof(p_board->difficulty) );
-    RegSetValueExW( hkey, heightW, 0, REG_DWORD, (LPBYTE) &p_board->rows, sizeof(p_board->rows) );
-    RegSetValueExW( hkey, widthW, 0, REG_DWORD, (LPBYTE) &p_board->cols, sizeof(p_board->cols) );
-    RegSetValueExW( hkey, minesW, 0, REG_DWORD, (LPBYTE) &p_board->mines, sizeof(p_board->mines) );
-    RegSetValueExW( hkey, markW, 0, REG_DWORD, (LPBYTE) &p_board->IsMarkQ, sizeof(p_board->IsMarkQ) );
-
-    for( i = 0; i < 3; i++ ) {
-        wsprintfW( key_name, nameW, i+1 );
-        lstrcpynW( data, p_board->best_name[i], sizeof(data)/sizeof(WCHAR) );
-        RegSetValueExW( hkey, key_name, 0, REG_SZ, (LPBYTE) data, (lstrlenW(data)+1) * sizeof(WCHAR) );
-    }
-
-    for( i = 0; i < 3; i++ ) {
-        wsprintfW( key_name, timeW, i+1 );
-        RegSetValueExW( hkey, key_name, 0, REG_DWORD, (LPBYTE) &p_board->best_time[i], sizeof(p_board->best_time[i]) );
-    }
-    RegCloseKey( hkey );
 }
 
 static void DestroyBoard( BOARD *p_board )
@@ -327,7 +337,6 @@ static void CreateBoard( BOARD *p_board )
     RedrawWindow( p_board->hWnd, NULL, 0,
           RDW_INVALIDATE | RDW_UPDATENOW | RDW_ERASE);
 }
-
 
 /* Randomly places mines everywhere except the selected box. */
 static void PlaceMines ( BOARD *p_board, int selected_col, int selected_row )
@@ -504,7 +513,6 @@ static void DrawLeds( HDC hdc, HDC hMemDC, BOARD *p_board, int number, int x, in
     SelectObject( hMemDC, hOldObj );
 }
 
-
 static void DrawFace( HDC hdc, HDC hMemDC, BOARD *p_board )
 {
     HGDIOBJ hOldObj;
@@ -520,7 +528,6 @@ static void DrawFace( HDC hdc, HDC hMemDC, BOARD *p_board )
 
     SelectObject( hMemDC, hOldObj );
 }
-
 
 static void DrawBoard( HDC hdc, HDC hMemDC, PAINTSTRUCT *ps, BOARD *p_board )
 {
@@ -542,7 +549,6 @@ static void DrawBoard( HDC hdc, HDC hMemDC, PAINTSTRUCT *ps, BOARD *p_board )
     if( IntersectRect( &tmp_rect, &ps->rcPaint, &p_board->mines_rect ) )
         DrawMines( hdc, hMemDC, p_board );
 }
-
 
 static void AddFlag( BOARD *p_board, unsigned col, unsigned row )
 {
@@ -567,7 +573,6 @@ static void AddFlag( BOARD *p_board, unsigned col, unsigned row )
     }
 }
 
-
 static void UnpressBox( BOARD *p_board, unsigned col, unsigned row )
 {
     HDC hdc;
@@ -585,7 +590,6 @@ static void UnpressBox( BOARD *p_board, unsigned col, unsigned row )
     ReleaseDC( p_board->hWnd, hdc );
 }
 
-
 static void UnpressBoxes( BOARD *p_board, unsigned col, unsigned row )
 {
     int i, j;
@@ -595,7 +599,6 @@ static void UnpressBoxes( BOARD *p_board, unsigned col, unsigned row )
             UnpressBox( p_board, col + i, row + j );
         }
 }
-
 
 static void PressBox( BOARD *p_board, unsigned col, unsigned row )
 {
@@ -613,7 +616,6 @@ static void PressBox( BOARD *p_board, unsigned col, unsigned row )
     DeleteDC( hMemDC );
     ReleaseDC( p_board->hWnd, hdc );
 }
-
 
 static void PressBoxes( BOARD *p_board, unsigned col, unsigned row )
 {
@@ -641,7 +643,6 @@ static void PressBoxes( BOARD *p_board, unsigned col, unsigned row )
     p_board->press.y = row;
 }
 
-
 static void CompleteBox( BOARD *p_board, unsigned col, unsigned row )
 {
     int i, j;
@@ -668,7 +669,6 @@ static void CompleteBox( BOARD *p_board, unsigned col, unsigned row )
     }
 }
 
-
 static void CompleteBoxes( BOARD *p_board, unsigned col, unsigned row )
 {
     unsigned numFlags = 0;
@@ -690,7 +690,6 @@ static void CompleteBoxes( BOARD *p_board, unsigned col, unsigned row )
         }
     }
 }
-
 
 static void TestMines( BOARD *p_board, POINT pt, int msg )
 {
@@ -760,7 +759,6 @@ static void TestMines( BOARD *p_board, POINT pt, int msg )
     }
 }
 
-
 static void TestFace( BOARD *p_board, POINT pt, int msg )
 {
     if( p_board->status == PLAYING || p_board->status == WAITING ) {
@@ -784,7 +782,6 @@ static void TestFace( BOARD *p_board, POINT pt, int msg )
     RedrawWindow( p_board->hWnd, &p_board->face_rect, 0,
         RDW_INVALIDATE | RDW_UPDATENOW );
 }
-
 
 static void TestBoard( HWND hWnd, BOARD *p_board, int x, int y, int msg )
 {
@@ -828,13 +825,13 @@ static void TestBoard( HWND hWnd, BOARD *p_board, int x, int y, int msg )
 
             DialogBoxParamW( p_board->hInst, MAKEINTRESOURCEW(DLG_CONGRATS), hWnd,
                              CongratsDlgProc, (LPARAM) p_board);
+            SaveBoard( p_board );
             DialogBoxParamW( p_board->hInst, MAKEINTRESOURCEW(DLG_TIMES), hWnd,
                              TimesDlgProc, (LPARAM) p_board);
         }
     }
     TestFace( p_board, pt, msg );
 }
-
 
 static LRESULT WINAPI MainProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {

@@ -130,6 +130,8 @@ typedef struct tagBOARD
 } BOARD;
 
 void CheckLevel( BOARD *p_board );
+void SaveBoard( BOARD *p_board );
+void ResetResults( BOARD *p_board );
 
 INT_PTR CALLBACK CustomDlgProc( HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam );
 
