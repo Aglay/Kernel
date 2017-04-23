@@ -2,4 +2,5 @@
 call "environment.cmd"
 echo Building Greentea...
 ninja livecd
+cd ..
 pause
