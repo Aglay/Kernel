@@ -19,7 +19,7 @@ FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     LTEXT "Разработчики Greentea и Open Source-проекты, благодаря которым была создана Greentea:", IDC_STATIC, 15, 7, 286, 19
     LISTBOX IDC_PROJECTS, 15, 30, 286, 75, LBS_NOSEL | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL
-    LTEXT "Greentea распространяется под лицензией GPL, если вы хотите использовать и распространять ее, вы должны соблюдать GPL.", IDC_STATIC, 15, 110, 227, 19
+    LTEXT "Greentea распространяется под лицензией GPL. Если вы хотите использовать и распространять ее, вы должны соблюдать GPL.", IDC_STATIC, 15, 110, 227, 19
     PUSHBUTTON "&Лицензия...", IDC_VIEWGPL, 251, 110, 50, 14
     LTEXT "Нажмите ""Далее"" для продолжения установки.", IDC_STATIC, 15, 136, 195, 17
 END
@@ -61,7 +61,7 @@ CAPTION "Установка Greentea"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON IDI_ICON4, IDC_STATIC, 21, 7, 20, 20
-    LTEXT "Язык системы устанавливается и действует во всех приложениях. Можно выбрать систему исчисления, формат чисел и даты.", IDC_STATIC, 53, 7, 253, 20
+    LTEXT "Язык системы устанавливается и действует во всех приложениях. Можно выбрать единицы измерения, формат чисел и даты.", IDC_STATIC, 53, 7, 253, 20
     LTEXT "", IDC_LOCALETEXT, 53, 29, 250, 16
     LTEXT "Для изменения языка системы нажмите ""Настроить"".", IDC_STATIC, 53, 60, 197, 8
     PUSHBUTTON "&Настроить...", IDC_CUSTOMLOCALE, 245, 57, 55, 14
@@ -117,7 +117,7 @@ END
 
 IDD_STATUSWINDOW_DLG DIALOGEX 0, 0, 274, 26
 STYLE NOT WS_VISIBLE | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME | WS_POPUP
-CAPTION "Пожалуйста подождите..."
+CAPTION "Пожалуйста, подождите..."
 FONT 8, "MS Shell Dlg", 400, 0, 1
 BEGIN
     LTEXT "", IDC_STATUSLABEL, 7, 8, 234, 12, SS_WORDELLIPSIS
@@ -132,7 +132,7 @@ BEGIN
     IDS_COMPUTERTITLE "Имя компьютера и пароль администратора"
     IDS_COMPUTERSUBTITLE "Вы должны ввести имя и администраторский пароль для вашего компьютера."
     IDS_LOCALETITLE "Региональные настройки"
-    IDS_LOCALESUBTITLE "Вы можете настраивать Greentea для разных регионов и языков."
+    IDS_LOCALESUBTITLE "Вы можете настроить Greentea для разных регионов и языков."
     IDS_DATETIMETITLE "Дата и время"
     IDS_DATETIMESUBTITLE "Установите правильную дату и время на вашем компьютере."
     IDS_PROCESSTITLE "Процесс установки"
