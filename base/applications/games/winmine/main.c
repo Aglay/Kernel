@@ -109,6 +109,8 @@ void SaveBoard( BOARD *p_board )
         RegSetValueExW( hkey, key_name, 0, REG_DWORD, (LPBYTE) &p_board->best_time[i], sizeof(p_board->best_time[i]) );
     }
     RegCloseKey( hkey );
+
+    WINE_TRACE("Board has been saved.\n");
 }
 
 static void LoadBoard( BOARD *p_board )
@@ -802,7 +804,7 @@ static void TestBoard( HWND hWnd, BOARD *p_board, int x, int y, int msg )
         p_board->press.y = 0;
     }
 
-    if( p_board->boxes_left == 0 ) {
+    if( p_board->boxes_left == 0 && p_board->status != WON ) {
         p_board->status = WON;
 
         if (p_board->num_flags < p_board->mines) {

@@ -9,6 +9,8 @@ BEGIN
     IDS_APPNAME "Mine"
     IDS_NOBODY "Asnje"
     IDS_ABOUT "Te Drejtat 2000 Joshua Thielen"
+    IDC_CONFIRMTITLE "Reset Results"
+    IDC_CONFIRMTEXT "All results will be lost. Are you sure?"
 END
 
 IDM_WINEMINE MENU

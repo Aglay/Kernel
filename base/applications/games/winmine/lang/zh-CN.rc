@@ -5,6 +5,8 @@ BEGIN
     IDS_APPNAME "Wine地雷"
     IDS_NOBODY "无人"
     IDS_ABOUT "版权所有 2000 Joshua Thielen"
+    IDC_CONFIRMTITLE "Reset Results"
+    IDC_CONFIRMTEXT "All results will be lost. Are you sure?"
 END
 
 IDM_WINEMINE MENU

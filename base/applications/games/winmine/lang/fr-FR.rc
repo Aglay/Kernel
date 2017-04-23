@@ -5,6 +5,8 @@ BEGIN
     IDS_APPNAME "Démineur de Wine"
     IDS_NOBODY "Anonyme"
     IDS_ABOUT "Copyright 2000 Joshua Thielen"
+    IDC_CONFIRMTITLE "Reset Results"
+    IDC_CONFIRMTEXT "All results will be lost. Are you sure?"
 END
 
 IDM_WINEMINE MENU

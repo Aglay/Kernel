@@ -5,6 +5,8 @@ BEGIN
     IDS_APPNAME "Minesveiper"
     IDS_NOBODY "Ingen"
     IDS_ABOUT "Kopirett 2000 tilhører Joshua Thielen"
+    IDC_CONFIRMTITLE "Reset Results"
+    IDC_CONFIRMTEXT "All results will be lost. Are you sure?"
 END
 
 IDM_WINEMINE MENU

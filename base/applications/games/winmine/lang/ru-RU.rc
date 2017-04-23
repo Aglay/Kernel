@@ -5,6 +5,8 @@ BEGIN
     IDS_APPNAME "Mine"
     IDS_NOBODY "Игрок"
     IDS_ABOUT "Copyright 2000 Joshua Thielen"
+    IDC_CONFIRMTITLE "Сброс результатов"
+    IDC_CONFIRMTEXT "Все результаты будут потеряны. Вы уверены, что хотите продолжить?"
 END
 
 IDM_WINEMINE MENU

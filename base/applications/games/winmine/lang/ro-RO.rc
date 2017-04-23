@@ -6,6 +6,8 @@ BEGIN
     IDS_APPNAME "Genist"
     IDS_NOBODY "Nimeni"
     IDS_ABOUT "Drept de autor 2000 Joshua Thielen"
+    IDC_CONFIRMTITLE "Reset Results"
+    IDC_CONFIRMTEXT "All results will be lost. Are you sure?"
 END
 
 IDM_WINEMINE MENU
