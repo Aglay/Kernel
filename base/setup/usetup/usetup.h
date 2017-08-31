@@ -54,6 +54,7 @@
 
 /* Filesystem headers */
 #include <reactos/rosioctl.h>
+#include <fslib/greenteafslib.h>
 #include <fslib/vfatlib.h>
 #include <fslib/ext2lib.h>
 // #include <fslib/ntfslib.h>

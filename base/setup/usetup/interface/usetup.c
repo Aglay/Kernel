@@ -1395,8 +1395,8 @@ ComputerSettingsPage(PINPUT_RECORD Ir)
 
     return HandleGenericList(ComputerList, DEVICE_SETTINGS_PAGE, Ir);
 }
- 
- 
+
+
 /*
  * Displays the DisplaySettingsPage.
  *
@@ -3144,6 +3144,10 @@ CheckFileSystemPage(PINPUT_RECORD Ir)
 
         while (TRUE)
         {
+            // Skip this page
+            PartEntry->NeedsCheck = FALSE;
+            return CHECK_FILE_SYSTEM_PAGE;
+
             CONSOLE_ConInKey(Ir);
 
             if (Ir->Event.KeyEvent.uChar.AsciiChar == 0x00 &&
