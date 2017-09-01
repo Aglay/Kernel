@@ -21,6 +21,7 @@ output-*/
 *.xcf
 *.svg
 *.chm
+buildSystem/data/
 
 ## Systems temporal files
 *DS_Store
