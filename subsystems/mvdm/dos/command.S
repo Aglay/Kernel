@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       GPL - See COPYING in the top level directory
- * PROJECT:         ReactOS Virtual DOS Machine
+ * PROJECT:         Virtual DOS Machine
  * FILE:            command.S
  * PURPOSE:         DOS32 command.com for NTVDM
  * PROGRAMMERS:     Hermes Belusca-Maito (hermes.belusca@sfr.fr)

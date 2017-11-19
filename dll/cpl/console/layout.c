@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Console Configuration DLL
+ * PROJECT:         Console Configuration DLL
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            dll/cpl/console/layout.c
  * PURPOSE:         Layout dialog

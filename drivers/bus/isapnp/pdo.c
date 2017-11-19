@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS ISA PnP Bus driver
+ * PROJECT:         ISA PnP Bus driver
  * FILE:            pdo.c
  * PURPOSE:         PDO-specific code
  * PROGRAMMERS:     Cameron Gutman (cameron.gutman@reactos.org)

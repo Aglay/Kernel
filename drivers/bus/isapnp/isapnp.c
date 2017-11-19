@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS ISA PnP Bus driver
+ * PROJECT:         ISA PnP Bus driver
  * FILE:            isapnp.c
  * PURPOSE:         Driver entry
  * PROGRAMMERS:     Cameron Gutman (cameron.gutman@reactos.org)

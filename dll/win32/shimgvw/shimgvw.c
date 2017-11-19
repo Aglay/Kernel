@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Picture and Fax Viewer
+ * PROJECT:         Picture and Fax Viewer
  * FILE:            dll/win32/shimgvw/shimgvw.c
  * PURPOSE:         shimgvw.dll
  * PROGRAMMER:      Dmitry Chapyshev (dmitry@reactos.org)

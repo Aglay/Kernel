@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS WinSock 2 DLL
+ * PROJECT:     WinSock 2 DLL
  * FILE:        dll/win32/ws2_32/include/debug.h
  * PURPOSE:     Debugging support macros
  * DEFINES:     DBG     - Enable debug output

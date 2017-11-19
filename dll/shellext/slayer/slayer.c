@@ -1,5 +1,5 @@
 /*
- * ReactOS Compatibility Layer Shell Extension
+ * Compatibility Layer Shell Extension
  * Copyright (C) 2004 - 2005 ReactOS Team
  *
  * This library is free software; you can redistribute it and/or
@@ -17,9 +17,9 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 /*
- * PROJECT:         ReactOS Compatibility Layer Shell Extension
+ * PROJECT:         Compatibility Layer Shell Extension
  * FILE:            dll/shellext/slayer/slayer.c
- * PURPOSE:         ReactOS Compatibility Layer Shell Extension
+ * PURPOSE:         Compatibility Layer Shell Extension
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>
  * UPDATE HISTORY:
  *      09/25/2004  Created

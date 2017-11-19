@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS PCI bus driver
+ * PROJECT:         PCI bus driver
  * FILE:            fdo.c
  * PURPOSE:         PCI device object dispatch routines
  * PROGRAMMERS:     Casper S. Hornstrup (chorns@users.sourceforge.net)

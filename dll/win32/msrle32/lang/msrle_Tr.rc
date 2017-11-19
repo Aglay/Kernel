@@ -24,7 +24,7 @@ LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 {
-	IDS_NAME	"ReactOS MS-RLE"
-	IDS_DESCRIPTION	"ReactOS MS-RLE Vidyo Kodeki"
-	IDS_ABOUT       "ReactOS MS-RLE Vidyo Kodeki\nTelif Hakkı: 2002 - Michael Günnewig"
+	IDS_NAME	"MS-RLE"
+	IDS_DESCRIPTION	"MS-RLE Vidyo Kodeki"
+	IDS_ABOUT       "MS-RLE Vidyo Kodeki\nTelif Hakkı: 2002 - Michael Günnewig"
 }

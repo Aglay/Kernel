@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS System Libraries
+ * PROJECT:         System Libraries
  * FILE:            dll/win32/kernel32/k32.h
  * PURPOSE:         Win32 Kernel Libary Header
  * PROGRAMMER:      Alex Ionescu (alex@relsoft.net)

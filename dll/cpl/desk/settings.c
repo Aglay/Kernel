@@ -1,11 +1,11 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Display Control Panel
+ * PROJECT:         Display Control Panel
  * FILE:            dll/cpl/desk/settings.c
  * PURPOSE:         Settings property page
  *
  * PROGRAMMERS:     Trevor McCort (lycan359@gmail.com)
- *                  Hervé Poussineau (hpoussin@reactos.org)
+ *                  Hervï¿½ Poussineau (hpoussin@reactos.org)
  */
 
 #include "desk.h"

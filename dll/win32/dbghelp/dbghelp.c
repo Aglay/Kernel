@@ -142,8 +142,6 @@ struct cpu*             dbghelp_current_cpu =
     &cpu_i386
 #elif defined(__x86_64__)
     &cpu_x86_64
-#elif defined(__powerpc__)
-    &cpu_ppc
 #elif defined(__arm__)
     &cpu_arm
 #elif defined(__aarch64__)

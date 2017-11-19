@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS ISA PnP Bus driver
+ * PROJECT:         ISA PnP Bus driver
  * FILE:            hardware.c
  * PURPOSE:         Hardware support code
  * PROGRAMMERS:     Cameron Gutman (cameron.gutman@reactos.org)

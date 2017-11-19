@@ -1,5 +1,5 @@
 /*
- * ReactOS German de_ergo/eMeier ASCII Keyboard layout
+ * German de_ergo/eMeier ASCII Keyboard layout
  * Copyright (C) 2008 ReactOS
  * License: LGPL, see: LGPL.txt
  *

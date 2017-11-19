@@ -1,5 +1,5 @@
 /*
- * ReactOS Finnish keyboard layout (Based on Swedish keyboard layout)
+ * Finnish keyboard layout (Based on Swedish keyboard layout)
  * Copyright (C) 2007 ReactOS
  * License: LGPL, see: LGPL.txt
  *

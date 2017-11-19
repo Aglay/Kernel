@@ -1,5 +1,5 @@
 /*
- * ReactOS German Ristome ASCII Keyboard layout
+ * German Ristome ASCII Keyboard layout
  * Copyright (C) 2008 ReactOS
  * License: LGPL, see: LGPL.txt
  *

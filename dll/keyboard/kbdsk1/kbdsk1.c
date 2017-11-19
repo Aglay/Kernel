@@ -1,5 +1,5 @@
 /*
- * ReactOS Slovak (QWERTY) Keyboard layout
+ * Slovak (QWERTY) Keyboard layout
  * Copyright (C) 2008 ReactOS
  * License: LGPL, see: LGPL.txt
  *

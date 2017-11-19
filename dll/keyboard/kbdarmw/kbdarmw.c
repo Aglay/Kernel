@@ -1,5 +1,5 @@
 /*
- * ReactOS Armenian Western Keyboard layout
+ * Armenian Western Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Alexey Komarov
  * License: LGPL, see: LGPL.txt

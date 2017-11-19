@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Framebuffer Display Driver
+ * PROJECT:         Framebuffer Display Driver
  * LICENSE:         Microsoft NT4 DDK Sample Code License
  * FILE:            win32ss/drivers/displays/framebuf_new/palette.c
  * PURPOSE:         Palette Support

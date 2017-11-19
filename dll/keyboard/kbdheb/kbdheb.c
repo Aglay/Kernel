@@ -1,5 +1,5 @@
 /*
- * ReactOS Hebrew Keyboard layout
+ * Hebrew Keyboard layout
  * Copyright (C) 2005 - 2013 ReactOS
  * License: LGPL, see: LGPL.txt
  * Authors: Royce Mitchell III

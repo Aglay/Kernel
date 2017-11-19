@@ -1,8 +1,8 @@
 /*
- * ReactOS Greek ASCII Keyboard layout
+ * Greek ASCII Keyboard layout
  * Copyright (C) 2005 ReactOS
  * License: LGPL, see: LGPL.txt
- * author: Apostolos Alexiadis (Dj Apal®)
+ * author: Apostolos Alexiadis (Dj Apalï¿½)
  *
  * Thanks to: http://www.barcodeman.com/altek/mule/scandoc.php
  * and http://win.tue.nl/~aeb/linux/kbd/scancodes-1.html

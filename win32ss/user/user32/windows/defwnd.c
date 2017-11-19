@@ -1,7 +1,7 @@
 /*
  *
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS user32.dll
+ * PROJECT:         user32.dll
  * FILE:            win32ss/user/user32/windows/defwnd.c
  * PURPOSE:         Window management
  * PROGRAMMER:      Casper S. Hornstrup (chorns@users.sourceforge.net)

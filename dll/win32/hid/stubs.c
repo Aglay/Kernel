@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Hid User Library
+ * PROJECT:         Hid User Library
  * FILE:            lib/hid/stubs.c
  * PURPOSE:         hid.dll stubs
  * NOTES:           If you implement a function, remove it from this file

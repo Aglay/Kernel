@@ -1,5 +1,5 @@
 /*
- * ReactOS Polish Keyboard layout
+ * Polish Keyboard layout
  * Copyright (C) 2007 ReactOS
  * License: LGPL, see: LGPL.txt
  * author: Sebastian Gasiorek

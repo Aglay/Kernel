@@ -1,5 +1,5 @@
 /*
- * ReactOS Arabic (101) Keyboard layout
+ * Arabic (101) Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Alexey Komarov
  * License: LGPL, see: LGPL.txt

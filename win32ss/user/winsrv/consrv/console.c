@@ -1,9 +1,9 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Console Server DLL
+ * PROJECT:         Console Server DLL
  * FILE:            win32ss/user/winsrv/consrv/console.c
  * PURPOSE:         Console Management Functions
- * PROGRAMMERS:     Gé van Geldorp
+ * PROGRAMMERS:     Gï¿½ van Geldorp
  *                  Jeffrey Morlan
  *                  Hermes Belusca-Maito (hermes.belusca@sfr.fr)
  */

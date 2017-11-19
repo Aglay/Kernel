@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * FILE:            asmxtras.inc
  * PURPOSE:         Extended ASM macros for GAS and MASM/ML64
  * PROGRAMMERS:     Hermes Belusca-Maito (hermes.belusca@sfr.fr)

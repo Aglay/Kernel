@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,11 +17,11 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS system libraries
+ * PROJECT:         system libraries
  * FILE:            dll/win32/userenv/profile.c
  * PURPOSE:         User profile code
  * PROGRAMMERS:     Eric Kohl
- *                  Hervé Poussineau
+ *                  Hervï¿½ Poussineau
  */
 
 #include "precomp.h"

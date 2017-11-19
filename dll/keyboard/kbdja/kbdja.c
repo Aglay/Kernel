@@ -1,5 +1,5 @@
 /*
- * ReactOS Japanese (JIS 106) keyboard layout
+ * Japanese (JIS 106) keyboard layout
  * Copyright (C) 2003 ReactOS
  * License: LGPL, see: LGPL.txt
  *

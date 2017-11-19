@@ -1,7 +1,7 @@
 /*
  *
  * COPYRIGHT:            See COPYING in the top level directory
- * PROJECT:              ReactOS Multimedia
+ * PROJECT:              Multimedia
  * FILE:                 dll/win32/mmdrv/wave.c
  * PURPOSE:              Multimedia User Mode Driver (Wave Audio)
  * PROGRAMMER:           Andrew Greenwood

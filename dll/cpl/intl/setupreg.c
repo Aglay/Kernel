@@ -1,8 +1,8 @@
 /*
- * PROJECT:         ReactOS International Control Panel
+ * PROJECT:         International Control Panel
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            dll/cpl/intl/setupreg.c
- * PURPOSE:         ReactOS International Control Panel
+ * PURPOSE:         International Control Panel
  * PROGRAMMERS:     Alexey Zavyalov (gen_x@mail.ru)
 */
 

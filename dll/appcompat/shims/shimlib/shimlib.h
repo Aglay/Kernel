@@ -1,8 +1,8 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Shim Engine
+ * PROJECT:         Shim Engine
  * FILE:            dll/appcompat/shims/shimlib/shimlib.h
- * PURPOSE:         ReactOS Shim Engine
+ * PURPOSE:         Shim Engine
  * PROGRAMMER:      Mark Jansen
  */
 

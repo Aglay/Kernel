@@ -1,5 +1,5 @@
 /*
- * ReactOS User32 Library
+ * User32 Library
  * - ScrollBar control
  *
  * Copyright 2001 Casper S. Hornstrup

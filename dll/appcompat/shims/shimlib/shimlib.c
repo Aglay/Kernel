@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Shim library
+ * PROJECT:         Shim library
  * FILE:            dll/appcompat/shims/shimlib/shimlib.c
  * PURPOSE:         Shim helper functions
  * PROGRAMMER:      Mark Jansen

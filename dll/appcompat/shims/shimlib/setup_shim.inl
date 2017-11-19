@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Shim library
+ * PROJECT:         Shim library
  * FILE:            dll/appcompat/shims/shimlib/setup_shim.inl
  * PURPOSE:         Shimlib helper file, used for setting up the macro's used when registering a shim.
  * PROGRAMMER:      Mark Jansen

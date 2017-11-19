@@ -1,5 +1,5 @@
 /*
- * ReactOS United Kingdom keyboard layout
+ * United Kingdom keyboard layout
  * Copyright (C) 2003 ReactOS
  * License: LGPL, see: LGPL.txt
  *

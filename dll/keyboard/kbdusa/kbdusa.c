@@ -1,5 +1,5 @@
 /*
- * ReactOS US IBM Arabic 238_L Keyboard layout
+ * US IBM Arabic 238_L Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

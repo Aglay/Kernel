@@ -1,5 +1,5 @@
 /*
- * ReactOS Generic Framebuffer display driver
+ * Generic Framebuffer display driver
  *
  * Copyright (C) 2007 Magnus Olsen
  *

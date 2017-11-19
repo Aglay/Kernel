@@ -1,5 +1,5 @@
 /*
- * ReactOS US-Dvorak for left hand Keyboard layout
+ * US-Dvorak for left hand Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

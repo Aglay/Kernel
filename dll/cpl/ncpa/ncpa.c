@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS Network Control Panel
+ * PROJECT:         Network Control Panel
  * FILE:            dll/cpl/ncpa/ncpa.c
- * PURPOSE:         ReactOS Network Control Panel
+ * PURPOSE:         Network Control Panel
  * PROGRAMMER:      Gero Kuehn (reactos.filter@gkware.com)
  * UPDATE HISTORY:
  *      07-18-2004  Created

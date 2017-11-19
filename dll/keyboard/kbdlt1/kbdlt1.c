@@ -1,7 +1,7 @@
 /*
- * ReactOS Lithuanian Keyboard layout
+ * Lithuanian Keyboard layout
  * Copyright (C) 2007 ReactOS
- * Author: Vytis Girdþijauskas, "CMan", cman@cman.us
+ * Author: Vytis Girdï¿½ijauskas, "CMan", cman@cman.us
  * License: LGPL, see: LGPL.txt
  *
  * http://www.microsoft.com/globaldev/tools/msklc.mspx

@@ -1,5 +1,5 @@
 /*
- * ReactOS Hungarian keyboard layout
+ * Hungarian keyboard layout
  * Copyright (C) 2003 ReactOS
  * License: LGPL, see: LGPL.txt
  *

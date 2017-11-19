@@ -1,5 +1,5 @@
 /*
- * ReactOS Russian (Typewriter) Keyboard layout
+ * Russian (Typewriter) Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

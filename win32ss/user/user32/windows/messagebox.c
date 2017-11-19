@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 1998, 1999, 2000, 2001 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  *
- * PROJECT:         ReactOS user32.dll
+ * PROJECT:         user32.dll
  * FILE:            win32ss/user/user32/windows/messagebox.c
  * PURPOSE:         Input
  * PROGRAMMERS:     Casper S. Hornstrup (chorns@users.sourceforge.net)

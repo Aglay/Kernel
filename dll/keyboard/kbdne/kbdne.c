@@ -1,5 +1,5 @@
 /*
- * ReactOS Dutch Keyboard layout
+ * Dutch Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

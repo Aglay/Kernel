@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * PURPOSE:          Window hooks
  * FILE:             win32ss/user/ntuser/hook.c
  * PROGRAMER:        Casper S. Hornstrup (chorns@users.sourceforge.net)

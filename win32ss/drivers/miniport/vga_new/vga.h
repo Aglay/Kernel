@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS VGA Miniport Driver
+ * PROJECT:         VGA Miniport Driver
  * LICENSE:         Microsoft NT4 DDK Sample Code License
  * FILE:            win32ss/drivers/miniport/vga_new/vga.h
  * PURPOSE:         Main Header File

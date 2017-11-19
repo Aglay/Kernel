@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS msgina.dll
+ * PROJECT:         msgina.dll
  * FILE:            dll/win32/msgina/gui.c
- * PURPOSE:         ReactOS Logon GINA DLL
+ * PURPOSE:         Logon GINA DLL
  * PROGRAMMER:      Eric Kohl
  */
 

@@ -1,5 +1,5 @@
 /*
- * PROJECT:          ReactOS Win32 Subsystem
+ * PROJECT:          Win32 Subsystem
  * LICENSE:          GPL - See COPYING in the top level directory
  * FILE:             win32ss/reactx/ntddraw/dxeng.c
  * PURPOSE:          Implementation of DxEng functions

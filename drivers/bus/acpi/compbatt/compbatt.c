@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Composite Battery Driver
+ * PROJECT:         Composite Battery Driver
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            boot/drivers/bus/acpi/compbatt/compbatt.c
  * PURPOSE:         Main Initialization Code and IRP Handling

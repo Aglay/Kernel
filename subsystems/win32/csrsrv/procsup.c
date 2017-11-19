@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Client/Server Runtime SubSystem
+ * PROJECT:         Client/Server Runtime SubSystem
  * FILE:            subsystems/win32/csrsrv/procsup.c
  * PURPOSE:         CSR Server DLL Process Management
  * PROGRAMMERS:     ReactOS Portable Systems Group

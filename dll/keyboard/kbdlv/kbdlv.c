@@ -1,5 +1,5 @@
 /*
- * ReactOS latvian Keyboard layout
+ * latvian Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev, Arthurs B.
  * License: LGPL, see: LGPL.txt

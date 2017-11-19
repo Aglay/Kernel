@@ -17,9 +17,9 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 /*
- * PROJECT:         ReactOS Sample Control Panel
+ * PROJECT:         Sample Control Panel
  * FILE:            dll/cpl/main/main.c
- * PURPOSE:         ReactOS Main Control Panel
+ * PURPOSE:         Main Control Panel
  * PROGRAMMER:      Eric Kohl
  * UPDATE HISTORY:
  *      05-01-2004  Created

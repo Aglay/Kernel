@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS PCI Bus Driver
+ * PROJECT:         PCI Bus Driver
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            drivers/bus/pci/intrface/intrface.c
  * PURPOSE:         Common Interface Support Routines

@@ -155,13 +155,7 @@
     */
 #  ifndef PNG_ARM_NEON_IMPLEMENTATION
 #     if defined(__ARM_NEON__) || defined(__ARM_NEON)
-#        if defined(__clang__)
-            /* At present it is unknown by the libpng developers which versions
-             * of clang support the intrinsics, however some or perhaps all
-             * versions do not work with the assembler so this may be
-             * irrelevant, so just use the default (do nothing here.)
-             */
-#        elif defined(__GNUC__)
+#        if defined(__GNUC__)
             /* GCC 4.5.4 NEON support is known to be broken.  4.6.3 is known to
              * work, so if this *is* GCC, or G++, look for a version >4.5
              */

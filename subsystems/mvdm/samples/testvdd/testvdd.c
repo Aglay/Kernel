@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Virtual DOS Machine
+ * PROJECT:         Virtual DOS Machine
  * FILE:            subsystems/mvdm/samples/testvdd/testvdd.c
  * PURPOSE:         Testing VDD for NTVDM
  * PROGRAMMERS:     Hermes Belusca-Maito (hermes.belusca@sfr.fr)

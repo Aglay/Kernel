@@ -1,5 +1,5 @@
 /*
- * ReactOS Ukrainian ASCII Keyboard layout
+ * Ukrainian ASCII Keyboard layout
  * Copyright (C) 2005 ReactOS
  * Author: Artem Reznikov
  * License: LGPL, see: LGPL.txt

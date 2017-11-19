@@ -1,5 +1,5 @@
 /*
- * ReactOS Burmese keyboard layout
+ * Burmese keyboard layout
  * Copyright (C) 2007 ReactOS
  * License: LGPL, see: LGPL.txt
  *

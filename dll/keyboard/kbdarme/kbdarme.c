@@ -1,5 +1,5 @@
 /*
- * ReactOS Armenian Eastern Keyboard layout
+ * Armenian Eastern Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Komarov Alexey
  * License: LGPL, see: LGPL.txt

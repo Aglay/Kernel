@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS msgina.dll
+ * PROJECT:         msgina.dll
  * FILE:            lib/msgina/shutdown.c
  * PURPOSE:         Shutdown Dialog Box
  * PROGRAMMER:      Lee Schroeder (spaceseel at gmail dot com)

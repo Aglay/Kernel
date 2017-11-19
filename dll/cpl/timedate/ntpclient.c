@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Timedate Control Panel
+ * PROJECT:     Timedate Control Panel
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        dll/cpl/timedate/ntpclient.c
  * PURPOSE:     Queries the NTP server

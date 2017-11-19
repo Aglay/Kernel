@@ -1,5 +1,5 @@
 /*
- * ReactOS Turkish F Keyboard layout
+ * Turkish F Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

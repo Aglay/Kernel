@@ -1,5 +1,5 @@
 /*
- * ReactOS USASCII Keyboard layout
+ * USASCII Keyboard layout
  * Copyright (C) 2003 ReactOS
  * License: LGPL, see: LGPL.txt
  *

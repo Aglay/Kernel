@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Shim library
+ * PROJECT:         Shim library
  * FILE:            dll/appcompat/shims/layer/versionlie.c
  * PURPOSE:         Version lie shims
  * PROGRAMMER:      Mark Jansen

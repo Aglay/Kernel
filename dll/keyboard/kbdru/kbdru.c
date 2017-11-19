@@ -1,5 +1,5 @@
 /*
- * ReactOS Russian ASCII Keyboard layout
+ * Russian ASCII Keyboard layout
  * Copyright (C) 2005 ReactOS
  * Author: Aleksey Bragin
  * License: LGPL, see: LGPL.txt

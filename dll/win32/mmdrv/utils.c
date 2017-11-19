@@ -1,7 +1,7 @@
 /*
  *
  * COPYRIGHT:            See COPYING in the top level directory
- * PROJECT:              ReactOS Multimedia
+ * PROJECT:              Multimedia
  * FILE:                 lib/mmdrv/utils.c
  * PURPOSE:              Multimedia User Mode Driver (utility functions)
  * PROGRAMMER:           Andrew Greenwood

@@ -1,5 +1,5 @@
 /*
- * ReactOS Latin American Keyboard layout
+ * Latin American Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS system libraries
+ * PROJECT:     system libraries
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        dll/win32/wlnotify/test.c
  * PURPOSE:     Winlogon notifications

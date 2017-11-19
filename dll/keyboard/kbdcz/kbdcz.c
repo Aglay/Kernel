@@ -1,5 +1,5 @@
 /*
- * ReactOS Czech ASCII Keyboard layout
+ * Czech ASCII Keyboard layout
  * Copyright (C) 2008 ReactOS
  * License: LGPL, see: LGPL.txt
  *

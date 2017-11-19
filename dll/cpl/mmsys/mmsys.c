@@ -1,8 +1,8 @@
 /*
  *
- * PROJECT:         ReactOS Multimedia Control Panel
+ * PROJECT:         Multimedia Control Panel
  * FILE:            dll/cpl/mmsys/mmsys.c
- * PURPOSE:         ReactOS Multimedia Control Panel
+ * PURPOSE:         Multimedia Control Panel
  * PROGRAMMER:      Thoams Weidenmueller <w3seek@reactos.com>
  *                  Dmitry Chapyshev <dmitry@reactos.org>
  * UPDATE HISTORY:

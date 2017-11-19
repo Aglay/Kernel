@@ -1,5 +1,5 @@
 /*
- *  ReactOS GDI lib
+ *  GDI lib
  *  Copyright (C) 2003 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 /*
- * PROJECT:         ReactOS gdi32.dll
+ * PROJECT:         gdi32.dll
  * FILE:            win32ss/gdi/gdi32/misc/misc.c
  * PURPOSE:         Miscellaneous functions
  * PROGRAMMER:      Thomas Weidenmueller <w3seek@reactos.com>

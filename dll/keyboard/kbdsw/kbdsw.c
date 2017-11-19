@@ -1,5 +1,5 @@
 /*
- * ReactOS Swedish ASCII Keyboard layout
+ * Swedish ASCII Keyboard layout
  * Copyright (C) 2004 ReactOS
  * License: LGPL, see: LGPL.txt
  *

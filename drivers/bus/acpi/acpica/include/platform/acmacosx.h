@@ -51,8 +51,4 @@
 #define ACPI_USE_ALTERNATE_TIMEOUT
 #endif /* __APPLE__ */
 
-#ifdef __clang__
-#pragma clang diagnostic ignored "-Wformat-nonliteral"
-#endif
-
 #endif /* __ACMACOSX_H__ */

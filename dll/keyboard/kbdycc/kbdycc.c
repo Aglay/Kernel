@@ -1,5 +1,5 @@
 /*
- * ReactOS Serbian (Cyrillic) Keyboard layout
+ * Serbian (Cyrillic) Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Dmitry Chapyshev
  * License: LGPL, see: LGPL.txt

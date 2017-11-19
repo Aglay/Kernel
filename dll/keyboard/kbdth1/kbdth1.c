@@ -1,5 +1,5 @@
 /*
- * ReactOS Thai Pattachote Keyboard layout
+ * Thai Pattachote Keyboard layout
  * Copyright (C) 2008 ReactOS
  * Author: Alexey Komarov
  * License: LGPL, see: LGPL.txt

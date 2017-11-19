@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            drivers/base/null/null.c
  * PURPOSE:         Null Device Driver
