@@ -1,5 +1,11 @@
 @echo off
-if not defined TOOLS set TOOLS=C:\Flame
+if not defined TOOLS (
+    if exist "C:\Flame\Flame" (
+        set TOOLS=C:\Flame\Flame
+    ) else (
+        set TOOLS=C:\Flame
+    )
+)
 
 color 0A
 set CURRENT=%cd%
