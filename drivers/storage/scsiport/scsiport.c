@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2001, 2002 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Storage Stack
+ * PROJECT:         Storage Stack
  * FILE:            drivers/storage/scsiport/scsiport.c
  * PURPOSE:         SCSI port driver
  * PROGRAMMER:      Eric Kohl

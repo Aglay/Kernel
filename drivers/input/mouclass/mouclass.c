@@ -1,10 +1,10 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Mouse class driver
+ * PROJECT:         Mouse class driver
  * FILE:            drivers/mouclass/mouclass.c
  * PURPOSE:         Mouse class driver
  *
- * PROGRAMMERS:     Hervé Poussineau (hpoussin@reactos.org)
+ * PROGRAMMERS:     Hervï¿½ Poussineau (hpoussin@reactos.org)
  */
 
 #include "mouclass.h"

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Drivers
+ * PROJECT:     Drivers
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * FILE:        drivers/sac/driver/vtutf8chan.c
  * PURPOSE:     Driver for the Server Administration Console (SAC) for EMS

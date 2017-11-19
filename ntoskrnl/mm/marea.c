@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
  *
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/mm/marea.c
  * PURPOSE:         Implements memory areas
  *

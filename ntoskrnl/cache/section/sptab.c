@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
  *
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/cache/section/sptab.c
  * PURPOSE:         Section object page tables
  *

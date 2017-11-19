@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:            See COPYING in the top level directory
- * PROJECT:              ReactOS kernel
+ * PROJECT:              kernel
  * FILE:                 services/dd/blue/blue.c
  * PURPOSE:              Console (blue screen) device driver
  * PROGRAMMER:           Eric Kohl

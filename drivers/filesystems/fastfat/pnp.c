@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * FILE:             drivers/filesystems/fastfat/pnp.c
  * PURPOSE:          VFAT Filesystem
  * PROGRAMMER:       Pierre Schweitzer

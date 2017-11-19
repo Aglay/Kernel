@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/kdbg/kdb_symbols.cmake.c
  * PURPOSE:         Getting symbol information...
  *

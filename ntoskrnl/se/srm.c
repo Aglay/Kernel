@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/se/srm.c
  * PURPOSE:         Security Reference Monitor Server
  *

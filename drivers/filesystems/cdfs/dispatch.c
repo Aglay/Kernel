@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2008 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  *
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * FILE:             drivers/filesystems/cdfs/dispatch.c
  * PURPOSE:          CDROM (ISO 9660) filesystem driver
  * PROGRAMMER:       Pierre Schweitzer

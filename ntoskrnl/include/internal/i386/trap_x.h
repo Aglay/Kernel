@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/include/internal/i386/trap_x.h
  * PURPOSE:         Internal Inlined Functions for the Trap Handling Code

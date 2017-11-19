@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS RAS Automatic Connection Driver
+ * PROJECT:     RAS Automatic Connection Driver
  * FILE:        include/acdapi.h
  * PURPOSE:     Header file
  * PROGRAMMERS: Dmitry Chapyshev(dmitry@reactos.org)

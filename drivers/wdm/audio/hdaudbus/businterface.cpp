@@ -1,6 +1,6 @@
 /*
 * COPYRIGHT:       See COPYING in the top level directory
-* PROJECT:         ReactOS Kernel Streaming
+* PROJECT:         Kernel Streaming
 * FILE:            drivers/wdm/audio/hdaudbus/hdaudbus.cpp
 * PURPOSE:         HDA Driver Entry
 * PROGRAMMER:      Johannes Anderwald

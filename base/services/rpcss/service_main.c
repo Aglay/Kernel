@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Remote Procedure Call service
+ * PROJECT:     Remote Procedure Call service
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/services/rpcss/service_main.c
  * PURPOSE:     Service control code

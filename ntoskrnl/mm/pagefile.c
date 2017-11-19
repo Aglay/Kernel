@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 1998, 1999, 2000, 2001 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 /*
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/mm/pagefile.c
  * PURPOSE:         Paging file functions
  * PROGRAMMER:      David Welch (welch@mcmail.com)

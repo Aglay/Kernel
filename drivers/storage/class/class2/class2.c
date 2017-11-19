@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Storage Stack
+ * PROJECT:         Storage Stack
  * LICENSE:         DDK - see license.txt in the root dir
  * FILE:            drivers/storage/class2/class2.c
  * PURPOSE:         SCSI Class driver routines

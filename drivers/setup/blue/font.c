@@ -1,5 +1,5 @@
 /*
-* PROJECT:         ReactOS Setup Driver
+* PROJECT:         Setup Driver
 * LICENSE:         GPL - See COPYING in the top level directory
 * FILE:            drivers/setup/blue/font.c
 * PURPOSE:         Loading specific fonts into VGA

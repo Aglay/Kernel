@@ -1,5 +1,5 @@
 /*
-    ReactOS Operating System
+    Operating System
     MPU401 Example KS Driver
 
     AUTHORS:

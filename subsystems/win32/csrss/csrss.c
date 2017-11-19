@@ -1,6 +1,6 @@
 /*
  * LICENSE:         BSD - See COPYING.ARM in root directory
- * PROJECT:         ReactOS Client/Server Runtime SubSystem
+ * PROJECT:         Client/Server Runtime SubSystem
  * FILE:            subsystems/win32/csrss/csrss.c
  * PURPOSE:         CSRSS Process Main Executable Code
  * PROGRAMMERS:     Alex Ionescu (alex@relsoft.net)

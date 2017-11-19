@@ -1,5 +1,5 @@
 /*
- * ReactOS AMD PCNet Driver
+ * AMD PCNet Driver
  *
  * Copyright (C) 2000 Casper Hornstroup <chorns@users.sourceforge.net>
  * Copyright (C) 2003 Vizzini <vizzini@plasmic.com>

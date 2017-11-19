@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Hardware Abstraction Layer (HAL)
+ * PROJECT:         Hardware Abstraction Layer (HAL)
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            hal/halx86/generic/misc.c
  * PURPOSE:         NMI, I/O Mapping and x86 Subs

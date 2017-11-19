@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/kd/wrappers/kdbg.c
  * PURPOSE:         KDBG Wrapper for Kd
  *

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS shell extensions
+ * PROJECT:     shell extensions
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        dll/shellext/ntobjshex/ntobjshex.cpp
  * PURPOSE:     NT Object Namespace shell extension

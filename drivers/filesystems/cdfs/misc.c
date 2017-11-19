@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2002, 2004 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * FILE:             drivers/filesystems/cdfs/misc.c
  * PURPOSE:          CDROM (ISO 9660) filesystem driver
  * PROGRAMMER:       Eric Kohl

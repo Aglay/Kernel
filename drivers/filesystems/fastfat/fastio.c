@@ -2,7 +2,7 @@
  * FILE:             drivers/filesystems/fastfat/fastio.c
  * PURPOSE:          Fast IO routines.
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * PROGRAMMER:       Herve Poussineau (hpoussin@reactos.org)
  *                   Pierre Schweitzer (pierre@reactos.org)
  */

@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * FILE:            ntoskrnl/kd/kdmain.c
  * PURPOSE:         Kernel Debugger Initialization
  *

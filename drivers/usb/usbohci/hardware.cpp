@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Universal Serial Bus Bulk Enhanced Host Controller Interface
+ * PROJECT:     Universal Serial Bus Bulk Enhanced Host Controller Interface
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/usb/usbohci/hcd_controller.cpp
  * PURPOSE:     USB OHCI device driver.

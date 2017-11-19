@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Source Development Kit (SDK)
+ * PROJECT:         Source Development Kit (SDK)
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            ntoskrnl/include/internal/i386/callconv.s
  * PURPOSE:         x86 Calling Convention Helpers

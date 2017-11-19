@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         HAL
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            hal/halx86/amd64/processor.c
  * PURPOSE:         HAL Processor Routines

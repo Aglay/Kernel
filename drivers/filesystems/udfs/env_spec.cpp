@@ -625,7 +625,7 @@ UDFNotifyVolumeEvent(
     IN ULONG EventCode
     )
 {
-/* ReactOS FIXME This is always true, and we return anyway. */
+/* FIXME This is always true, and we return anyway. */
 //    if(!FsRtlNotifyVolumeEvent)
         return;
     //FsRtlNotifyVolumeEvent(FileObject, EventCode);

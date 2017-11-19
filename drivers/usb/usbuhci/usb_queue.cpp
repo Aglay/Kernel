@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Universal Serial Bus Host Controller Interface
+ * PROJECT:     Universal Serial Bus Host Controller Interface
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/usb/usbuhci/usb_queue.cpp
  * PURPOSE:     USB UHCI device driver.

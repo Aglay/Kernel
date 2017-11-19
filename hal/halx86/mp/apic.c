@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2004, 2005 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS kernel
+ * PROJECT:     kernel
  * FILE:        hal/halx86/mp/apic.c
  * PURPOSE:     
  * PROGRAMMER:  

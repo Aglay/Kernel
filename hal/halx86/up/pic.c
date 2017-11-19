@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         HAL
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            hal/halx86/up/pic.c
  * PURPOSE:         HAL PIC Management and Control Code

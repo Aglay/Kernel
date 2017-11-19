@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * FILE:            ntoskrnl/kd/amd64/kdmemsup.c
  * PURPOSE:         Kernel Debugger Safe Memory Support
  *

@@ -4,9 +4,9 @@
  * Copyright 1999, 2000 Juergen Schmied <juergen.schmied@debitel.net>
  * Copyright 2003 CodeWeavers Inc. (Ulrich Czekalla)
  * Copyright 2006 Robert Reif
- * Copyright 2006 Hervé Poussineau
+ * Copyright 2006 Hervï¿½ Poussineau
  *
- * PROJECT:         ReactOS system libraries
+ * PROJECT:         system libraries
  * FILE:            dll/win32/advapi32/wine/security.c
  */
 

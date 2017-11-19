@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       GPL, See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/mm/amd64/init.c
  * PURPOSE:         Memory Manager Initialization for amd64
  *

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Named Pipe FileSystem
+ * PROJECT:     Named Pipe FileSystem
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * FILE:        drivers/filesystems/npfs/readsup.c
  * PURPOSE:     Pipes Reading Support

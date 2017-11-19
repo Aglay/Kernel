@@ -967,7 +967,7 @@ MiUnmapPagesInZeroSpace(IN PVOID VirtualAddress,
                         IN PFN_NUMBER NumberOfPages);
 
 //
-// ReactOS Compatibility Layer
+// Compatibility Layer
 //
 FORCEINLINE
 PVOID

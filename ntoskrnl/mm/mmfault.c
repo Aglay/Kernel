@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/mm/mmfault.c
  * PURPOSE:         Kernel memory managment functions
  * PROGRAMMERS:     David Welch (welch@cwcom.net)

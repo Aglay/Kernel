@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2005 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,11 +17,11 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 /*
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            ntoskrnl/kdbg/kdb_cli.c
  * PURPOSE:         Kernel debugger command line interface
  * PROGRAMMER:      Gregor Anich (blight@blight.eu.org)
- *                  Hervé Poussineau
+ *                  Hervï¿½ Poussineau
  * UPDATE HISTORY:
  *                  Created 16/01/2005
  */

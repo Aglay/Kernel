@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Storage Stack
+ * PROJECT:         Storage Stack
  * LICENSE:         DDK - see license.txt in the root dir
  * FILE:            drivers/storage/disk/disk.c
  * PURPOSE:         Disk class driver

@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Kernel Streaming
+ * PROJECT:         Kernel Streaming
  * FILE:            drivers/ksfilter/ks/device.c
  * PURPOSE:         KS IKsDevice interface functions
  * PROGRAMMER:      Johannes Anderwald

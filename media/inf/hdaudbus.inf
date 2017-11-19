@@ -62,27 +62,27 @@ DRMLevel=1300
 
 
 [Strings]
-DiskId1 = "ReactOS UAA Bus Driver for High Definition Audio. Installation Disk #1"
+DiskId1 = "UAA Bus Driver for High Definition Audio. Installation Disk #1"
 HDAudio.DeviceDesc = "High Definition Audio Controller"
-HDAudBus.SVCDESC = "ReactOS UAA Bus Driver for High Definition Audio"
+HDAudBus.SVCDESC = "UAA Bus Driver for High Definition Audio"
 AUDIOFG = "Audio Device on High Definition Audio Bus"
 MODEMFG = "Modem Device on High Definition Audio Bus"
 UNKNOWNFG = "Unknown Device on High Definition Audio Bus"
 HDAudioBUS = "Internal High Definition Audio Bus"
 
 [Strings.0418]
-DiskId1 = "Modúl-pilot ReactOS de magistrală UAA pentru dispozitive audio de înaltă definiție. Disc de instalare №1"
+DiskId1 = "Modúl-pilot de magistrală UAA pentru dispozitive audio de înaltă definiție. Disc de instalare №1"
 HDAudio.DeviceDesc = "Dispozitiv de control audio de înaltă definiție"
-HDAudBus.SVCDESC = "Modúl-pilot ReactOS pentru magistrală UAA pentru dispozitive audio de înaltă definiție"
+HDAudBus.SVCDESC = "Modúl-pilot pentru magistrală UAA pentru dispozitive audio de înaltă definiție"
 AUDIOFG = "Dispozitiv audio pe magistrala audio de înaltă definiție"
 MODEMFG = "Dispozitiv modem pe magistrala audio de înaltă definiție"
 UNKNOWNFG = "Dispozitiv nespecificat pe magistrala audio de înaltă definiție"
 HDAudioBUS = "Magistrală internă audio de înaltă definiție"
 
 [Strings.041f]
-DiskId1 = "Yüksek Tanımlı Ses İçin ReactOS UAA Veri Yolu Sürücüsü. 1. Kurulum Diski"
+DiskId1 = "Yüksek Tanımlı Ses İçin UAA Veri Yolu Sürücüsü. 1. Kurulum Diski"
 HDAudio.DeviceDesc = "Yüksek Tanımlı Ses Denetleyicisi"
-HDAudBus.SVCDESC = "Yüksek Tanımlı Ses için ReactOS UAA Veri Yolu Sürücüsü"
+HDAudBus.SVCDESC = "Yüksek Tanımlı Ses için UAA Veri Yolu Sürücüsü"
 AUDIOFG = "Yüksek Tanımlı Ses Veri Yolu Üzerinde Ses Aygıtı"
 MODEMFG = "Yüksek Tanımlı Ses Veri Yolu Üzerinde Çevirge Aygıtı"
 UNKNOWNFG = "Yüksek Tanımlı Ses Veri Yolu Üzerinde Bilinmeyen Aygıt"

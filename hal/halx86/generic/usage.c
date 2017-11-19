@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         HAL
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            hal/halx86/generic/usage.c
  * PURPOSE:         HAL Resource Report Routines

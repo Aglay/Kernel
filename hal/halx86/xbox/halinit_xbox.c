@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:     See COPYING in the top level directory
- * PROJECT:       ReactOS kernel
+ * PROJECT:       kernel
  * FILE:          hal/halx86/xbox/halinit_xbox.c
  * PURPOSE:       Initialize the x86 hal
  * PROGRAMMER:    David Welch (welch@cwcom.net)

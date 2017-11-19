@@ -1,10 +1,10 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * COPYRIGHT:       GPL - See COPYING in the top level directory
  * FILE:            ntoskrnl/io/pnpmgr/pnpnotify.c
  * PURPOSE:         Plug & Play notification functions
  * PROGRAMMERS:     Filip Navara (xnavara@volny.cz)
- *                  Hervé Poussineau (hpoussin@reactos.org)
+ *                  Hervï¿½ Poussineau (hpoussin@reactos.org)
  *                  Pierre Schweitzer
  */
 

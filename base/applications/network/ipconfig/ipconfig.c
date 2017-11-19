@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS ipconfig utility
+ * PROJECT:     ipconfig utility
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/network/ipconfig/ipconfig.c
  * PURPOSE:     Display IP info for net adapters

@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:     See COPYING in the top level directory
- * PROJECT:       ReactOS kernel
+ * PROJECT:       kernel
  * FILE:          hal/halx86/xbox/part_xbox.c
  * PURPOSE:       Xbox specific handling of partition tables
  * PROGRAMMER:    Ge van Geldorp (gvg@reactos.com)

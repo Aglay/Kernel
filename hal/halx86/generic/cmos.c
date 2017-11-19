@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS HAL
+ * PROJECT:         HAL
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            hal/halx86/generic/cmos.c
  * PURPOSE:         CMOS Access Routines (Real Time Clock and LastKnownGood)
