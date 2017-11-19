@@ -1,11 +1,7 @@
 
 add_definitions(-DSDBWRITE_HOSTTOOL=1)
 
-if(MSVC)
-    set_property(SOURCE main.cpp tinyxml2.cpp xml2sdb.cpp APPEND_STRING PROPERTY COMPILE_FLAGS " /EHsc")
-else()
-    add_compile_flags("-fshort-wchar -Wno-multichar")
-endif()
+add_compile_flags("-fshort-wchar -Wno-multichar")
 
 
 list(APPEND SOURCE

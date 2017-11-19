@@ -29,6 +29,4 @@ add_asm_files(mesa_x86_asm ${ASM_SOURCE})
 add_library(mesa_x86 ${SOURCE} ${mesa_x86_asm})
 add_dependencies(mesa_x86 xdk)
 
-if(NOT MSVC)
-    add_compile_flags("-Wno-format")
-endif()
+add_compile_flags("-Wno-format")

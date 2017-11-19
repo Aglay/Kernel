@@ -69,7 +69,7 @@ ELSE(NOT CMAKE_ASM${ASM_DIALECT}_COMPILER)
   # if a compiler was specified by the user but without path,
   # now try to find it with the full path
   # if it is found, force it into the cache,
-  # if not, don't overwrite the setting (which was given by the user) with "NOTFOUND"
+  # if not, dont overwrite the setting (which was given by the user) with "NOTFOUND"
   GET_FILENAME_COMPONENT(_CMAKE_USER_ASM${ASM_DIALECT}_COMPILER_PATH "${CMAKE_ASM${ASM_DIALECT}_COMPILER}" PATH)
   IF(NOT _CMAKE_USER_ASM${ASM_DIALECT}_COMPILER_PATH)
     FIND_PROGRAM(CMAKE_ASM${ASM_DIALECT}_COMPILER_WITH_PATH NAMES ${CMAKE_ASM${ASM_DIALECT}_COMPILER})
@@ -112,7 +112,7 @@ IF(NOT CMAKE_ASM${ASM_DIALECT}_COMPILER_ID)
   LIST(APPEND CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDORS TI_DSP )
   SET(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDOR_FLAGS_TI_DSP "-h")
   SET(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDOR_REGEX_TI_DSP "Texas Instruments")
-  
+
   LIST(APPEND CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDORS VISUAL)
   SET(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDOR_FLAGS_VISUAL "/?")
   SET(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDOR_REGEX_VISUAL "Microsoft Corporation")
@@ -182,7 +182,7 @@ CONFIGURE_FILE(${CMAKE_ROOT}/Modules/CMakeASMCompiler.cmake.in
 SET(_CMAKE_ASM_COMPILER)
 SET(_CMAKE_ASM_COMPILER_ARG1)
 SET(_CMAKE_ASM_COMPILER_ENV_VAR)
-    
+
 else()
 
 # determine the compiler to use for ASM programs
@@ -228,7 +228,7 @@ else()
   # if a compiler was specified by the user but without path,
   # now try to find it with the full path
   # if it is found, force it into the cache,
-  # if not, don't overwrite the setting (which was given by the user) with "NOTFOUND"
+  # if not, dont overwrite the setting (which was given by the user) with "NOTFOUND"
   get_filename_component(_CMAKE_USER_ASM${ASM_DIALECT}_COMPILER_PATH "${CMAKE_ASM${ASM_DIALECT}_COMPILER}" PATH)
   if(NOT _CMAKE_USER_ASM${ASM_DIALECT}_COMPILER_PATH)
     find_program(CMAKE_ASM${ASM_DIALECT}_COMPILER_WITH_PATH NAMES ${CMAKE_ASM${ASM_DIALECT}_COMPILER})
@@ -341,6 +341,6 @@ configure_file(${CMAKE_ROOT}/Modules/CMakeASMCompiler.cmake.in
 set(_CMAKE_ASM_COMPILER)
 set(_CMAKE_ASM_COMPILER_ARG1)
 set(_CMAKE_ASM_COMPILER_ENV_VAR)
-    
+
 endif()
 

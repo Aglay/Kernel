@@ -76,12 +76,6 @@ add_host_tool(mkisofs
     schilytools/mkisofs/write.c)
 target_link_libraries(mkisofs libschily libsiconv)
 
-if(MSVC)
-    # mkisofs uses K&R-style function definitions to support very old compilers.
-    # MSVC complains about the resulting foo() vs. foo(void) mismatches.
-    add_target_compile_flags(mkisofs "/wd4113")
-else()
-    # libschily implements an own printf function with support for the %r formatter.
-    # Silence compilers checking for invalid formatting sequences.
-    add_target_compile_flags(libschily "-Wno-format")
-endif()
+# libschily implements an own printf function with support for the %r formatter.
+# Silence compilers checking for invalid formatting sequences.
+add_target_compile_flags(libschily "-Wno-format")

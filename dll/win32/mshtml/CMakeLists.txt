@@ -85,10 +85,6 @@ list(APPEND SOURCE
     xmlhttprequest.c
     mshtml_private.h)
 
-if(MSVC)
-    add_asm_files(mshtml_asm msvc.S)
-endif()
-
 add_library(mshtml SHARED
     ${SOURCE}
     ${mshtml_asm}

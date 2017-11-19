@@ -36,23 +36,12 @@ else()
 "Whether to compile for debugging.")
 endif()
 
-if(MSVC)
-    set(KDBG FALSE CACHE BOOL
-"Whether to compile in the integrated kernel debugger.")
-    if(CMAKE_BUILD_TYPE STREQUAL "Release")
-        set(_WINKD_ FALSE CACHE BOOL "Whether to compile with the KD protocol.")
-    else()
-        set(_WINKD_ TRUE CACHE BOOL "Whether to compile with the KD protocol.")
-    endif()
-
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    set(KDBG FALSE CACHE BOOL "Whether to compile in the integrated kernel debugger.")
 else()
-    if(CMAKE_BUILD_TYPE STREQUAL "Release")
-        set(KDBG FALSE CACHE BOOL "Whether to compile in the integrated kernel debugger.")
-    else()
-        set(KDBG TRUE CACHE BOOL "Whether to compile in the integrated kernel debugger.")
-    endif()
-    set(_WINKD_ FALSE CACHE BOOL "Whether to compile with the KD protocol.")
+    set(KDBG TRUE CACHE BOOL "Whether to compile in the integrated kernel debugger.")
 endif()
+set(_WINKD_ FALSE CACHE BOOL "Whether to compile with the KD protocol.")
 
 set(_ELF_ FALSE CACHE BOOL
 "Whether to compile support for ELF files.
@@ -70,15 +59,8 @@ set(BUILD_MP TRUE CACHE BOOL
 set(GENERATE_DEPENDENCY_GRAPH FALSE CACHE BOOL
 "Whether to create a GraphML dependency graph of DLLs.")
 
-if(MSVC)
-set(_PREFAST_ FALSE CACHE BOOL
-"Whether to enable PREFAST while compiling.")
-set(_VS_ANALYZE_ FALSE CACHE BOOL
-"Whether to enable static analysis while compiling.")
-else()
 set(STACK_PROTECTOR FALSE CACHE BOOL
 "Whether to enbable the GCC stack checker while compiling")
-endif()
 
 set(USE_DUMMY_PSEH FALSE CACHE BOOL
 "Whether to disable PSEH support.")

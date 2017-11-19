@@ -49,10 +49,6 @@ set_module_type(ntdll win32dll ENTRYPOINT 0)
 set_subsystem(ntdll console)
 ################# END  HACK #################
 
-if(MSVC)
-    add_target_link_flags(ntdll "/RELEASE")
-endif()
-
 target_link_libraries(ntdll rtl ntdllsys libcntpr uuid ${PSEH_LIB})
 add_pch(ntdll include/ntdll.h SOURCE)
 add_dependencies(ntdll ntstatus asm)

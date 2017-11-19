@@ -16,9 +16,7 @@ list(APPEND SOURCE
 
 add_executable(eventlog ${SOURCE} eventlog.rc)
 
-if(NOT MSVC)
-    target_link_libraries(eventlog ${PSEH_LIB})
-endif()
+target_link_libraries(eventlog ${PSEH_LIB})
 
 set_module_type(eventlog win32cui UNICODE)
 add_importlibs(eventlog advapi32 rpcrt4 msvcrt kernel32 ntdll)

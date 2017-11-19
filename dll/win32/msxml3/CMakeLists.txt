@@ -5,10 +5,6 @@ add_definitions(
     -DLIBXML_STATIC
     -DCOM_NO_WINDOWS_H)
 
-if(MSVC)
-    add_compile_flags("/FIwine/typeof.h /FImsvc.h")
-endif()
-
 include_directories(
     ${REACTOS_SOURCE_DIR}/sdk/include/reactos/wine
     ${REACTOS_SOURCE_DIR}/sdk/lib/3rdparty/libwin-iconv)

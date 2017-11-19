@@ -42,14 +42,9 @@ list(APPEND SOURCE
     udffs.h)
 
 add_library(udfs SHARED ${SOURCE} udffs.rc)
-if(MSVC)
-    # FIXME: Make sure we marked all what needs to be marked with stdcall before removing this.
-    add_target_compile_flags(udfs "/Gz")
-else()
-    # FIXME: Tons of warnings.
-    replace_compile_flags("-Werror" " ")
-    add_target_compile_flags(udfs "-fpermissive")
-endif()
+# FIXME: Tons of warnings.
+replace_compile_flags("-Werror" " ")
+add_target_compile_flags(udfs "-fpermissive")
 set_module_type(udfs kernelmodedriver)
 target_link_libraries(udfs ${PSEH_LIB})
 add_importlibs(udfs ntoskrnl hal)

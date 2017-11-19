@@ -40,16 +40,8 @@ set_module_type(libxslt win32dll)
 target_link_libraries(libxslt libxml2 iconv-static zlib)
 add_importlibs(libxslt msvcrt ws2_32 kernel32)
 
-if(MSVC)
-    add_importlibs(libxslt ntdll)
-endif()
-
 add_pch(libxslt precomp.h SOURCE)
 add_cd_file(TARGET libxslt DESTINATION reactos/system32 FOR all)
 
-if(NOT MSVC)
-    add_target_compile_flags(libxslt "-Wno-pointer-sign -Wno-unused-function")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(libxslt "-Wno-unused-but-set-variable")
-    endif()
-endif()
+add_target_compile_flags(libxslt "-Wno-pointer-sign -Wno-unused-function")
+add_target_compile_flags(libxslt "-Wno-unused-but-set-variable")

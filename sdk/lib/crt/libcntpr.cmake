@@ -108,9 +108,7 @@ if(ARCH STREQUAL "i386")
         math/i386/cipow.c
         math/i386/cisin.c
         math/i386/cisqrt.c)
-    if(NOT MSVC)
-        list(APPEND LIBCNTPR_SOURCE except/i386/chkstk_ms.s)
-    endif()
+    list(APPEND LIBCNTPR_SOURCE except/i386/chkstk_ms.s)
 elseif(ARCH STREQUAL "amd64")
     list(APPEND LIBCNTPR_ASM_SOURCE
         except/amd64/chkstk_asm.s

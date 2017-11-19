@@ -18,7 +18,7 @@ if(OPENGL32_USE_TLS)
     add_definitions(-DOPENGL32_USE_TLS)
 endif()
 
-if((ARCH STREQUAL "i386") AND (NOT MSVC))
+if(ARCH STREQUAL "i386")
     add_definitions(
         -DUSE_X86_ASM
         -DUSE_MMX_ASM

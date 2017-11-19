@@ -30,10 +30,6 @@ list(APPEND SOURCE
     swenum.c
     precomp.h)
 
-if(MSVC)
-    add_asm_files(ks_asm msvc.S)
-endif()
-
 add_library(ks SHARED
     ${SOURCE}
     ${ks_asm}

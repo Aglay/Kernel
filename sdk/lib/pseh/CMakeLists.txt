@@ -15,8 +15,6 @@ if(NOT MSVC)
             i386/framebased-gcchack-asm.S)
     elseif(ARCH STREQUAL "amd64")
         list(APPEND SOURCE amd64/framebased.S)
-    elseif(ARCH STREQUAL "powerpc")
-        list(APPEND SOURCE powerpc/framebased.S)
     endif()
 
     add_library(pseh ${SOURCE})

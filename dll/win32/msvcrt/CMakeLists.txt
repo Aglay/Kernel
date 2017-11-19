@@ -24,11 +24,5 @@ set_module_type(msvcrt win32dll ENTRYPOINT DllMain 12)
 add_dependencies(msvcrt psdk)
 target_link_libraries(msvcrt crt wine ${PSEH_LIB})
 
-if(MSVC)
-    # export of deleting destructor "name"
-    add_target_link_flags(msvcrt "/ignore:4102")
-    add_target_property(libmsvcrt STATIC_LIBRARY_FLAGS "/ignore:4102")
-endif()
-
 add_importlibs(msvcrt kernel32 ntdll)
 add_cd_file(TARGET msvcrt DESTINATION reactos/system32 FOR all)

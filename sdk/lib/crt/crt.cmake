@@ -435,10 +435,6 @@ if(ARCH STREQUAL "i386")
         math/i386/cisin.c
         math/i386/cisqrt.c
         math/i386/ldexp.c)
-    if(MSVC)
-        list(APPEND CRT_ASM_SOURCE
-            except/i386/cpp.s)
-    endif()
 elseif(ARCH STREQUAL "amd64")
     list(APPEND CRT_ASM_SOURCE
         except/amd64/seh.s
@@ -471,10 +467,6 @@ elseif(ARCH STREQUAL "amd64")
         except/amd64/ehandler.c
         float/i386/cntrlfp.c
         float/i386/statfp.c)
-    if(MSVC)
-        list(APPEND CRT_ASM_SOURCE
-            except/amd64/cpp.s)
-    endif()
 elseif(ARCH STREQUAL "arm")
     list(APPEND CRT_SOURCE
         except/arm/ehandler.c
@@ -522,10 +514,6 @@ elseif(ARCH STREQUAL "arm")
         math/arm/__rt_udiv64.s
         setjmp/arm/setjmp.s
     )
-    if(MSVC)
-        list(APPEND CRT_ASM_SOURCE
-            except/arm/cpp.s)
-    endif()
 endif()
 
 if(NOT ARCH STREQUAL "i386")

@@ -46,25 +46,21 @@ add_importlibs(browseui shlwapi shell32 comctl32 gdi32 ole32 oleaut32 user32 adv
 add_pch(browseui precomp.h SOURCE)
 add_cd_file(TARGET browseui DESTINATION reactos/system32 FOR all)
 
-if(NOT MSVC)
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(browseui "-Wno-unused-but-set-variable")
-    endif()
+add_target_compile_flags(browseui "-Wno-unused-but-set-variable")
 
-    # Binutils linker bug
-    if(LTCG)
-        add_target_link_flags(browseui "-Wl,--allow-multiple-definition")
-    endif()
+# Binutils linker bug
+if(LTCG)
+    add_target_link_flags(browseui "-Wl,--allow-multiple-definition")
 endif()
 
-add_custom_command(TARGET browseui POST_BUILD 
-  COMMAND "${CMAKE_COMMAND}" -E copy 
+add_custom_command(TARGET browseui POST_BUILD
+  COMMAND "${CMAKE_COMMAND}" -E copy
      "$<TARGET_FILE:browseui>"
-     "$<TARGET_FILE_DIR:filebrowser>/$<TARGET_FILE_NAME:browseui>" 
+     "$<TARGET_FILE_DIR:filebrowser>/$<TARGET_FILE_NAME:browseui>"
   COMMENT "Copying to output directory")
 
-add_custom_command(TARGET browseui POST_BUILD 
-  COMMAND "${CMAKE_COMMAND}" -E copy 
+add_custom_command(TARGET browseui POST_BUILD
+  COMMAND "${CMAKE_COMMAND}" -E copy
      "$<TARGET_FILE:browseui>"
-     "$<TARGET_FILE_DIR:filebrowser>/$<TARGET_FILE_NAME:browseui>" 
+     "$<TARGET_FILE_DIR:filebrowser>/$<TARGET_FILE_NAME:browseui>"
   COMMENT "Copying to output directory")

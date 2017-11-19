@@ -27,8 +27,6 @@ add_importlibs(winmm advapi32 user32 msvcrt kernel32 ntdll)
 add_pch(winmm winemm.h SOURCE)
 add_cd_file(TARGET winmm DESTINATION reactos/system32 FOR all)
 
-if((NOT MSVC) AND (NOT CMAKE_C_COMPILER_ID STREQUAL "Clang"))
-    add_target_compile_flags(winmm "-Wno-unused-but-set-variable")
-endif()
+add_target_compile_flags(winmm "-Wno-unused-but-set-variable")
 
 add_subdirectory(midimap)

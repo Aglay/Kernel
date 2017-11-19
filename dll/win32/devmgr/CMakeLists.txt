@@ -4,14 +4,12 @@ spec2def(devmgr.dll devmgr.spec ADD_IMPORTLIB)
 
 set_cpp(WITH_RTTI WITH_RUNTIME WITH_EXCEPTIONS)
 
-if(NOT MSVC)
-    # HACK: this should be enabled globally!
-    add_compile_flags_language("-std=c++11" "CXX")
-endif()
+# HACK: this should be enabled globally!
+add_compile_flags_language("-std=c++11" "CXX")
 
 include_directories(
     ${REACTOS_SOURCE_DIR}/sdk/include/reactos/dll
-    ${REACTOS_SOURCE_DIR}/sdk/lib/atl 
+    ${REACTOS_SOURCE_DIR}/sdk/lib/atl
     includes)
 
 list(APPEND SOURCE

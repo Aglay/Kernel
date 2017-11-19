@@ -11,11 +11,6 @@ add_subdirectory(cportlib)
 add_subdirectory(crt)
 add_subdirectory(cryptlib)
 
-if(MSVC)
-    add_subdirectory(cpprt)
-    add_subdirectory(RunTmChk)
-endif()
-
 add_subdirectory(delayimp)
 #add_subdirectory(dnslib) Nothing links to this lib.
 add_subdirectory(drivers)

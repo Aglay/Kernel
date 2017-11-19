@@ -21,10 +21,5 @@ add_library(crtdll SHARED ${SOURCE})
 set_module_type(crtdll win32dll ENTRYPOINT DllMain 12)
 target_link_libraries(crtdll crt wine)
 
-if(MSVC)
-    add_importlibs(crtdll msvcrt)
-    target_link_libraries(crtdll oldnames)
-endif()
-
 add_importlibs(crtdll kernel32 ntdll)
 add_cd_file(TARGET crtdll DESTINATION reactos/system32 FOR all)

@@ -24,11 +24,9 @@ target_link_libraries(cmipci stdunk libcntpr uuid)
 set_module_type(cmipci wdmdriver UNICODE)
 add_importlibs(cmipci portcls hal ntoskrnl)
 
-if(NOT MSVC)
-    # FIXME: http://www.cmake.org/Bug/view.php?id=12998
-    #add_target_compile_flags(cmipci "-Wno-write-strings -Wno-switch")
-    set_source_files_properties(${SOURCE} PROPERTIES COMPILE_FLAGS "-Wno-write-strings -Wno-switch")
-endif()
+# FIXME: http://www.cmake.org/Bug/view.php?id=12998
+#add_target_compile_flags(cmipci "-Wno-write-strings -Wno-switch")
+set_source_files_properties(${SOURCE} PROPERTIES COMPILE_FLAGS "-Wno-write-strings -Wno-switch")
 
 add_pch(cmipci precomp.h SOURCE)
 add_cd_file(TARGET cmipci DESTINATION reactos/system32/drivers FOR all)

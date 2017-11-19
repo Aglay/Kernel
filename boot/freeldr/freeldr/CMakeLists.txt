@@ -5,11 +5,6 @@ if(SEPARATE_DBG)
     set(CMAKE_LDR_PE_HELPER_STANDARD_LIBRARIES "-lgcc" CACHE STRING "Standard C Libraries")
 endif()
 
-if(MSVC)
-    # We don't need it here
-    replace_compile_flags("/hotpatch" " ")
-endif()
-
 spec2def(freeldr_pe.exe freeldr.spec)
 
 if(ARCH STREQUAL "i386")
@@ -143,9 +138,7 @@ if(ARCH STREQUAL "i386")
         arch/i386/xboxrtc.c
         arch/i386/xboxvideo.c
         disk/scsiport.c)
-    if(NOT MSVC)
-        list(APPEND FREELDR_COMMON_ASM_SOURCE arch/i386/drvmap.S)
-    endif()
+    list(APPEND FREELDR_COMMON_ASM_SOURCE arch/i386/drvmap.S)
 elseif(ARCH STREQUAL "amd64")
     list(APPEND FREELDR_COMMON_ASM_SOURCE
         arch/amd64/entry.S
@@ -201,7 +194,7 @@ add_library(freeldr_common ${FREELDR_BOOTLIB_COMMON_SOURCE} ${FREELDR_ARC_COMMON
 add_pch(freeldr_common include/freeldr.h FREELDR_COMMON_SOURCE)
 add_dependencies(freeldr_common bugcodes asm xdk)
 
-if(ARCH STREQUAL "i386" AND NOT MSVC)
+if(ARCH STREQUAL "i386")
     list(APPEND FREELDR_BASE_SOURCE arch/i386/multiboot.S)
     target_link_libraries(freeldr_common mini_hal)
 endif()
@@ -212,7 +205,6 @@ list(APPEND FREELDR_BASE_SOURCE
     ntldr/setupldr.c ## Strangely enough this file is needed in GCC builds
                      ## even if ${FREELDR_NTLDR_COMMON_SOURCE} is not added,
                      ## otherwise we get linking errors with Rtl**Bitmap** APIs.
-                     ## Do not happen on MSVC builds however...
     lib/inffile/inffile.c
     lib/rtl/libsupp.c)
 
@@ -225,23 +217,13 @@ endif()
 add_executable(freeldr_pe ${FREELDR_BASE_SOURCE})
 add_executable(freeldr_pe_dbg EXCLUDE_FROM_ALL ${FREELDR_BASE_SOURCE})
 
-if(NOT MSVC AND SEPARATE_DBG)
+if(SEPARATE_DBG)
     set_target_properties(freeldr_pe PROPERTIES LINKER_LANGUAGE LDR_PE_HELPER)
     set_target_properties(freeldr_pe_dbg PROPERTIES LINKER_LANGUAGE LDR_PE_HELPER)
 endif()
 
-if(MSVC)
-    if(ARCH STREQUAL "arm")
-        add_target_link_flags(freeldr_pe "/ignore:4078 /ignore:4254 /DRIVER")
-        add_target_link_flags(freeldr_pe_dbg "/ignore:4078 /ignore:4254 /DRIVER")
-    else()
-        add_target_link_flags(freeldr_pe "/ignore:4078 /ignore:4254 /DRIVER /FIXED /ALIGN:0x400 /SECTION:.text,ERW /SECTION:.data,RW /MERGE:.text16=.text /MERGE:.data=.text /MERGE:.rdata=.text /MERGE:.bss=.text")
-        add_target_link_flags(freeldr_pe_dbg "/ignore:4078 /ignore:4254 /DRIVER /FIXED /ALIGN:0x400 /SECTION:.text,ERW /SECTION:.data,RW /MERGE:.text16=.text /MERGE:.data=.text /MERGE:.rdata=.text /MERGE:.bss=.text")
-    endif()
-else()
-    add_target_link_flags(freeldr_pe "-Wl,--strip-all,--exclude-all-symbols,--file-alignment,0x1000,-T,${CMAKE_CURRENT_SOURCE_DIR}/freeldr_i386.lds")
-    add_target_link_flags(freeldr_pe_dbg "-Wl,--exclude-all-symbols,--file-alignment,0x1000,-T,${CMAKE_CURRENT_SOURCE_DIR}/freeldr_i386.lds")
-endif()
+add_target_link_flags(freeldr_pe "-Wl,--strip-all,--exclude-all-symbols,--file-alignment,0x1000,-T,${CMAKE_CURRENT_SOURCE_DIR}/freeldr_i386.lds")
+add_target_link_flags(freeldr_pe_dbg "-Wl,--exclude-all-symbols,--file-alignment,0x1000,-T,${CMAKE_CURRENT_SOURCE_DIR}/freeldr_i386.lds")
 
 set_image_base(freeldr_pe 0x10000)
 set_subsystem(freeldr_pe native)

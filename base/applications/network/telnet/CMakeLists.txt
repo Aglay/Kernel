@@ -25,9 +25,7 @@ list(APPEND SOURCE
     src/ttelhndl.cpp
     precomp.h)
 
-if(NOT MSVC)
-    add_compile_flags_language("-Wno-narrowing" "CXX")
-endif()
+add_compile_flags_language("-Wno-narrowing" "CXX")
 
 add_executable(telnet ${SOURCE} telnet.rc)
 set_module_type(telnet win32cui)

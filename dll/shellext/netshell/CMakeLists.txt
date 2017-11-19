@@ -3,10 +3,8 @@ project(SHELL)
 
 set_cpp(WITH_RUNTIME)
 
-if(NOT MSVC)
-    # HACK: this should be enabled globally!
-    add_compile_flags_language("-std=c++11 -Wshadow" "CXX")
-endif()
+# HACK: this should be enabled globally!
+add_compile_flags_language("-std=c++11 -Wshadow" "CXX")
 
 remove_definitions(-D_WIN32_WINNT=0x502)
 add_definitions(-D_WIN32_WINNT=0x600)

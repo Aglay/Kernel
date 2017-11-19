@@ -14,22 +14,12 @@ function(add_hal _halname)
     spec2def(${_halname}.dll ../hal.spec ADD_IMPORTLIB)
 
     # Create the actual target
-    if(NOT MSVC)
-        foreach(_component ${_haldata_COMPONENTS})
-            list(APPEND _haldata_SOURCES "$<TARGET_OBJECTS:lib_hal_${_component}>")
-        endforeach()
-        add_library(${_halname} SHARED
-            ${_haldata_SOURCES}
-            ${CMAKE_CURRENT_BINARY_DIR}/hal.def)
-    else()
-        foreach(_component ${_haldata_COMPONENTS})
-            list(APPEND _haldata_LIBS "lib_hal_${_component}")
-        endforeach()
-        add_library(${_halname} SHARED
-            ${_haldata_SOURCES}
-            ${CMAKE_CURRENT_BINARY_DIR}/hal.def)
-        target_link_libraries(${_halname} ${_haldata_LIBS})
-    endif()
+    foreach(_component ${_haldata_COMPONENTS})
+        list(APPEND _haldata_SOURCES "$<TARGET_OBJECTS:lib_hal_${_component}>")
+    endforeach()
+    add_library(${_halname} SHARED
+        ${_haldata_SOURCES}
+        ${CMAKE_CURRENT_BINARY_DIR}/hal.def)
 
     target_link_libraries(${_halname} libcntpr)
     add_importlibs(${_halname} ntoskrnl)
@@ -37,11 +27,7 @@ function(add_hal _halname)
     add_dependencies(${_halname} psdk asm)
     set_module_type(${_halname} kerneldll ENTRYPOINT HalInitSystem 8)
     add_cd_file(TARGET ${_halname} DESTINATION reactos/system32 NO_CAB FOR all)
-    if(MSVC)
-        add_target_link_flags(${_halname} "/ignore:4216 /ignore:4078")
-    else()
-        target_link_libraries(${_halname} -lgcc)
-    endif()
+    target_link_libraries(${_halname} -lgcc)
 endfunction()
 
 # The components

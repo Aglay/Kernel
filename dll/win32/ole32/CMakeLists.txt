@@ -62,10 +62,6 @@ list(APPEND SOURCE
     ${CMAKE_CURRENT_BINARY_DIR}/dcom_i.c
     ${CMAKE_CURRENT_BINARY_DIR}/irot_c.c)
 
-if(MSVC AND (ARCH STREQUAL "i386"))
-    list(APPEND SOURCE msvc-thiscall.c)
-endif()
-
 add_library(ole32 SHARED
     ${SOURCE}
     guid.c

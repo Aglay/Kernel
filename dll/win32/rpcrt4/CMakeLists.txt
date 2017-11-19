@@ -38,10 +38,6 @@ add_definitions(
     -DCOM_NO_WINDOWS_H
     -DMSWMSG)
 
-if(MSVC AND NOT ARCH STREQUAL "arm")
-    add_asm_files(rpcrt4_asm msvc.S)
-endif()
-
 add_library(rpcrt4 SHARED
     ${SOURCE}
     ${rpcrt4_asm}

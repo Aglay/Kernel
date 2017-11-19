@@ -10,9 +10,7 @@ add_library(idndl SHARED
 
 set_entrypoint(idndl 0)
 
-if(NOT MSVC)
-    add_target_compile_flags(idndl "-fno-exceptions -fno-rtti")
-endif()
+add_target_compile_flags(idndl "-fno-exceptions -fno-rtti")
 
 add_importlibs(idndl kernel32)
 add_dependencies(idndl psdk)

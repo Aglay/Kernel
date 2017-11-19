@@ -4,9 +4,7 @@ include_directories(..)
 
 add_executable(cmicontrol main.cpp window.rc)
 
-if(NOT MSVC)
-    set_source_files_properties(main.cpp PROPERTIES COMPILE_FLAGS "-Wno-write-strings")
-endif()
+set_source_files_properties(main.cpp PROPERTIES COMPILE_FLAGS "-Wno-write-strings")
 
 add_importlibs(cmicontrol user32 gdi32 ole32 advapi32 comctl32 shell32 dsound setupapi winmm msvcrt kernel32)
 set_module_type(cmicontrol win32gui)

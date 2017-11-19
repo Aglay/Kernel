@@ -49,7 +49,7 @@ target_link_libraries(opengl32
     mesa_math
 )
 
-if((ARCH STREQUAL "i386") AND (NOT MSVC))
+if(ARCH STREQUAL "i386")
     target_link_libraries(opengl32 mesa_x86)
 endif()
 

@@ -13,6 +13,4 @@ target_link_libraries(mciseq wine)
 add_importlibs(mciseq winmm user32 msvcrt kernel32 ntdll)
 add_cd_file(TARGET mciseq DESTINATION reactos/system32 FOR all)
 
-if(NOT MSVC)
-    add_target_compile_flags(mciseq "-Wno-overflow")
-endif()
+add_target_compile_flags(mciseq "-Wno-overflow")

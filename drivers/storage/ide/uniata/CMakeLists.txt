@@ -22,12 +22,8 @@ list(APPEND SOURCE
 
 add_library(uniata SHARED ${SOURCE} idedma.rc)
 
-if(NOT MSVC)
-    add_target_compile_flags(uniata "-Wno-narrowing")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(uniata "-Wno-unused-but-set-variable")
-    endif()
-endif()
+add_target_compile_flags(uniata "-Wno-narrowing")
+add_target_compile_flags(uniata "-Wno-unused-but-set-variable")
 
 add_pch(uniata stdafx.h SOURCE)
 set_module_type(uniata kernelmodedriver)

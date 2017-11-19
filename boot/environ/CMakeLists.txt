@@ -80,19 +80,11 @@ list(APPEND BOOTMGR_BASE_SOURCE
 add_executable(bootmgfw ${BOOTMGR_BASE_SOURCE} app/bootmgr/bootmgr.rc)
 set_target_properties(bootmgfw PROPERTIES SUFFIX ".efi")
 
-if(MSVC)
-    add_target_link_flags(bootmgfw "/ignore:4078 /ignore:4254 /DRIVER /FIXED")
-else()
-    add_target_link_flags(bootmgfw "-Wl,--strip-all,--exclude-all-symbols")
-endif()
+add_target_link_flags(bootmgfw "-Wl,--strip-all,--exclude-all-symbols")
 
 set_image_base(bootmgfw 0x10000)
 
-if(MSVC)
-    set_subsystem(bootmgfw EFI_APPLICATION)
-else()
-    set_subsystem(bootmgfw 10)
-endif()
+set_subsystem(bootmgfw 10)
 
 set_entrypoint(bootmgfw EfiEntry)
 
@@ -113,19 +105,11 @@ list(APPEND ROSLOAD_BASE_SOURCE
 add_executable(rosload ${ROSLOAD_BASE_SOURCE})
 set_target_properties(rosload PROPERTIES SUFFIX ".efi")
 
-if(MSVC)
-    add_target_link_flags(rosload "/ignore:4078 /ignore:4254 /DRIVER")
-else()
-    add_target_link_flags(rosload "-Wl,--strip-all,--exclude-all-symbols,--dynamicbase,--pic-executable")
-endif()
+add_target_link_flags(rosload "-Wl,--strip-all,--exclude-all-symbols,--dynamicbase,--pic-executable")
 
 set_image_base(rosload 0x10000)
 
-if(MSVC)
-    set_subsystem(rosload BOOT_APPLICATION)
-else()
-    set_subsystem(rosload 16)
-endif()
+set_subsystem(rosload 16)
 
 if(ARCH STREQUAL "i386")
     set_entrypoint(rosload OslMain 4)

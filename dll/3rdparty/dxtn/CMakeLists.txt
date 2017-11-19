@@ -10,7 +10,5 @@ add_library(dxtn SHARED
 
 set_entrypoint(dxtn 0)
 add_importlibs(dxtn msvcrt)
-if(NOT MSVC)
-    add_target_compile_flags(dxtn "-Wno-unused-but-set-variable")
-endif()
+add_target_compile_flags(dxtn "-Wno-unused-but-set-variable")
 add_cd_file(TARGET dxtn DESTINATION reactos/system32 FOR all)

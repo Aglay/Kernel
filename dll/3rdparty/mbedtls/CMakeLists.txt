@@ -89,14 +89,7 @@ add_importlibs(mbedtls advapi32 ws2_32 msvcrt kernel32)
 # and explicitly export it from msvcrt for it to work... what on earth?!
 add_definitions(-DMINGW_HAS_SECURE_API -DCRTDLL)
 
-if(MSVC)
-    add_importlibs(mbedtls ntdll)
-endif()
 add_cd_file(TARGET mbedtls DESTINATION reactos/system32 FOR all)
 
-if(NOT MSVC)
-    add_target_compile_flags(mbedtls "-Wno-pointer-sign -Wno-unused-function")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(mbedtls "-Wno-unused-but-set-variable")
-    endif()
-endif()
+add_target_compile_flags(mbedtls "-Wno-pointer-sign -Wno-unused-function")
+add_target_compile_flags(mbedtls "-Wno-unused-but-set-variable")

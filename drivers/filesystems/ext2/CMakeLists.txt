@@ -86,16 +86,8 @@ list(APPEND SOURCE
 
 add_library(ext2fs SHARED ${SOURCE} ext2fs.rc)
 
-if(NOT MSVC)
-    add_target_compile_flags(ext2fs "-Wno-pointer-sign -Wno-unused-function")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(ext2fs "-Wno-unused-but-set-variable -Wno-unused-variable -Wno-missing-braces")
-    endif()
-else()
-    #disable warnings: "unreferenced local variable", "initialized, but not used variable", "benign include"
-    replace_compile_flags("/we\"4189\"" " ")
-    add_target_compile_flags(ext2fs "/wd\"4189\" /wd\"4142\" /wd\"4101\"")
-endif()
+add_target_compile_flags(ext2fs "-Wno-pointer-sign -Wno-unused-function")
+add_target_compile_flags(ext2fs "-Wno-unused-but-set-variable -Wno-unused-variable -Wno-missing-braces")
 
 target_link_libraries(ext2fs memcmp ${PSEH_LIB})
 add_definitions(-D__KERNEL__)

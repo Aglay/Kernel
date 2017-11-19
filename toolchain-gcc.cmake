@@ -1,8 +1,3 @@
-
-if(NOT ARCH)
-    set(ARCH i386)
-endif()
-
 # Default to Debug for the build type
 if(NOT DEFINED CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug" CACHE STRING
@@ -25,8 +20,6 @@ if (NOT DEFINED MINGW_TOOLCHAIN_PREFIX)
 
     elseif(ARCH STREQUAL "amd64")
         set(MINGW_TOOLCHAIN_PREFIX "x86_64-w64-mingw32-" CACHE STRING "MinGW Toolchain Prefix")
-    elseif(ARCH STREQUAL "arm")
-        set(MINGW_TOOLCHAIN_PREFIX "arm-mingw32ce-" CACHE STRING "MinGW Toolchain Prefix")
     endif()
 endif()
 
@@ -58,7 +51,7 @@ set(CMAKE_C_CREATE_STATIC_LIBRARY "<CMAKE_AR> crT <TARGET> <LINK_FLAGS> <OBJECTS
 set(CMAKE_CXX_CREATE_STATIC_LIBRARY ${CMAKE_C_CREATE_STATIC_LIBRARY})
 set(CMAKE_ASM_CREATE_STATIC_LIBRARY ${CMAKE_C_CREATE_STATIC_LIBRARY})
 
-# Don't link with anything by default unless we say so
+# Do not link with anything by default unless we say so
 set(CMAKE_C_STANDARD_LIBRARIES "-lgcc" CACHE STRING "Standard C Libraries")
 
 #MARK_AS_ADVANCED(CLEAR CMAKE_CXX_STANDARD_LIBRARIES)

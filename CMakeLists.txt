@@ -203,11 +203,7 @@ else()
     set_i18n_language(${I18N_LANG})
 
     # Compiler specific definitions and macros
-    if(MSVC)
-        include(sdk/cmake/msvc.cmake)
-    else()
-        include(sdk/cmake/gcc.cmake)
-    endif()
+    include(sdk/cmake/gcc.cmake)
 
     # Generic macros
     include(sdk/cmake/CMakeMacros.cmake)
@@ -242,8 +238,6 @@ else()
 
     if(NO_ROSSYM)
         include(sdk/cmake/baseaddress_dwarf.cmake)
-    elseif(MSVC)
-        include(sdk/cmake/baseaddress_msvc.cmake)
     else()
         include(sdk/cmake/baseaddress.cmake)
     endif()

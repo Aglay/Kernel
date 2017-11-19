@@ -33,10 +33,6 @@ list(APPEND SOURCE
     vartype.c
     precomp.h)
 
-if(MSVC)
-    add_asm_files(oleaut32_asm msvc.S)
-endif()
-
 add_library(oleaut32 SHARED
     ${SOURCE}
     ${oleaut32_asm}

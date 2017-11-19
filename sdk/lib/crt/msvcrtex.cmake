@@ -1,11 +1,9 @@
 
 include_directories(include/internal/mingw-w64)
 
-if(NOT MSVC)
-    add_compile_flags("-Wno-main")
-    if(LTCG)
-        add_compile_flags("-fno-lto")
-    endif()
+add_compile_flags("-Wno-main")
+if(LTCG)
+    add_compile_flags("-fno-lto")
 endif()
 
 list(APPEND MSVCRTEX_SOURCE
@@ -41,11 +39,9 @@ list(APPEND MSVCRTEX_SOURCE
     misc/iswblank.c
     misc/ofmt_stub.c)
 
-if(NOT MSVC)
-    list(APPEND MSVCRTEX_SOURCE
-        startup/pseudo-reloc.c
-        startup/pseudo-reloc-list.c)
-endif()
+list(APPEND MSVCRTEX_SOURCE
+    startup/pseudo-reloc.c
+    startup/pseudo-reloc-list.c)
 
 if(ARCH STREQUAL "i386")
     list(APPEND MSVCRTEX_ASM_SOURCE
@@ -87,11 +83,7 @@ elseif(ARCH STREQUAL "arm")
     )
 endif()
 
-if(MSVC)
-    list(APPEND MSVCRTEX_SOURCE startup/mscmain.c)
-else()
-    list(APPEND MSVCRTEX_SOURCE startup/gccmain.c)
-endif()
+list(APPEND MSVCRTEX_SOURCE startup/gccmain.c)
 
 set_source_files_properties(${MSVCRTEX_ASM_SOURCE} PROPERTIES COMPILE_DEFINITIONS "_DLL;_MSVCRTEX_")
 add_asm_files(msvcrtex_asm ${MSVCRTEX_ASM_SOURCE})
@@ -102,9 +94,7 @@ set_source_files_properties(startup/crtdll.c PROPERTIES COMPILE_DEFINITIONS CRTD
 set_source_files_properties(startup/crtexe.c
                             startup/wcrtexe.c PROPERTIES COMPILE_DEFINITIONS _M_CEE_PURE)
 
-if(NOT MSVC)
-    target_link_libraries(msvcrtex oldnames)
-endif()
+target_link_libraries(msvcrtex oldnames)
 
 if(STACK_PROTECTOR)
     target_link_libraries(msvcrtex gcc_ssp)

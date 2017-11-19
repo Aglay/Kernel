@@ -30,14 +30,8 @@ list(APPEND SOURCE
 
 add_library(ffs SHARED ${SOURCE} src/ffsdrv.rc)
 
-if(NOT MSVC)
-    add_target_compile_flags(ffs "-Wno-pointer-sign -Wno-unused-function")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_target_compile_flags(ffs "-Wno-unused-but-set-variable -Wno-unused-variable -Wno-missing-braces")
-    endif()
-#else()
-#    replace_compile_flags("/we\"4189\"" " ")
-endif()
+add_target_compile_flags(ffs "-Wno-pointer-sign -Wno-unused-function")
+add_target_compile_flags(ffs "-Wno-unused-but-set-variable -Wno-unused-variable -Wno-missing-braces")
 
 add_definitions(-D__KERNEL__)
 set_module_type(ffs kernelmodedriver)

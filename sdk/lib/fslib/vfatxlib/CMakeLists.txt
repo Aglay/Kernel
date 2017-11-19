@@ -7,9 +7,6 @@ list(APPEND SOURCE
 add_library(vfatxlib ${SOURCE})
 add_pch(vfatxlib vfatxlib.h SOURCE)
 target_link_libraries(vfatxlib chkstk)
-
-if(NOT MSVC)
-    target_link_libraries(vfatxlib -lgcc)
-endif()
+target_link_libraries(vfatxlib -lgcc)
 
 add_dependencies(vfatxlib psdk)

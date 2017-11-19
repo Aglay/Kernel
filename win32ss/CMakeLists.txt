@@ -1,10 +1,8 @@
 
 set(USE_DIBLIB FALSE)
 
-if(NOT MSVC)
-    # HACK: this should be enabled globally!
-    add_compile_flags_language("-std=c++11" "CXX")
-endif()
+# HACK: this should be enabled globally!
+add_compile_flags_language("-std=c++11" "CXX")
 
 # Give WIN32 subsystem its own project.
 PROJECT(WIN32SS)

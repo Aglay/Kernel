@@ -94,13 +94,8 @@ foreach(_keyboard_layout ${_keyboard_layouts})
     set_image_base(${_keyboard_layout} 0x5FFF0000)
     set_subsystem(${_keyboard_layout} native)
 
-    if(MSVC)
-        # Merge the .text and .rdata section into the .data section
-        add_target_link_flags(${_keyboard_layout} "/ignore:4254 /SECTION:.data,ER /MERGE:.text=.data /MERGE:.rdata=.data /MERGE:.bss=.data /MERGE:.edata=.data")
-    else()
-        # Use a custom linker script
-        add_target_link_flags(${_keyboard_layout} "-Wl,-T,${CMAKE_CURRENT_SOURCE_DIR}/kbdlayout.lds")
-    endif()
+    # Use a custom linker script
+    add_target_link_flags(${_keyboard_layout} "-Wl,-T,${CMAKE_CURRENT_SOURCE_DIR}/kbdlayout.lds")
 
     if (STACK_PROTECTOR)
         target_link_libraries(${_keyboard_layout} gcc_ssp)

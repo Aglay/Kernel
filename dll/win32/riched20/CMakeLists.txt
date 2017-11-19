@@ -23,20 +23,7 @@ list(APPEND SOURCE
     writer.c
     editor.h)
 
-if(MSVC)
-    if(ARCH STREQUAL "i386")
-        list(APPEND SOURCE msvc-thiscall.c)
-    endif()
-    set_source_files_properties(txthost.c txtsrv.c PROPERTIES COMPILE_FLAGS "/FImsvc.h")
-    list(APPEND ADDITIONAL_SOURCE txthost.c txtsrv.c)
-else()
-    list(APPEND SOURCE txthost.c txtsrv.c)
-endif()
-
-if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
-    #FIXME: http://llvm.org/bugs/show_bug.cgi?id=19027
-    set_property(SOURCE txthost.c txtsrv.c APPEND_STRING PROPERTY COMPILE_FLAGS " -no-integrated-as")
-endif()
+list(APPEND SOURCE txthost.c txtsrv.c)
 
 list(APPEND ADDITIONAL_SOURCE
     version.rc

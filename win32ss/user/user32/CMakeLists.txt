@@ -72,11 +72,6 @@ add_library(user32 SHARED
 set_module_type(user32 win32dll ENTRYPOINT DllMain 12 UNICODE)
 target_link_libraries(user32 user32_wsprintf wine win32ksys ${PSEH_LIB})
 
-if(MSVC)
-    # for __ftol2_sse, float to int cast helper
-    target_link_libraries(user32 msvcrtex)
-endif()
-
 add_delay_importlibs(user32 imm32 usp10)
 add_importlibs(user32 gdi32 advapi32 kernel32 ntdll)
 add_pch(user32 include/user32.h SOURCE)
