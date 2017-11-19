@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS On-Screen Keyboard
+ * PROJECT:         On-Screen Keyboard
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            base/applications/osk/main.c
  * PURPOSE:         On-screen keyboard.
@@ -373,7 +373,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance,
 
     if (!hMutex)
     {
-        /* Mutex doesn’t exist. This is the first instance so create the mutex. */
+        /* Mutex doesnï¿½t exist. This is the first instance so create the mutex. */
         hMutex = CreateMutexA(NULL, FALSE, "osk");
 
         DialogBox(hInstance,

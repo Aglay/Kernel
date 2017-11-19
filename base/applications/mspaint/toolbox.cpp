@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     Paint
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/toolbox.cpp
  * PURPOSE:     Window procedure of the main window and all children apart from

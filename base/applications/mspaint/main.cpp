@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     Paint
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/main.cpp
  * PURPOSE:     Initializing everything

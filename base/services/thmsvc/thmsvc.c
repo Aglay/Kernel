@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * FILE:             base/services/thmsvc/thmsvc.c
  * PURPOSE:          Themes service
  * PROGRAMMER:       Giannis Adamopoulos

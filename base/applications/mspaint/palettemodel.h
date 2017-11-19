@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     PAINT
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/palettemodel.h
  * PURPOSE:     Keep track of palette data, notify listeners

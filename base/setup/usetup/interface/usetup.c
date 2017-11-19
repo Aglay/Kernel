@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2002, 2003, 2004 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,12 +18,12 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS text-mode setup
+ * PROJECT:         text-mode setup
  * FILE:            base/setup/usetup/interface/usetup.c
  * PURPOSE:         Text-mode setup
  * PROGRAMMER:      Eric Kohl
  *                  Casper S. Hornstrup (chorns@users.sourceforge.net)
- *                  Hervé Poussineau (hpoussin@reactos.org)
+ *                  Hervï¿½ Poussineau (hpoussin@reactos.org)
  */
 
 #include <usetup.h>
@@ -81,7 +81,7 @@ static UNICODE_STRING InstallPath;
  */
 static UNICODE_STRING SystemRootPath;
 
-/* Path to the install directory inside the ReactOS boot partition */
+/* Path to the install directory inside the boot partition */
 static UNICODE_STRING DestinationPath;
 static UNICODE_STRING DestinationArcPath;
 static UNICODE_STRING DestinationRootPath;

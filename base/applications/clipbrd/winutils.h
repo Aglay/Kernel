@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Clipboard Viewer
+ * PROJECT:         Clipboard Viewer
  * FILE:            base/applications/clipbrd/winutils.h
  * PURPOSE:         Miscellaneous helper functions.
  * PROGRAMMERS:     Ricardo Hanke

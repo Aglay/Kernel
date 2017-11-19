@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     Paint
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/toolsmodel.cpp
  * PURPOSE:     Keep track of tool parameters, notify listeners

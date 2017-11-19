@@ -1,4 +1,4 @@
-/* PROJECT:     ReactOS Applications Manager
+/* PROJECT:     Applications Manager
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/rapps/loaddlg.c
  * PURPOSE:     Displaying a download dialog

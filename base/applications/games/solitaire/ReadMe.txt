@@ -1,4 +1,4 @@
-Solitaire for ReactOS
+Solitaire
 
 /*****************************************
 A complete working example of the CardLib 

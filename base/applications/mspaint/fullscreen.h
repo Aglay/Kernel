@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     PAINT
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/fullscreen.h
  * PURPOSE:     Window for fullscreen view

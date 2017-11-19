@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     Paint
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/sizebox.cpp
  * PURPOSE:     Window procedure of the size boxes

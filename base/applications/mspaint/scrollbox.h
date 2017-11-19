@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     PAINT
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/scrollbox.h
  * PURPOSE:     Functionality surrounding the scroll box window class

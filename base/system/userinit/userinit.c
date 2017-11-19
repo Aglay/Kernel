@@ -1,5 +1,5 @@
 /*
- *  ReactOS applications
+ *  applications
  *  Copyright (C) 2001, 2002 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,10 +18,10 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS Userinit Logon Application
+ * PROJECT:     Userinit Logon Application
  * FILE:        base/system/userinit/userinit.c
  * PROGRAMMERS: Thomas Weidenmueller (w3seek@users.sourceforge.net)
- *              Hervé Poussineau (hpoussin@reactos.org)
+ *              Hervï¿½ Poussineau (hpoussin@reactos.org)
  */
 
 #include "userinit.h"

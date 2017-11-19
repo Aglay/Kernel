@@ -1,5 +1,5 @@
 /*
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * LICENSE:          GPL - See COPYING in the top level directory
  * FILE:             base/services/eventlog/eventlog.h
  * PURPOSE:          Event logging service

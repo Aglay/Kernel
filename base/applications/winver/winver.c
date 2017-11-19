@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Version Program
+ * PROJECT:         Version Program
  * FILE:            base/applications/winver/winver.c
  */
 

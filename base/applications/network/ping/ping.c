@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS ping utility
+ * PROJECT:     ping utility
  * FILE:        base/applications/network/ping/ping.c
  * PURPOSE:     Network test utility
  * PROGRAMMERS:

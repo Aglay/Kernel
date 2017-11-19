@@ -1,7 +1,7 @@
 /*
- * PROJECT:         ReactOS System Control Panel
+ * PROJECT:         System Control Panel
  * FILE:            base/applications/control/control.c
- * PURPOSE:         ReactOS System Control Panel
+ * PURPOSE:         System Control Panel
  * PROGRAMMERS:     Gero Kuehn (reactos.filter@gkware.com)
  *                  Colin Finck (mail@colinfinck.de)
  */

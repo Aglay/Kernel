@@ -1,5 +1,5 @@
 /*
- *  ReactOS applications
+ *  applications
  *  Copyright (C) 2004-2008 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS GUI first stage setup application
+ * PROJECT:     GUI first stage setup application
  * FILE:        base/setup/reactos/drivepage.c
  * PROGRAMMERS: Eric Kohl
  *              Matthias Kupfer

@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Services
+ * PROJECT:     Services
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/sc/print.c
  * PURPOSE:     print service info

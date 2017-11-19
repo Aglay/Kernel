@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Clipboard Viewer
+ * PROJECT:         Clipboard Viewer
  * FILE:            base/applications/clipbrd/clipbrd.c
  * PURPOSE:         Provides a view of the contents of the ReactOS clipboard.
  * PROGRAMMERS:     Ricardo Hanke

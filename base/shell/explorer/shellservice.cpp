@@ -1,5 +1,5 @@
 /*
-* ReactOS Explorer
+* Explorer
 *
 * Copyright 2014 - David Quintana
 *

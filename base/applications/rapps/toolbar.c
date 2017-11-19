@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Applications Manager
+ * PROJECT:         Applications Manager
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            base/applications/rapps/toolbar.c
  * PURPOSE:         ToolBar functions

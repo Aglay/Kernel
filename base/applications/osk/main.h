@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS On-Screen Keyboard
+ * PROJECT:         On-Screen Keyboard
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            base/applications/osk/main.h
  * PURPOSE:         On screen keyboard.

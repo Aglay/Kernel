@@ -1,5 +1,5 @@
 /*
- *  ReactOS Task Manager
+ *  Task Manager
  *
  *  trayicon.c
  *

@@ -85,7 +85,7 @@
  *        on or off. (marked with "JPP 19980708")
  *
  *    07-Dec-1998 (Eric Kohl)
- *        First ReactOS release.
+ *        First release.
  *        Extended length of commandline buffers to 512.
  *
  *    13-Dec-1998 (Eric Kohl)

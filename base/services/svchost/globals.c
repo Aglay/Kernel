@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Service Host
+ * PROJECT:     Service Host
  * LICENSE:     BSD - See COPYING.ARM in the top level directory
  * FILE:        base/services/svchost/globals.c
  * PURPOSE:     Functions to initialize global settings and support

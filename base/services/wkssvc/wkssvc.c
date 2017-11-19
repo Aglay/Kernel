@@ -1,5 +1,5 @@
 /*
- *  ReactOS Services
+ *  Services
  *  Copyright (C) 2015 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS Services
+ * PROJECT:          Services
  * FILE:             base/services/wkssvc/wkssvc.c
  * PURPOSE:          Workstation service
  * PROGRAMMER:       Eric Kohl

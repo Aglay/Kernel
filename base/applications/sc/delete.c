@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Services
+ * PROJECT:     Services
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/sc/delete.c
  * PURPOSE:     Delete a service

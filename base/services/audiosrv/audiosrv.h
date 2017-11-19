@@ -1,5 +1,4 @@
 /*
- * PROJECT:          ReactOS
  * LICENSE:          GPL - See COPYING in the top level directory
  * FILE:             base/services/audiosrv/audiosrv.h
  * PURPOSE:          Audio Service (private header)

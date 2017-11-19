@@ -1,9 +1,9 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS text-mode setup
+ * PROJECT:         text-mode setup
  * FILE:            base/setup/usetup/interface/devinst.c
  * PURPOSE:         Device installation
- * PROGRAMMER:      Hervé Poussineau (hpoussin@reactos.org)
+ * PROGRAMMER:      Hervï¿½ Poussineau (hpoussin@reactos.org)
  */
 
 #include <usetup.h>

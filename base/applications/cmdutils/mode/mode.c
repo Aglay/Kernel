@@ -1,5 +1,5 @@
 /*
- *  ReactOS mode console command
+ *  mode console command
  *
  *  mode.c
  *

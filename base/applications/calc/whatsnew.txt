@@ -43,7 +43,7 @@
 
 1.07 (20071219)
 =======================
-* Added support for GNU multi-precision libraries. LibGMP and LibMPFR are required for compiling ReactOS Calc with big number support.
+* Added support for GNU multi-precision libraries. LibGMP and LibMPFR are required for compiling Calc with big number support.
 * When calculating the standard deviation, the population can be 'n' or 'n-1' as the true Microsoft Calculator does.
 * Unified language support: just one executable for all.
 * Fixed type bug into CopyMemToClipboard() when compiled with WideChar support.
@@ -53,7 +53,7 @@
 * Fixed bug signaled by remi-aldo about a the precision issue.
 * Fixed bug into shortcuts from keyboard: modulo shortcut was missing.
 * Implemented coloured buttons.
-* ReactOS Calc has been compiled for working with x86-64 (still untested on the real hardware).
+* Calc has been compiled for working with x86-64 (still untested on the real hardware).
 
 1.06 (20070518)
 =======================

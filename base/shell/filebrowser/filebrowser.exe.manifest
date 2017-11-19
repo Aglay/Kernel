@@ -6,7 +6,7 @@
     name="ReactOS.FileBrowser"
     type="win32"
 />
-<description>This is ReactOS File Browser</description>
+<description>This is File Browser</description>
 <dependency>
     <dependentAssembly>
         <assemblyIdentity

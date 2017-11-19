@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:        See COPYING in the top level directory
- * PROJECT:          ReactOS kernel
+ * PROJECT:          kernel
  * FILE:             base/services/spoolsv/spoolsv.c
  * PURPOSE:          Printer spooler
  * PROGRAMMER:       Eric Kohl

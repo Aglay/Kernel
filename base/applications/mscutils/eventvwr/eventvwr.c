@@ -1,5 +1,5 @@
 /*
- *  ReactOS Win32 Applications
+ *  Win32 Applications
  *  Copyright (C) 2007 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 /*
- * PROJECT:         ReactOS Event Log Viewer
+ * PROJECT:         Event Log Viewer
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            base/applications/mscutils/eventvwr/eventvwr.c
  * PURPOSE:         Colors dialog

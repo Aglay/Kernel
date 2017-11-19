@@ -1,10 +1,10 @@
 /*
- *  ReactOS Task Manager
+ *  Task Manager
  *
  *  shutdown.c
  *
  *  Copyright (C) 1999 - 2001  Brian Palmer  <brianp@reactos.org>
- *                2011         Mário Kacmár /Mario Kacmar/ aka Kario (kario@szm.sk)
+ *                2011         Mï¿½rio Kacmï¿½r /Mario Kacmar/ aka Kario (kario@szm.sk)
  *                2014         Robert Naumann  <gonzomdx@gmail.com>
  *
  * This library is free software; you can redistribute it and/or

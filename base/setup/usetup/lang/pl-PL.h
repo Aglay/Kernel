@@ -1,6 +1,6 @@
 /*
  *      translated by Caemyr (Jan-Feb, Apr, 2008)
- *      Use ReactOS forum PM or IRC to contact me
+ *      Use forum PM or IRC to contact me
  *      https://greenteaos.github.io/
  *      IRC: irc.freenode.net #reactos-pl;
  *      Updated by Wojo664 (July, 2014)
@@ -28,31 +28,31 @@ static MUI_ENTRY plPLLanguagePageEntries[] =
     {
         6,
         8,
-        "Wyb¢r j©zyka",
+        "Wybï¿½r jï¿½zyka",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         10,
-        "\x07  Prosz© wybra† j©zyk dla procesu instalacji systemu",
+        "\x07  Proszï¿½ wybraï¿½ jï¿½zyk dla procesu instalacji systemu",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   i nacisn¥† ENTER.",
+        "   i nacisnï¿½ï¿½ ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Wybrany j©zyk b©dzie domy˜lnym dla zainstalowanego systemu.",
+        "\x07  Wybrany jï¿½zyk bï¿½dzie domyï¿½lnym dla zainstalowanego systemu.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja  F3 = Wyj˜cie",
+        "ENTER = Kontynuacja  F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -80,43 +80,43 @@ static MUI_ENTRY plPLWelcomePageEntries[] =
     {
         6,
         11,
-        " Na tym etapie, instalator skopiuje niezb©dne pliki systemu operacyjnego",
+        " Na tym etapie, instalator skopiuje niezbï¿½dne pliki systemu operacyjnego",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         12,
-        "na tw¢j komputer i rozpocznie kolejny etap procesu instalacji.",
+        "na twï¿½j komputer i rozpocznie kolejny etap procesu instalacji.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         15,
-        "\x07  Naci˜nij ENTER, aby zainstalowa† system Greentea.",
+        "\x07  Naciï¿½nij ENTER, aby zainstalowaï¿½ system Greentea.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         17,
-        "\x07  Naci˜nij R, aby naprawi† zainstalowany system Greentea.",
+        "\x07  Naciï¿½nij R, aby naprawiï¿½ zainstalowany system Greentea.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         19,
-        "\x07  Naci˜nij L, aby zapozna† si© z licencj¥ Greentea",
+        "\x07  Naciï¿½nij L, aby zapoznaï¿½ siï¿½ z licencjï¿½ Greentea",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Naci˜nij F3, aby wyj˜† bez instalacji systemu Greentea.",
+        "\x07  Naciï¿½nij F3, aby wyjï¿½ï¿½ bez instalacji systemu Greentea.",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         23,
-        "Wi©cej informacji o systemie Greentea mo¾na znale«† na stronie:",
+        "Wiï¿½cej informacji o systemie Greentea moï¿½na znaleï¿½ï¿½ na stronie:",
         TEXT_STYLE_NORMAL
     },
     {
@@ -128,7 +128,7 @@ static MUI_ENTRY plPLWelcomePageEntries[] =
     {
         0,
         0,
-        "ENTER = Kontynuacja  R = Naprawa F3 = Wyj˜cie",
+        "ENTER = Kontynuacja  R = Naprawa F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -150,49 +150,49 @@ static MUI_ENTRY plPLIntroPageEntries[] =
     {
         6,
         8,
-        "Instalator Greentea wci¥¾ jest we wczesnej fazie rozwoju. Nadal nie",
+        "Instalator Greentea wciï¿½ï¿½ jest we wczesnej fazie rozwoju. Nadal nie",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         9,
-        "obsˆuguje wszystkich funkcji, niezb©dnych dla programu instalacyjnego.",
+        "obsï¿½uguje wszystkich funkcji, niezbï¿½dnych dla programu instalacyjnego.",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         12,
-        "Najwa¾niejsze ograniczenia:",
+        "Najwaï¿½niejsze ograniczenia:",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "- Instalator obsˆuguje jedynie system plik¢w FAT.",
+        "- Instalator obsï¿½uguje jedynie system plikï¿½w FAT.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         14,
-        "- Brakuje sprawdzenia poprawno˜ci systemu plik¢w.",
+        "- Brakuje sprawdzenia poprawnoï¿½ci systemu plikï¿½w.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         23,
-        "\x07  Naci˜nij ENTER, aby zainstalowa† system Greentea.",
+        "\x07  Naciï¿½nij ENTER, aby zainstalowaï¿½ system Greentea.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         25,
-        "\x07  Naci˜nij F3, aby wyj˜† bez instalacji systemu Greentea.",
+        "\x07  Naciï¿½nij F3, aby wyjï¿½ï¿½ bez instalacji systemu Greentea.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS| TEXT_PADDING_BIG
     },
     {
@@ -226,19 +226,19 @@ static MUI_ENTRY plPLLicensePageEntries[] =
     {
         8,
         9,
-        "GNU GPL z elementami kodu pochodz¥cego z kompatybilnych",
+        "GNU GPL z elementami kodu pochodzï¿½cego z kompatybilnych",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         10,
-        "licencji, takich jak X11 czy BSD albo GNU LGPL. Caˆe",
+        "licencji, takich jak X11 czy BSD albo GNU LGPL. Caï¿½e",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "oprogramowanie, b©d¥ce cz©˜ci¥ systemu Greentea podlega wi©c",
+        "oprogramowanie, bï¿½dï¿½ce czï¿½ï¿½ciï¿½ systemu Greentea podlega wiï¿½c",
         TEXT_STYLE_NORMAL
     },
     {
@@ -256,31 +256,31 @@ static MUI_ENTRY plPLLicensePageEntries[] =
     {
         8,
         15,
-        "czy te¾ ograniczeä w u¾yciu, poza przepisami prawa lokalnego",
+        "czy teï¿½ ograniczeï¿½ w uï¿½yciu, poza przepisami prawa lokalnego",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         16,
-        "b¥d« mi©dzynarodowego. Licencja systemu Greentea",
+        "bï¿½dï¿½ miï¿½dzynarodowego. Licencja systemu Greentea",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         17,
-        "reguluje wyˆ¥cznie zasady dystrybucji dla os¢b trzecich.",
+        "reguluje wyï¿½ï¿½cznie zasady dystrybucji dla osï¿½b trzecich.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         18,
-        "Je˜li z jakiego˜ powodu nie otrzymaˆe˜ kopii licencji",
+        "Jeï¿½li z jakiegoï¿½ powodu nie otrzymaï¿½eï¿½ kopii licencji",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         19,
-        "GNU GPL wraz z systemem Greentea, prosimy odwiedzi† stron©:",
+        "GNU GPL wraz z systemem Greentea, prosimy odwiedziï¿½ stronï¿½:",
         TEXT_STYLE_NORMAL
     },
     {
@@ -298,25 +298,25 @@ static MUI_ENTRY plPLLicensePageEntries[] =
     {
         8,
         24,
-        "Niniejszy program jest wolnym oprogramowaniem; szczeg¢ˆy",
+        "Niniejszy program jest wolnym oprogramowaniem; szczegï¿½ï¿½y",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         25,
-        "dotycz¥ce kopiowania w «r¢dˆach. Nie ma ½ADNEJ gwarancji",
+        "dotyczï¿½ce kopiowania w ï¿½rï¿½dï¿½ach. Nie ma ï¿½ADNEJ gwarancji",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         26,
-        "PRZYDATNO—CI HANDLOWEJ LUB DO OKRE—LONYCH ZASTOSOWAã",
+        "PRZYDATNOï¿½CI HANDLOWEJ LUB DO OKREï¿½LONYCH ZASTOSOWAï¿½",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Powr¢t",
+        "ENTER = Powrï¿½t",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -338,7 +338,7 @@ static MUI_ENTRY plPLDevicePageEntries[] =
     {
         6,
         8,
-        "Poni¾sza lista zawiera obecne ustawienia sprz©tu.",
+        "Poniï¿½sza lista zawiera obecne ustawienia sprzï¿½tu.",
         TEXT_STYLE_NORMAL
     },
     {
@@ -362,7 +362,7 @@ static MUI_ENTRY plPLDevicePageEntries[] =
     {
         24,
         14,
-        "Ukˆ. klawiatury:",
+        "Ukï¿½. klawiatury:",
         TEXT_STYLE_NORMAL | TEXT_ALIGN_RIGHT
     },
     {
@@ -373,43 +373,43 @@ static MUI_ENTRY plPLDevicePageEntries[] =
     },
     {
         25,
-        16, "Akceptuj ustawienia sprz©tu",
+        16, "Akceptuj ustawienia sprzï¿½tu",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         19,
-        "Mo¾esz zmieni† poszczeg¢lne ustawienia za pomoc¥ klawiszy GàRA i Dà,",
+        "Moï¿½esz zmieniï¿½ poszczegï¿½lne ustawienia za pomocï¿½ klawiszy Gï¿½RA i Dï¿½,",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         20,
-        "aby wybra† kategori©. Potem naci˜nij ENTER, by przej˜† do menu z ",
+        "aby wybraï¿½ kategoriï¿½. Potem naciï¿½nij ENTER, by przejï¿½ï¿½ do menu z ",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         21,
-        "ustawieniami szczeg¢ˆowymi do wyboru.",
+        "ustawieniami szczegï¿½ï¿½owymi do wyboru.",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         23,
-        "Gdy wszystkie ustawienia s¥ poprawne, wybierz: ",
+        "Gdy wszystkie ustawienia sï¿½ poprawne, wybierz: ",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         24,
-        "\"Akceptuj ustawienia sprz©tu\" i naci˜nij ENTER.",
+        "\"Akceptuj ustawienia sprzï¿½tu\" i naciï¿½nij ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -431,49 +431,49 @@ static MUI_ENTRY plPLRepairPageEntries[] =
     {
         6,
         8,
-        "Instalator Greentea wci¥¾ jest we wczesnej fazie rozwoju. Nadal nie",
+        "Instalator Greentea wciï¿½ï¿½ jest we wczesnej fazie rozwoju. Nadal nie",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         9,
-        "obsˆuguje wszystkich funkcji, niezb©dnych dla programu instalacyjnego.",
+        "obsï¿½uguje wszystkich funkcji, niezbï¿½dnych dla programu instalacyjnego.",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         12,
-        "Naprawa istniej¥cej instalacji systemu nie jest jeszcze mo¾liwa.",
+        "Naprawa istniejï¿½cej instalacji systemu nie jest jeszcze moï¿½liwa.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         15,
-        "\x07  Naci˜nij U ¾eby uaktualni† system.",
+        "\x07  Naciï¿½nij U ï¿½eby uaktualniï¿½ system.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         17,
-        "\x07  Naci˜nij R, by uruchomi† Konsol© Odtwarzania.",
+        "\x07  Naciï¿½nij R, by uruchomiï¿½ Konsolï¿½ Odtwarzania.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         19,
-        "\x07  Naci˜nij ESC, by powr¢ci† do gˆ¢wnego menu.",
+        "\x07  Naciï¿½nij ESC, by powrï¿½ciï¿½ do gï¿½ï¿½wnego menu.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Naci˜nij ENTER, by zrestartowa† komputer.",
+        "\x07  Naciï¿½nij ENTER, by zrestartowaï¿½ komputer.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ESC = Menu gˆ¢wne  ENTER = Restart",
+        "ESC = Menu gï¿½ï¿½wne  ENTER = Restart",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -495,25 +495,25 @@ static MUI_ENTRY plPLComputerPageEntries[] =
     {
         6,
         8,
-        "Aby zmieni† typ komputera, na kt¢rym chcesz zainstalowa† Greentea",
+        "Aby zmieniï¿½ typ komputera, na ktï¿½rym chcesz zainstalowaï¿½ Greentea",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         10,
-        "\x07  Naci˜nij klawisz GàRA albo Dà, by wybra† odpowiedni typ komputera.",
+        "\x07  Naciï¿½nij klawisz Gï¿½RA albo Dï¿½, by wybraï¿½ odpowiedni typ komputera.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   a nast©pnie naci˜nij ENTER.",
+        "   a nastï¿½pnie naciï¿½nij ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Naci˜nij klawisz ESC, aby powr¢ci† do poprzedniej strony bez zmiany",
+        "\x07  Naciï¿½nij klawisz ESC, aby powrï¿½ciï¿½ do poprzedniej strony bez zmiany",
         TEXT_STYLE_NORMAL
     },
     {
@@ -525,7 +525,7 @@ static MUI_ENTRY plPLComputerPageEntries[] =
     {
         0,
         0,
-        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -547,25 +547,25 @@ static MUI_ENTRY plPLFlushPageEntries[] =
     {
         10,
         6,
-        "System obecnie sprawdza czy dane s¥ poprawnie zapisane na dysku",
+        "System obecnie sprawdza czy dane sï¿½ poprawnie zapisane na dysku",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         8,
-        "To mo¾e zaj¥† minut©.",
+        "To moï¿½e zajï¿½ï¿½ minutï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         9,
-        "Po zakoäczeniu, system zrestartuje komputer automatycznie.",
+        "Po zakoï¿½czeniu, system zrestartuje komputer automatycznie.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Czyszczenie pami©ci Cache",
+        "Czyszczenie pamiï¿½ci Cache",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -587,31 +587,31 @@ static MUI_ENTRY plPLQuitPageEntries[] =
     {
         10,
         6,
-        "Greentea zostaˆ ju¾ poprawnie zainstalowany",
+        "Greentea zostaï¿½ juï¿½ poprawnie zainstalowany",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         8,
-        "Upewnij si© ¾e w Nap©dzie A: nie ma dyskietki i",
+        "Upewnij siï¿½ ï¿½e w Napï¿½dzie A: nie ma dyskietki i",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         9,
-        "w nap©dach optycznych - ¾adnych CD-ROM¢w.",
+        "w napï¿½dach optycznych - ï¿½adnych CD-ROMï¿½w.",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         11,
-        "Naci˜nij ENTER, by zrestartowa† komputer.",
+        "Naciï¿½nij ENTER, by zrestartowaï¿½ komputer.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Prosz© czeka† ...",
+        "Proszï¿½ czekaï¿½ ...",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG,
     },
     {
@@ -633,36 +633,36 @@ static MUI_ENTRY plPLDisplayPageEntries[] =
     {
         6,
         8,
-        "Chcesz zmieni† rozdzielczo˜† ekranu.",
+        "Chcesz zmieniï¿½ rozdzielczoï¿½ï¿½ ekranu.",
         TEXT_STYLE_NORMAL
     },
     {   8,
         10,
-         "\x07  Naci˜nij klawisz GàRA albo Dà, by wybra† rozdzielczo˜† i liczb©",
+         "\x07  Naciï¿½nij klawisz Gï¿½RA albo Dï¿½, by wybraï¿½ rozdzielczoï¿½ï¿½ i liczbï¿½",
          TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   kolor¢w, a nast©pnie naci˜nij ENTER.",
+        "   kolorï¿½w, a nastï¿½pnie naciï¿½nij ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Naci˜nij ESC, aby powr¢ci† do poprzedniej strony bez zmiany",
+        "\x07  Naciï¿½nij ESC, aby powrï¿½ciï¿½ do poprzedniej strony bez zmiany",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         14,
-        "   rozdzielczo˜ci czy ilo˜ci kolor¢w.",
+        "   rozdzielczoï¿½ci czy iloï¿½ci kolorï¿½w.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -684,25 +684,25 @@ static MUI_ENTRY plPLSuccessPageEntries[] =
     {
         10,
         6,
-        "Podstawowe skˆadniki systemu Greentea zostaˆy zainstalowane.",
+        "Podstawowe skï¿½adniki systemu Greentea zostaï¿½y zainstalowane.",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         8,
-        "Upewnij si© ¾e w Nap©dzie A: nie ma dyskietki i",
+        "Upewnij siï¿½ ï¿½e w Napï¿½dzie A: nie ma dyskietki i",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         9,
-        "w nap©dach optycznych - ¾adnych CD-ROM¢w.",
+        "w napï¿½dach optycznych - ï¿½adnych CD-ROMï¿½w.",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         11,
-        "Naci˜nij ENTER, by zrestartowa† komputer.",
+        "Naciï¿½nij ENTER, by zrestartowaï¿½ komputer.",
         TEXT_STYLE_NORMAL
     },
     {
@@ -730,7 +730,7 @@ static MUI_ENTRY plPLBootPageEntries[] =
     {
         6,
         8,
-        "Instalator Greentea nie mo¾e wgra† bootloadera na tw¢j",
+        "Instalator Greentea nie moï¿½e wgraï¿½ bootloadera na twï¿½j",
         TEXT_STYLE_NORMAL
     },
     {
@@ -742,19 +742,19 @@ static MUI_ENTRY plPLBootPageEntries[] =
     {
         6,
         13,
-        "Prosz© umie˜ci† sformatowan¥ dyskietk© w nap©dzie A:",
+        "Proszï¿½ umieï¿½ciï¿½ sformatowanï¿½ dyskietkï¿½ w napï¿½dzie A:",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         14,
-        "i nacisn¥† klawisz ENTER.",
+        "i nacisnï¿½ï¿½ klawisz ENTER.",
         TEXT_STYLE_NORMAL,
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -777,7 +777,7 @@ static MUI_ENTRY plPLSelectPartitionEntries[] =
     {
         6,
         8,
-        "Poni¾sza lista pokazuje istniej¥ce partycje i puste",
+        "Poniï¿½sza lista pokazuje istniejï¿½ce partycje i puste",
         TEXT_STYLE_NORMAL
     },
     {
@@ -789,43 +789,43 @@ static MUI_ENTRY plPLSelectPartitionEntries[] =
     {
         8,
         11,
-        "\x07  Naci˜nij GàRA lub Dà, by wybra† pozycj© z listy.",
+        "\x07  Naciï¿½nij Gï¿½RA lub Dï¿½, by wybraï¿½ pozycjï¿½ z listy.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Naci˜nij ENTER, by zainstalowa† Greentea na wybranej partycji.",
+        "\x07  Naciï¿½nij ENTER, by zainstalowaï¿½ Greentea na wybranej partycji.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         15,
-        "\x07  Naci˜nij P, by stworzy† partycj© podstawow¥.",
+        "\x07  Naciï¿½nij P, by stworzyï¿½ partycjï¿½ podstawowï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         17,
-        "\x07  Naci˜nij E, by stworzy† partycj© rozszerzon¥.",
+        "\x07  Naciï¿½nij E, by stworzyï¿½ partycjï¿½ rozszerzonï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         19,
-        "\x07  Naci˜nij L, by stworzy† partycj© logiczn¥.",
+        "\x07  Naciï¿½nij L, by stworzyï¿½ partycjï¿½ logicznï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Naci˜nij D, by skasowa† istniej¥c¥ partycj©.",
+        "\x07  Naciï¿½nij D, by skasowaï¿½ istniejï¿½cï¿½ partycjï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Prosz© czeka†...",
+        "Proszï¿½ czekaï¿½...",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -947,13 +947,13 @@ static MUI_ENTRY plPLFormatPartitionEntries[] =
     {
         6,
         10,
-        "Instalator sformatuje teraz partycj©. Naci˜nij ENTER, aby kontynuowa†.",
+        "Instalator sformatuje teraz partycjï¿½. Naciï¿½nij ENTER, aby kontynuowaï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -975,37 +975,37 @@ static MUI_ENTRY plPLInstallDirectoryEntries[] =
     {
         6,
         8,
-        "Instalator przegra pliki systemu na wybran¥ partycj©. Wybierz",
+        "Instalator przegra pliki systemu na wybranï¿½ partycjï¿½. Wybierz",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         9,
-        "katalog, do kt¢rego chcesz zainstalowa† system Greentea:",
+        "katalog, do ktï¿½rego chcesz zainstalowaï¿½ system Greentea:",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         14,
-        "Aby zmieni† domy˜lny katalog, u¾yj klawisza BACKSPACE, by skasowa†",
+        "Aby zmieniï¿½ domyï¿½lny katalog, uï¿½yj klawisza BACKSPACE, by skasowaï¿½",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         15,
-        "a nast©pnie wprowad« now¥ ˜cie¾k© do katalogu, do kt¢rego system",
+        "a nastï¿½pnie wprowadï¿½ nowï¿½ ï¿½cieï¿½kï¿½ do katalogu, do ktï¿½rego system",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         16,
-        "ma zosta† zainstalowany.",
+        "ma zostaï¿½ zainstalowany.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1027,7 +1027,7 @@ static MUI_ENTRY plPLFileCopyEntries[] =
     {
         11,
         12,
-        "Prosz© czeka†, Instalator Greentea kopiuje pliki do wybranego",
+        "Proszï¿½ czekaï¿½, Instalator Greentea kopiuje pliki do wybranego",
         TEXT_STYLE_NORMAL | TEXT_ALIGN_CENTER
     },
     {
@@ -1039,13 +1039,13 @@ static MUI_ENTRY plPLFileCopyEntries[] =
     {
         20,
         14,
-        "To mo¾e zaj¥† kilka minut.",
+        "To moï¿½e zajï¿½ï¿½ kilka minut.",
         TEXT_STYLE_NORMAL | TEXT_ALIGN_CENTER
     },
     {
         50,
         0,
-        "\xB3 Prosz© czeka†...    ",
+        "\xB3 Proszï¿½ czekaï¿½...    ",
         TEXT_TYPE_STATUS
     },
     {
@@ -1067,7 +1067,7 @@ static MUI_ENTRY plPLBootLoaderEntries[] =
     {
         6,
         8,
-        "Instalator musi teraz wgra† bootloader",
+        "Instalator musi teraz wgraï¿½ bootloader",
         TEXT_STYLE_NORMAL
     },
     {
@@ -1085,19 +1085,19 @@ static MUI_ENTRY plPLBootLoaderEntries[] =
     {
         8,
         14,
-        "Wgraj bootloader na dyskietk©.",
+        "Wgraj bootloader na dyskietkï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         15,
-        "Pomiä wgrywanie bootloadera.",
+        "Pomiï¿½ wgrywanie bootloadera.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1119,25 +1119,25 @@ static MUI_ENTRY plPLKeyboardSettingsEntries[] =
     {
         6,
         8,
-        "Chcesz zmieni† typ klawiatury, jaki ma by† zainstalowany.",
+        "Chcesz zmieniï¿½ typ klawiatury, jaki ma byï¿½ zainstalowany.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         10,
-        "\x07  Naci˜nij klawisz GàRA albo Dà, by wybra† odpowiedni typ klawiatury.",
+        "\x07  Naciï¿½nij klawisz Gï¿½RA albo Dï¿½, by wybraï¿½ odpowiedni typ klawiatury.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   a nast©pnie naci˜nij ENTER.",
+        "   a nastï¿½pnie naciï¿½nij ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Naci˜nij ESC, aby powr¢ci† do poprzedniej strony bez zmiany",
+        "\x07  Naciï¿½nij ESC, aby powrï¿½ciï¿½ do poprzedniej strony bez zmiany",
         TEXT_STYLE_NORMAL
     },
     {
@@ -1149,7 +1149,7 @@ static MUI_ENTRY plPLKeyboardSettingsEntries[] =
     {
         0,
         0,
-        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1171,37 +1171,37 @@ static MUI_ENTRY plPLLayoutSettingsEntries[] =
     {
         6,
         8,
-        "Prosz© wybra† domy˜lnie instalowany ukˆad klawiatury.",
+        "Proszï¿½ wybraï¿½ domyï¿½lnie instalowany ukï¿½ad klawiatury.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         10,
-        "\x07  Naci˜nij klawisz GàRA albo Dà, by wybra† odpowiedni ukˆad",
+        "\x07  Naciï¿½nij klawisz Gï¿½RA albo Dï¿½, by wybraï¿½ odpowiedni ukï¿½ad",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   klawiatury. Nast©pnie naci˜nij ENTER.",
+        "   klawiatury. Nastï¿½pnie naciï¿½nij ENTER.",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  Naci˜nij ESC, aby powr¢ci† do poprzedniej strony bez zmiany",
+        "\x07  Naciï¿½nij ESC, aby powrï¿½ciï¿½ do poprzedniej strony bez zmiany",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         14,
-        "   ukˆadu klawiatury.",
+        "   ukï¿½adu klawiatury.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1224,13 +1224,13 @@ static MUI_ENTRY plPLPrepareCopyEntries[] =
     {
         6,
         8,
-        "Instalator przygotuje tw¢j komputer do skopiowania plik¢w systemu. ",
+        "Instalator przygotuje twï¿½j komputer do skopiowania plikï¿½w systemu. ",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Tworzenie listy plik¢w do skopiowania...",
+        "Tworzenie listy plikï¿½w do skopiowania...",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1253,31 +1253,31 @@ static MUI_ENTRY plPLSelectFSEntries[] =
     {
         6,
         17,
-        "Wybierz system plik¢w z listy poni¾ej.",
+        "Wybierz system plikï¿½w z listy poniï¿½ej.",
         0
     },
     {
         8,
         19,
-        "\x07  Naci˜nij klawisz GàRA alub Dà, by wybra† system plik¢w.",
+        "\x07  Naciï¿½nij klawisz Gï¿½RA alub Dï¿½, by wybraï¿½ system plikï¿½w.",
         0
     },
     {
         8,
         21,
-        "\x07  Naci˜nij ENTER, aby sformatowa† partycj©.",
+        "\x07  Naciï¿½nij ENTER, aby sformatowaï¿½ partycjï¿½.",
         0
     },
     {
         8,
         23,
-        "\x07  Naci˜nij ESC, aby wybra† inn¥ partycj©.",
+        "\x07  Naciï¿½nij ESC, aby wybraï¿½ innï¿½ partycjï¿½.",
         0
     },
     {
         0,
         0,
-        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyj˜cie",
+        "ENTER = Kontynuacja   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
 
@@ -1300,31 +1300,31 @@ static MUI_ENTRY plPLDeletePartitionEntries[] =
     {
         6,
         8,
-        "Chcesz skasowa† wybran¥ partycj©",
+        "Chcesz skasowaï¿½ wybranï¿½ partycjï¿½",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         18,
-        "\x07  Naci˜nij D, by skasowa† partycj©.",
+        "\x07  Naciï¿½nij D, by skasowaï¿½ partycjï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         11,
         19,
-        "UWAGA: Wszystkie dane, zapisane na tej partycji zostan¥ skasowane!",
+        "UWAGA: Wszystkie dane, zapisane na tej partycji zostanï¿½ skasowane!",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Naci˜nij ESC, aby anulowa†.",
+        "\x07  Naciï¿½nij ESC, aby anulowaï¿½.",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "D = Skasowanie partycji   ESC = Anulowanie   F3 = Wyj˜cie",
+        "D = Skasowanie partycji   ESC = Anulowanie   F3 = Wyjï¿½cie",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1346,13 +1346,13 @@ static MUI_ENTRY plPLRegistryEntries[] =
     {
         6,
         8,
-        "Instalator uaktualnia wˆa˜nie konfiguracj© systemu. ",
+        "Instalator uaktualnia wï¿½aï¿½nie konfiguracjï¿½ systemu. ",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Tworzenie gaˆ©zi rejestru...",
+        "Tworzenie gaï¿½ï¿½zi rejestru...",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1372,42 +1372,42 @@ MUI_ERROR plPLErrorEntries[] =
     },
     {
         //ERROR_NOT_INSTALLED
-        "Greentea nie zostaˆ w peˆni zainstalowany na twoim\n"
-        "komputerze. Je˜li wyjdziesz teraz, trzeba b©dzie\n"
-        "ponownie uruchomi† instalator, by zainstalowa† Greentea.\n"
+        "Greentea nie zostaï¿½ w peï¿½ni zainstalowany na twoim\n"
+        "komputerze. Jeï¿½li wyjdziesz teraz, trzeba bï¿½dzie\n"
+        "ponownie uruchomiï¿½ instalator, by zainstalowaï¿½ Greentea.\n"
         "\n"
-        "  \x07  Naci˜nij ENTER, aby kontynuowa† instalacj©.\n"
-        "  \x07  Naci˜nij F3, aby wyj˜† z instalatora.",
-        "F3 = Wyj˜cie  ENTER = Kontynuacja"
+        "  \x07  Naciï¿½nij ENTER, aby kontynuowaï¿½ instalacjï¿½.\n"
+        "  \x07  Naciï¿½nij F3, aby wyjï¿½ï¿½ z instalatora.",
+        "F3 = Wyjï¿½cie  ENTER = Kontynuacja"
     },
     {
         //ERROR_NO_HDD
-        "Instalator nie znalazˆ ¾adnego dysku twardego.\n",
+        "Instalator nie znalazï¿½ ï¿½adnego dysku twardego.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_NO_SOURCE_DRIVE
-        "Instalator nie znalazˆ nap©du «r¢dˆowego.\n",
+        "Instalator nie znalazï¿½ napï¿½du ï¿½rï¿½dï¿½owego.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_LOAD_TXTSETUPSIF
-        "Instalator nie m¢gˆ zaˆadowa† pliku TXTSETUP.SIF.\n",
+        "Instalator nie mï¿½gï¿½ zaï¿½adowaï¿½ pliku TXTSETUP.SIF.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CORRUPT_TXTSETUPSIF
-        "Instalator znalazˆ uszkodzony plik TXTSETUP.SIF.\n",
+        "Instalator znalazï¿½ uszkodzony plik TXTSETUP.SIF.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_SIGNATURE_TXTSETUPSIF,
-        "Instalator znalazˆ nieprawidˆowy wpis w TXTSETUP.SIF.\n",
+        "Instalator znalazï¿½ nieprawidï¿½owy wpis w TXTSETUP.SIF.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_DRIVE_INFORMATION
-        "Instalator nie m¢gˆ odczyta† informacji o nap©dzie.\n",
+        "Instalator nie mï¿½gï¿½ odczytaï¿½ informacji o napï¿½dzie.\n",
         "ENTER = Restart komputera"
     },
     {
@@ -1417,48 +1417,48 @@ MUI_ERROR plPLErrorEntries[] =
     },
     {
         //ERROR_LOAD_COMPUTER,
-        "Instalator nie m¢gˆ zaˆadowa† listy typ¢w komputera.\n",
+        "Instalator nie mï¿½gï¿½ zaï¿½adowaï¿½ listy typï¿½w komputera.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_LOAD_DISPLAY,
-        "Instalator nie m¢gˆ zaˆadowa† listy ustawieä ekranu.\n",
+        "Instalator nie mï¿½gï¿½ zaï¿½adowaï¿½ listy ustawieï¿½ ekranu.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_LOAD_KEYBOARD,
-        "Instalator nie m¢gˆ zaˆadowa† listy typ¢w klawiatury.\n",
+        "Instalator nie mï¿½gï¿½ zaï¿½adowaï¿½ listy typï¿½w klawiatury.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_LOAD_KBLAYOUT,
-        "Instalator nie m¢gˆ zaˆadowa† listy ukˆad¢w klawiatury.\n",
+        "Instalator nie mï¿½gï¿½ zaï¿½adowaï¿½ listy ukï¿½adï¿½w klawiatury.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_WARN_PARTITION,
-        "Instalator wykryˆ, ¾e co najmniej jeden dysk twardy zawiera niekompatybiln¥ \n"
-        "tablic© partycji, kt¢ra nie b©dzie poprawnie obsˆugiwana!\n"
+        "Instalator wykryï¿½, ï¿½e co najmniej jeden dysk twardy zawiera niekompatybilnï¿½ \n"
+        "tablicï¿½ partycji, ktï¿½ra nie bï¿½dzie poprawnie obsï¿½ugiwana!\n"
         "\n"
-        "Tworzenie lub kasowanie partycji mo¾e zniszczy† caˆ¥ tablic© partycji.\n"
+        "Tworzenie lub kasowanie partycji moï¿½e zniszczyï¿½ caï¿½ï¿½ tablicï¿½ partycji.\n"
         "\n"
-        "  \x07  Naci˜nij F3, aby wyj˜† z instalatora.\n"
-        "  \x07  Naci˜nij ENTER, aby kontynuowa†.",
-        "F3 = Wyj˜cie  ENTER = Kontynuacja"
+        "  \x07  Naciï¿½nij F3, aby wyjï¿½ï¿½ z instalatora.\n"
+        "  \x07  Naciï¿½nij ENTER, aby kontynuowaï¿½.",
+        "F3 = Wyjï¿½cie  ENTER = Kontynuacja"
     },
     {
         //ERROR_NEW_PARTITION,
-        "Nie mo¾esz stworzy† nowej partycji w miejscu ju¾\n"
-        "istniej¥cej!\n"
+        "Nie moï¿½esz stworzyï¿½ nowej partycji w miejscu juï¿½\n"
+        "istniejï¿½cej!\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†.",
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½.",
         NULL
     },
     {
         //ERROR_DELETE_SPACE,
-        "Nie mo¾esz skasowa† pustej przestrzeni, gdzie nie ma ¾adnej partycji!\n"
+        "Nie moï¿½esz skasowaï¿½ pustej przestrzeni, gdzie nie ma ï¿½adnej partycji!\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†.",
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½.",
         NULL
     },
     {
@@ -1468,47 +1468,47 @@ MUI_ERROR plPLErrorEntries[] =
     },
     {
         //ERROR_NO_FLOPPY,
-        "Brak dyskietki w nap©dzie A:.",
+        "Brak dyskietki w napï¿½dzie A:.",
         "ENTER = Kontynuacja"
     },
     {
         //ERROR_UPDATE_KBSETTINGS,
-        "Instalator nie m¢gˆ zmieni† ukˆadu klawiatury.",
+        "Instalator nie mï¿½gï¿½ zmieniï¿½ ukï¿½adu klawiatury.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_UPDATE_DISPLAY_SETTINGS,
-        "Instalator nie m¢gˆ zmieni† ustawieä ekranu w rejestrze.",
+        "Instalator nie mï¿½gï¿½ zmieniï¿½ ustawieï¿½ ekranu w rejestrze.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_IMPORT_HIVE,
-        "Instalator nie byˆ w stanie zaimportowa† pliku gaˆ©zi rejestru.",
+        "Instalator nie byï¿½ w stanie zaimportowaï¿½ pliku gaï¿½ï¿½zi rejestru.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_FIND_REGISTRY
-        "Instalator nie byˆ w stanie znale«† plik¢w z danymi rejestru.",
+        "Instalator nie byï¿½ w stanie znaleï¿½ï¿½ plikï¿½w z danymi rejestru.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CREATE_HIVE,
-        "Instalator nie m¢gˆ stworzy† gaˆ©zi rejestru.",
+        "Instalator nie mï¿½gï¿½ stworzyï¿½ gaï¿½ï¿½zi rejestru.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_INITIALIZE_REGISTRY,
-        "Instalator nie byˆ w stanie ustawi† inicjalizacji rejestru.",
+        "Instalator nie byï¿½ w stanie ustawiï¿½ inicjalizacji rejestru.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_INVALID_CABINET_INF,
-        "Cabinet nie zawiera prawidˆowego pliku inf.\n",
+        "Cabinet nie zawiera prawidï¿½owego pliku inf.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CABINET_MISSING,
-        "Cabinet nie zostaˆ znaleziony.\n",
+        "Cabinet nie zostaï¿½ znaleziony.\n",
         "ENTER = Restart komputera"
     },
     {
@@ -1518,92 +1518,92 @@ MUI_ERROR plPLErrorEntries[] =
     },
     {
         //ERROR_COPY_QUEUE,
-        "Instalator nie byˆ w stanie otworzy† kolejki kopiowania pliku.\n",
+        "Instalator nie byï¿½ w stanie otworzyï¿½ kolejki kopiowania pliku.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CREATE_DIR,
-        "Instalator nie m¢gˆ stworzy† katalog¢w.",
+        "Instalator nie mï¿½gï¿½ stworzyï¿½ katalogï¿½w.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_TXTSETUP_SECTION,
-        "Instalator nie byˆ w stanie znale«† sekcji 'Directories'\n"
+        "Instalator nie byï¿½ w stanie znaleï¿½ï¿½ sekcji 'Directories'\n"
         "w pliku TXTSETUP.SIF.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CABINET_SECTION,
-        "Instalator nie byˆ w stanie znale«† sekcji 'Directories'\n"
+        "Instalator nie byï¿½ w stanie znaleï¿½ï¿½ sekcji 'Directories'\n"
         "w pliku cabinet.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_CREATE_INSTALL_DIR
-        "Instalator nie m¢gˆ stworzy† katalogu instalacji.",
+        "Instalator nie mï¿½gï¿½ stworzyï¿½ katalogu instalacji.",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_FIND_SETUPDATA,
-        "Instalator nie byˆ w stanie znale«† sekcji 'SetupData'\n"
+        "Instalator nie byï¿½ w stanie znaleï¿½ï¿½ sekcji 'SetupData'\n"
         "w pliku TXTSETUP.SIF.\n",
         "ENTER = Restart komputera"
     },
     {
         //ERROR_WRITE_PTABLE,
-        "Instalator nie m¢gˆ zapisa† zmian w tablicy partycji.\n"
+        "Instalator nie mï¿½gï¿½ zapisaï¿½ zmian w tablicy partycji.\n"
         "ENTER = Restart komputera"
     },
     {
         //ERROR_ADDING_CODEPAGE,
-        "Instalator nie m¢gˆ doda† strony kodowania do rejestru.\n"
+        "Instalator nie mï¿½gï¿½ dodaï¿½ strony kodowania do rejestru.\n"
         "ENTER = Restart komputera"
     },
     {
         //ERROR_UPDATE_LOCALESETTINGS,
-        "Instalator nie m¢gˆ ustawi† wersji j©zykowej.\n"
+        "Instalator nie mï¿½gï¿½ ustawiï¿½ wersji jï¿½zykowej.\n"
         "ENTER = Restart komputera"
     },
     {
         //ERROR_ADDING_KBLAYOUTS,
-        "Instalator nie m¢gˆ doda† ukˆad¢w klawiatury do rejestru.\n"
+        "Instalator nie mï¿½gï¿½ dodaï¿½ ukï¿½adï¿½w klawiatury do rejestru.\n"
         "ENTER = Restart komputera"
     },
     {
         //ERROR_UPDATE_GEOID,
-        "Instalator nie m¢gˆ ustawi† lokalizacji geograficznej.\n"
+        "Instalator nie mï¿½gï¿½ ustawiï¿½ lokalizacji geograficznej.\n"
         "ENTER = Restart komputera"
     },
     {
         //ERROR_DIRECTORY_NAME,
-        "Nieprawidˆowa nazwa katalogu.\n"
+        "Nieprawidï¿½owa nazwa katalogu.\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†."
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½."
     },
     {
         //ERROR_INSUFFICIENT_PARTITION_SIZE,
-        "Wybrana partycja nie jest wystarczaj¥co du¾a, aby zainstalowa† Greentea.\n"
-        "Instalacyjna partycja musi mie† rozmiar co najmniej %lu MB.\n"
+        "Wybrana partycja nie jest wystarczajï¿½co duï¿½a, aby zainstalowaï¿½ Greentea.\n"
+        "Instalacyjna partycja musi mieï¿½ rozmiar co najmniej %lu MB.\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†.",
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½.",
         NULL
     },
     {
         //ERROR_PARTITION_TABLE_FULL,
-        "Nie mo¾na utworzy† na tym dysku partycji podstawowej lub\n" // FIXME
-        "rozszerzonej, poniewa¾ tabela partycji jest pe©na.\n"
+        "Nie moï¿½na utworzyï¿½ na tym dysku partycji podstawowej lub\n" // FIXME
+        "rozszerzonej, poniewaï¿½ tabela partycji jest peï¿½na.\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†."
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½."
     },
     {
         //ERROR_ONLY_ONE_EXTENDED,
-        "Nie mo¾esz utworzy† wi©cej ni¾ jednej partycji rozszerzonej na dysku.\n"
+        "Nie moï¿½esz utworzyï¿½ wiï¿½cej niï¿½ jednej partycji rozszerzonej na dysku.\n"
         "\n"
-        "  * Naci˜nij dowolny klawisz, aby kontynuowa†."
+        "  * Naciï¿½nij dowolny klawisz, aby kontynuowaï¿½."
     },
     {
         //ERROR_FORMATTING_PARTITION,
-        "Instalator nie m¢gˆ sformatowa† partycji:\n"
+        "Instalator nie mï¿½gï¿½ sformatowaï¿½ partycji:\n"
         " %S\n"
         "\n"
         "ENTER = Restart komputera"
@@ -1721,15 +1721,15 @@ MUI_PAGE plPLPages[] =
 MUI_STRING plPLStrings[] =
 {
     {STRING_PLEASEWAIT,
-     "   Prosz© czeka†..."},
+     "   Proszï¿½ czekaï¿½..."},
     {STRING_INSTALLCREATEPARTITION,
-     "  ENTER = Instalacja   P = Partycja Podstawowa   E = Rozszerzona   F3 = Wyj˜cie"},
+     "  ENTER = Instalacja   P = Partycja Podstawowa   E = Rozszerzona   F3 = Wyjï¿½cie"},
     {STRING_INSTALLCREATELOGICAL,
-     "   ENTER = Instalacja   L = Utworzenie Partycji Logicznej   F3 = Wyj˜cie"},
+     "   ENTER = Instalacja   L = Utworzenie Partycji Logicznej   F3 = Wyjï¿½cie"},
     {STRING_INSTALLDELETEPARTITION,
-     "   ENTER = Instalacja   D = Skasowanie Partycji   F3 = Wyj˜cie"},
+     "   ENTER = Instalacja   D = Skasowanie Partycji   F3 = Wyjï¿½cie"},
     {STRING_DELETEPARTITION,
-     "   D = Skasowanie Partycji   F3 = Wyj˜cie"},
+     "   D = Skasowanie Partycji   F3 = Wyjï¿½cie"},
     {STRING_PARTITIONSIZE,
      "Rozmiar nowej partycji:"},
     {STRING_CHOOSENEWPARTITION,
@@ -1739,31 +1739,31 @@ MUI_STRING plPLStrings[] =
     {STRING_CHOOSE_NEW_LOGICAL_PARTITION,
      "Wybrane: utworzenie nowej partycji logicznej na"},
     {STRING_HDDSIZE,
-    "Prosz© wprowadzi† rozmiar nowej partycji w megabajtach."},
+    "Proszï¿½ wprowadziï¿½ rozmiar nowej partycji w megabajtach."},
     {STRING_CREATEPARTITION,
-     "   ENTER = Utworzenie Partycji   ESC = Anulowanie   F3 = Wyj˜cie"},
+     "   ENTER = Utworzenie Partycji   ESC = Anulowanie   F3 = Wyjï¿½cie"},
     {STRING_PARTFORMAT,
-    "Nast©puj¥ca partycja zostanie sformatowana."},
+    "Nastï¿½pujï¿½ca partycja zostanie sformatowana."},
     {STRING_NONFORMATTEDPART,
-    "Mo¾esz zainstalowa† Greentea na nowej lub niesformatowanej partycji."},
+    "Moï¿½esz zainstalowaï¿½ Greentea na nowej lub niesformatowanej partycji."},
     {STRING_NONFORMATTEDSYSTEMPART,
     "Partycja systemowa nie jest jeszcze sformatowana."},
     {STRING_NONFORMATTEDOTHERPART,
     "Nowa partycja nie jest jeszcze sformatowana."},
     {STRING_INSTALLONPART,
-    "Instalator kopiuje pliki systemu na wybran¥ partycj©."},
+    "Instalator kopiuje pliki systemu na wybranï¿½ partycjï¿½."},
     {STRING_CHECKINGPART,
-    "Instalator sprawdza wybran¥ partycj©."},
+    "Instalator sprawdza wybranï¿½ partycjï¿½."},
     {STRING_CONTINUE,
     "ENTER = Kontynuacja"},
     {STRING_QUITCONTINUE,
-    "F3 = Wyj˜cie  ENTER = Kontynuacja"},
+    "F3 = Wyjï¿½cie  ENTER = Kontynuacja"},
     {STRING_REBOOTCOMPUTER,
     "ENTER = Restart komputera"},
     {STRING_TXTSETUPFAILED,
-    "Instalator nie byˆ w stanie odnale«† sekcji '%S'\nw pliku TXTSETUP.SIF.\n"},
+    "Instalator nie byï¿½ w stanie odnaleï¿½ï¿½ sekcji '%S'\nw pliku TXTSETUP.SIF.\n"},
     {STRING_COPYING,
-     "   Kopiowanie plik¢w: %S"},
+     "   Kopiowanie plikï¿½w: %S"},
     {STRING_SETUPCOPYINGFILES,
      "Instalator kopiuje pliki..."},
     {STRING_REGHIVEUPDATE,
@@ -1771,33 +1771,33 @@ MUI_STRING plPLStrings[] =
     {STRING_IMPORTFILE,
     "   Importowanie %S..."},
     {STRING_DISPLAYETTINGSUPDATE,
-    "   Zmiana ustawieä ekranu w rejestrze..."},
+    "   Zmiana ustawieï¿½ ekranu w rejestrze..."},
     {STRING_LOCALESETTINGSUPDATE,
-    "   Zmiana wersji j©zykowej..."},
+    "   Zmiana wersji jï¿½zykowej..."},
     {STRING_KEYBOARDSETTINGSUPDATE,
-    "   Zmiana ukˆadu klawiatury..."},
+    "   Zmiana ukï¿½adu klawiatury..."},
     {STRING_CODEPAGEINFOUPDATE,
     "   Dodawanie informacji o stronie kodowej do rejestru..."},
     {STRING_DONE,
-    "   Ukoäczone..."},
+    "   Ukoï¿½czone..."},
     {STRING_REBOOTCOMPUTER2,
     "   ENTER = Restart komputera"},
     {STRING_CONSOLEFAIL1,
     "Otwarcie konsoli nieudane\r\n\r\n"},
     {STRING_CONSOLEFAIL2,
-    "Najcz©stsz¥ tego przyczyn¥ jest u¾ycie klawiatury USB.\r\n"},
+    "Najczï¿½stszï¿½ tego przyczynï¿½ jest uï¿½ycie klawiatury USB.\r\n"},
     {STRING_CONSOLEFAIL3,
-    "Nie s¥ obecnie w peˆni obsˆugiwane.\r\n"},
+    "Nie sï¿½ obecnie w peï¿½ni obsï¿½ugiwane.\r\n"},
     {STRING_FORMATTINGDISK,
-    "Instalator formatuje tw¢j dysk"},
+    "Instalator formatuje twï¿½j dysk"},
     {STRING_CHECKINGDISK,
-    "Instalator sprawdza tw¢j dysk"},
+    "Instalator sprawdza twï¿½j dysk"},
     {STRING_FORMATDISK1,
-    " Sformatuj partycj© z systemem plik¢w %S (szybkie formatowanie) "},
+    " Sformatuj partycjï¿½ z systemem plikï¿½w %S (szybkie formatowanie) "},
     {STRING_FORMATDISK2,
-    " Sformatuj partycj© z systemem plik¢w %S "},
+    " Sformatuj partycjï¿½ z systemem plikï¿½w %S "},
     {STRING_KEEPFORMAT,
-    " Zachowaj obecny system plik¢w (bez zmian) "},
+    " Zachowaj obecny system plikï¿½w (bez zmian) "},
     {STRING_HDINFOPARTCREATE,
     "%I64u %s  Dysku Twardym %lu  (Port=%hu, Szyna=%hu, Id=%hu) na %wZ."},
     {STRING_HDDINFOUNK1,
@@ -1821,7 +1821,7 @@ MUI_STRING plPLStrings[] =
     {STRING_HDDINFOUNK6,
     "%6lu %s  Dysk11 Twardy %lu  (Port=%hu, Szyna=%hu, Id=%hu)"},
     {STRING_NEWPARTITION,
-    "Instalator utworzyˆ now¥ partycj©"},
+    "Instalator utworzyï¿½ nowï¿½ partycjï¿½"},
     {STRING_UNPSPACE,
     "    %sMiejsce poza partycjami%s            %6lu %s"},
     {STRING_MAXSIZE,
@@ -1831,7 +1831,7 @@ MUI_STRING plPLStrings[] =
     {STRING_UNFORMATTED,
     "Nowa (Niesformatowana)"},
     {STRING_FORMATUNUSED,
-    "Nieu¾yte"},
+    "Nieuï¿½yte"},
     {STRING_FORMATUNKNOWN,
     "Nieznane"},
     {STRING_KB,
@@ -1841,6 +1841,6 @@ MUI_STRING plPLStrings[] =
     {STRING_GB,
     "GB"},
     {STRING_ADDKBLAYOUTS,
-    "Dodawanie ukˆad¢w klawiatury"},
+    "Dodawanie ukï¿½adï¿½w klawiatury"},
     {0, 0}
 };

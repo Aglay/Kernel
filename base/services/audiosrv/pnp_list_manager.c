@@ -1,5 +1,4 @@
 /*
- * PROJECT:          ReactOS
  * LICENSE:          GPL - See COPYING in the top level directory
  * FILE:             base/services/audiosrv/pnp_list_manager.c
  * PURPOSE:          Audio Service List Manager

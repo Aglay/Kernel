@@ -339,7 +339,7 @@ BEGIN
     BEGIN
         MENUITEM "Помощ", IDM_HELP_HELP
         MENUITEM SEPARATOR
-        MENUITEM "За ReactOS Calc", IDM_HELP_ABOUT
+        MENUITEM "За Calc", IDM_HELP_ABOUT
     END
 END
 
@@ -372,7 +372,7 @@ BEGIN
     BEGIN
         MENUITEM "Помощ", IDM_HELP_HELP
         MENUITEM SEPARATOR
-        MENUITEM "За ReactOS Calc", IDM_HELP_ABOUT
+        MENUITEM "За Calc", IDM_HELP_ABOUT
     END
 END
 
@@ -395,7 +395,7 @@ BEGIN
     BEGIN
         MENUITEM "Помощ", IDM_HELP_HELP
         MENUITEM SEPARATOR
-        MENUITEM "За ReactOS Calc", IDM_HELP_ABOUT
+        MENUITEM "За Calc", IDM_HELP_ABOUT
     END
 END
 

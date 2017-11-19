@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Magnify
+ * PROJECT:     Magnify
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/magnify/settings.c
  * PURPOSE:     Magnification of parts of the screen.

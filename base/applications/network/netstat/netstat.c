@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS netstat utility
+ * PROJECT:     netstat utility
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        base/applications/network/netstat/netstat.c
  * PURPOSE:     display IP stack statistics

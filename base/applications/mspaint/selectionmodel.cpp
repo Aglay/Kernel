@@ -1,5 +1,5 @@
 /*
- * PROJECT:     PAINT for ReactOS
+ * PROJECT:     Paint
  * LICENSE:     LGPL
  * FILE:        base/applications/mspaint/selectionmodel.cpp
  * PURPOSE:     Keep track of selection parameters, notify listeners

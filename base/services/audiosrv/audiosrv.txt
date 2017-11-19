@@ -1,4 +1,4 @@
-ReactOS Audio Service (audiosrv.exe)
+Audio Service (audiosrv.exe)
 ====================================
 
 This is intended to operate in a similar manner to how the Windows Audio
@@ -10,7 +10,7 @@ have any impact on functionality.
 AudioSrv on Windows creates a mapped file at:
 Global\mmGlobalPnpInfo
 
-The ReactOS audio device list lives at:
+The audio device list lives at:
 Global\AudioDeviceList
 
 This file appears to contain a list of devices that WinMM accesses and
