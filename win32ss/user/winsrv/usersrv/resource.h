@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT: See COPYING in the top level directory
- * PROJECT:   ReactOS User API Server DLL
+ * PROJECT:   User API Server DLL
  * FILE:      win32ss/user/winsrv/usersrv/resource.h
  * PURPOSE:   Resource #defines
  */

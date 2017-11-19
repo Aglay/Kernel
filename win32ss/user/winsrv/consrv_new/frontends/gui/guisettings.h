@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Console Server DLL
+ * PROJECT:         Console Server DLL
  * FILE:            win32ss/user/winsrv/consrv_new/frontends/gui/guisettings.h
  * PURPOSE:         GUI front-end settings management
  * PROGRAMMERS:     Johannes Anderwald

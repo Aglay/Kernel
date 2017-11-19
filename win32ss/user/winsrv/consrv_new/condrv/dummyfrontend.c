@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Console Server DLL
+ * PROJECT:         Console Server DLL
  * FILE:            win32ss/user/winsrv/consrv_new/condrv/dummyfrontend.c
  * PURPOSE:         Dummy Terminal Front-End used when no frontend
  *                  is attached to the specified console.

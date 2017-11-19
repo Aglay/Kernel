@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Console Driver DLL
+ * PROJECT:         Console Driver DLL
  * FILE:            win32ss/user/winsrv/consrv_new/condrv/conoutput.c
  * PURPOSE:         General Console Output Functions
  * PROGRAMMERS:     Jeffrey Morlan
