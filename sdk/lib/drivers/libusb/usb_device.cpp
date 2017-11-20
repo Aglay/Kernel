@@ -1,5 +1,5 @@
 /*
- * PROJECT:     ReactOS Universal Serial Bus Bulk Driver Library
+ * PROJECT:     Universal Serial Bus Bulk Driver Library
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        lib/drivers/libusb/usb_device.cpp
  * PURPOSE:     USB Common Driver Library.

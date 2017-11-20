@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Bootsector for ISO file system
+ * PROJECT:         Bootsector for ISO file system
  * FILE:            boot/freeldr/bootsect/isoboot.S
  * PURPOSE:
  * PROGRAMMERS:     ?

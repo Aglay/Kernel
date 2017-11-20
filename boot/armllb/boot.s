@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Boot Loader
+ * PROJECT:         Boot Loader
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            boot/armllb/boot.s
  * PURPOSE:         Implements the entry point for ARM machines

@@ -65,5 +65,5 @@ Two possible solutions.
 . Run ftrandom within a debugging tool like `valgrind' to catch various
   memory issues.
 
-. Compile FreeType with sanitizer flags as provided by gcc or clang, for
+. Compile FreeType with sanitizer flags as provided by gcc, for
   example, then link it with ftrandom.

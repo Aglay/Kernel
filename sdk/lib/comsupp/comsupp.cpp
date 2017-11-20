@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS crt library
+ * PROJECT:         crt library
  * LICENSE:         GPLv2+ - See COPYING in the top level directory
  * PURPOSE:         Compiler support for COM
  * PROGRAMMER:      Thomas Faber (thomas.faber@reactos.org)

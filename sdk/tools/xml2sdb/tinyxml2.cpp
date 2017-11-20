@@ -1918,7 +1918,7 @@ XMLError XMLDocument::LoadFile( const char* filename )
 
 // This is likely overengineered template art to have a check that unsigned long value incremented
 // by one still fits into size_t. If size_t type is larger than unsigned long type
-// (x86_64-w64-mingw32 target) then the check is redundant and gcc and clang emit
+// (x86_64-w64-mingw32 target) then the check is redundant and gcc emit
 // -Wtype-limits warning. This piece makes the compiler select code with a check when a check
 // is useful and code with no check when a check is redundant depending on how size_t and unsigned long
 // types sizes relate to each other.
@@ -2081,7 +2081,7 @@ void XMLDocument::PrintError() const
         }
 
         // Should check INT_MIN <= _errorID && _errorId <= INT_MAX, but that
-        // causes a clang "always true" -Wtautological-constant-out-of-range-compare warning
+        // causes "always true" -Wtautological-constant-out-of-range-compare warning
         TIXMLASSERT( 0 <= _errorID && XML_ERROR_COUNT - 1 <= INT_MAX );
         printf( "XMLDocument error id=%d '%s' str1=%s str2=%s\n",
                 static_cast<int>( _errorID ), ErrorName(), buf1, buf2 );

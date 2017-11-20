@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS xml to sdb converter
+ * PROJECT:     xml to sdb converter
  * FILE:        sdk/tools/xml2sdb/xml2sdb.cpp
  * PURPOSE:     Main conversion functions from xml -> db
  * PROGRAMMERS: Mark Jansen

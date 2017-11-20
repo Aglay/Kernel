@@ -1,5 +1,5 @@
 /*
-    ReactOS Kernel-Mode COM
+    Kernel-Mode COM
     IUnknown implementations
 
     LICENSE

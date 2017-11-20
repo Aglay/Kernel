@@ -155,7 +155,7 @@ HKCU,"Control Panel\International",,0x00000012
 HKCU,"Control Panel\International\Geo",,0x00000012
 
 ; Cursors Schemes
-HKCU,"Control Panel\Cursors",,,"ReactOS Default"
+HKCU,"Control Panel\Cursors",,,"Default"
 HKCU,"Control Panel\Cursors","Scheme Source",0x00010001,0x00000002
 
 ; PowerCfg
@@ -217,7 +217,7 @@ HKCU,"Control Panel\Appearance","Current",0x00020000,"%DESKTOP_SCHEME_0%"
 HKCU,"Control Panel\Appearance","NewCurrent",0x00020000,"%DESKTOP_SCHEME_0%"
 HKCU,"Control Panel\Appearance\New Schemes","SelectedSize",0x00020000,"0"
 HKCU,"Control Panel\Appearance\New Schemes","SelectedStyle",0x00020000,"0"
-; ReactOS Standard
+; Standard
 HKCU,"Control Panel\Appearance\New Schemes\0","DisplayName",0x00020000,"@themeui.dll,-883"
 HKCU,"Control Panel\Appearance\New Schemes\0","LegacyName",0x00020000,"%DESKTOP_SCHEME_0%"
 HKCU,"Control Panel\Appearance\New Schemes\0\Sizes\0","DisplayName",0x00020000,"@themeui.dll,-2019"
@@ -1211,7 +1211,7 @@ HKCU,"Control Panel\Appearance\New Schemes\13\Sizes\0","Size #5",0x000b0001,0c,0
 HKCU,"Control Panel\Appearance\New Schemes\13\Sizes\0","Size #6",0x000b0001,0c,00,00,00,00,00,00,00
 HKCU,"Control Panel\Appearance\New Schemes\13\Sizes\0","Size #7",0x000b0001,12,00,00,00,00,00,00,00
 HKCU,"Control Panel\Appearance\New Schemes\13\Sizes\0","Size #8",0x000b0001,12,00,00,00,00,00,00,00
-; ReactOS Classic
+; Classic
 HKCU,"Control Panel\Appearance\New Schemes\14","DisplayName",0x00020000,"@themeui.dll,-880"
 HKCU,"Control Panel\Appearance\New Schemes\14","LegacyName",0x00020000,"%DESKTOP_SCHEME_14%"
 HKCU,"Control Panel\Appearance\New Schemes\14\Sizes\0","DisplayName",0x00020000,"@themeui.dll,-2019"
@@ -1923,7 +1923,7 @@ HKCU,"SOFTWARE",,0x00000012
 HKCU,"SOFTWARE\Policies",,0x00000012
 HKCU,"SOFTWARE\Microsoft",,0x00000012
 
-; ReactOS Calculator
+; Calculator
 HKCU,"SOFTWARE\Microsoft\Calc",,0x00000012
 HKCU,"SOFTWARE\Microsoft\Calc","layout",0x00010001,0x00000001
 HKCU,"SOFTWARE\Microsoft\Calc","UseSep",0x00010001,0x00000001
@@ -2128,7 +2128,7 @@ HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating",,0x00000012
 HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.Current","",0x00020000,""
 HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.Default","",0x00020000,""
 HKCU,"AppEvents\Schemes\Names",,0x00000012
-HKCU,"AppEvents\Schemes\Names\.Default","",0x00000002,"ReactOS Default"
+HKCU,"AppEvents\Schemes\Names\.Default","",0x00000002,"Default"
 HKCU,"AppEvents\Schemes\Names\.None","",0x00000002,"No sounds"
 
 HKCU,"AppEvents\EventLabels",,0x00000012
@@ -2184,9 +2184,9 @@ HKCU,"AppEvents\EventLabels\SystemQuestion","",0x00000000,"Question"
 HKCU,"AppEvents\EventLabels\SystemQuestion","DispFileName",0x00000000,"@mmsys.cpl,-5849"
 HKCU,"AppEvents\EventLabels\SystemStart","",0x00000000,"Start ReactOS"
 HKCU,"AppEvents\EventLabels\SystemStart","DispFileName",0x00000000,"@mmsys.cpl,-5850"
-HKCU,"AppEvents\EventLabels\WindowsLogoff","",0x00000000,"ReactOS Logoff"
+HKCU,"AppEvents\EventLabels\WindowsLogoff","",0x00000000,"Logoff"
 HKCU,"AppEvents\EventLabels\WindowsLogoff","DispFileName",0x00000000,"@mmsys.cpl,-5852"
-HKCU,"AppEvents\EventLabels\WindowsLogon","",0x00000000,"ReactOS Logon"
+HKCU,"AppEvents\EventLabels\WindowsLogon","",0x00000000,"Logon"
 HKCU,"AppEvents\EventLabels\WindowsLogon","DispFileName",0x00000000,"@mmsys.cpl,-5853"
 
 ;-------------------------------- STRINGS -------------------------------

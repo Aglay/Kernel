@@ -55,18 +55,18 @@ HKCR,"anifile","",0x00000000,"Animated Cursor"
 HKCR,"anifile","FriendlyTypeName",0x00020000,"@%SystemRoot%\system32\main.cpl,-1039"
 HKCR,"anifile\DefaultIcon","",0x00000000,"%1"
 
-; ReactOS Batch Files
+; Batch Files
 HKCR,".bat","",0x00000000,"batfile"
-HKCR,"batfile","",0x00000000,"ReactOS Batch File"
+HKCR,"batfile","",0x00000000,"Batch File"
 HKCR,"batfile","EditFlags",0x00010001,0x00000010
 HKCR,"batfile","FriendlyTypeName",0x00020000,"@%SystemRoot%\system32\shell32.dll,-201"
 HKCR,"batfile\DefaultIcon","",0x00020000,"%SystemRoot%\system32\shell32.dll,-153"
 HKCR,"batfile\shell\edit\command","",0x00020000,"%SystemRoot%\system32\notepad.exe %1"
 HKCR,"batfile\shell\open\command","",0x00000000,"""%1"" %*"
 
-; ReactOS Command Script Files
+; Command Script Files
 HKCR,".cmd","",0x00000000,"cmdfile"
-HKCR,"cmdfile","",0x00000000,"ReactOS Command Script"
+HKCR,"cmdfile","",0x00000000,"Command Script"
 HKCR,"cmdfile","EditFlags",0x00010001,0x00000010
 HKCR,"cmdfile","FriendlyTypeName",0x00020000,"@%SystemRoot%\system32\shell32.dll,-202"
 HKCR,"cmdfile\DefaultIcon","",0x00020000,"%SystemRoot%\system32\shell32.dll,-153"
@@ -640,7 +640,7 @@ XMLFILE="XML Document"
 XSLFILE="XSL Stylesheet"
 
 ;; In msi.dll
-MSIPACK="ReactOS Installer Package"
+MSIPACK="Installer Package"
 
 ;; In themeui.dll
 MSSTYLESFILE="Visual Style File"
@@ -708,7 +708,7 @@ CPLFILE_OPENWITH="Ouvrir avec le Panneau de Contrôle"
 CHMFILE="Fichier d'aide HTML compilé"
 XMLFILE="Document XML"
 XSLFILE="Feuille de style XSL"
-MSIPACK="Package ReactOS Installer"
+MSIPACK="Package Installer"
 MSSTYLESFILE="Fichier de styles visuels"
 THEMEFILE="Fichier de thèmes"
 WAVFILE="Son Wave"

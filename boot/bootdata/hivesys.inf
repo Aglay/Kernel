@@ -1900,9 +1900,9 @@ HKLM,"SYSTEM\CurrentControlSet\Services\tcpsvcs","ObjectName",0x00000000,"LocalS
 HKLM,"SYSTEM\CurrentControlSet\Services\tcpsvcs","Start",0x00010001,0x00000003
 HKLM,"SYSTEM\CurrentControlSet\Services\tcpsvcs","Type",0x00010001,0x00000020
 
-; ReactOS Telnet Service
-HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","Description",0x00000000,"ReactOS Telnet Service"
-HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","DisplayName",0x00000000,"ReactOS Telnet Service"
+; Telnet Service
+HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","Description",0x00000000,"Telnet Service"
+HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","DisplayName",0x00000000,"Telnet Service"
 HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","ErrorControl",0x00010001,0x00000001
 HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","Group",0x00000000,"Network"
 HKLM,"SYSTEM\CurrentControlSet\Services\telnetd","ImagePath",0x00020000,"%SystemRoot%\system32\telnetd.exe"
@@ -1923,9 +1923,9 @@ HKLM,"SYSTEM\CurrentControlSet\Services\Themes","ObjectName",0x00000000,"LocalSy
 HKLM,"SYSTEM\CurrentControlSet\Services\Themes","Start",0x00010001,0x00000002
 HKLM,"SYSTEM\CurrentControlSet\Services\Themes","Type",0x00010001,0x00000020
 
-; ReactOS Installer Service
+; Installer Service
 HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","DependOnService",0x00010000,"RPCSS"
-HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","DisplayName",0x00000000,"ReactOS Installer"
+HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","DisplayName",0x00000000,"Installer"
 HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","Description",0x00000000,"Controls installation, maintenance, and removal of software packaged as an MSI (Windows Installer)"
 HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","ErrorControl",0x00010001,0x00000001
 HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","ImagePath",0x00020000,"%SystemRoot%\system32\msiexec.exe /V"
@@ -1935,7 +1935,7 @@ HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","Type",0x00010001,0x00000020
 
 ; WMI Service
 HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","DependOnService",0x00010000,"RPCSS"
-HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","DisplayName",0x00000000,"ReactOS Management Infrastructure"
+HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","DisplayName",0x00000000,"Management Infrastructure"
 HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","Description",0x00000000,"Provides interface to system management information"
 HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","ErrorControl",0x00010001,0x00000001
 HKLM,"SYSTEM\CurrentControlSet\Services\winmgmt","Group",0x00000000,"WMI"
