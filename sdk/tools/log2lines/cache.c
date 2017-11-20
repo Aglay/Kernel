@@ -52,11 +52,11 @@ unpack_iso(char *dir, char *iso)
     }
     else
     {
-        l2l_dbg(2, "\nUnpacking reactos.cab in %s\n", dir);
+        l2l_dbg(2, "\nUnpacking system.cab in %s\n", dir);
         sprintf(Line, UNZIP_FMT_CAB, opt_7z, dir, dir);
         if (system(Line) < 0)
         {
-            l2l_dbg(0, "\nCannot unpack reactos.cab in %s\n", dir);
+            l2l_dbg(0, "\nCannot unpack system.cab in %s\n", dir);
             l2l_dbg(1, "Failed to execute: '%s'\n", Line);
             res = 2;
         }

@@ -2,7 +2,7 @@
 
 # reactos.dff is the concatenation of two files :
 #   - reactos.dff.in, which is a static one and can be altered to
-# add custom modules/files to reactos.cab
+# add custom modules/files to system.cab
 #   - reactos.dff.dyn (dyn as dynamic) which is generated at configure time by our cmake scripts
 # If you want to slip-stream anything into the bootcd, then you want to alter reactos.dff.in
 
@@ -17,14 +17,14 @@ file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/reactos.dff.dyn "")
 
 # This finalizes reactos.dff by concat-ing the two files: one generated and one static containing the optional file.
 # please keep it this way as it permits to add files to reactos.dff.in without having to run cmake again
-# and also avoids rebuilding reactos.cab in case nothing changes after a cmake run
+# and also avoids rebuilding .cab in case nothing changes after a cmake run
 add_custom_command(
     OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/reactos.dff
     COMMAND ${CMAKE_COMMAND} -D SRC1=${CMAKE_CURRENT_SOURCE_DIR}/reactos.dff.in
                              -D SRC2=${CMAKE_CURRENT_BINARY_DIR}/reactos.dff.dyn
                              -D DST=${CMAKE_CURRENT_BINARY_DIR}/reactos.dff.maydiff
                              -P ${CMAKE_CURRENT_BINARY_DIR}/concat.cmake
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different 
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
                              ${CMAKE_CURRENT_BINARY_DIR}/reactos.dff.maydiff
                              ${CMAKE_CURRENT_BINARY_DIR}/reactos.dff
     DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/reactos.dff.in

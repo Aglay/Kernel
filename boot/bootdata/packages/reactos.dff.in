@@ -1,8 +1,8 @@
 
-; Main ReactOS package
+; Main package
 
 .Set DiskLabelTemplate="ReactOS"                ; Label of disk
-.Set CabinetNameTemplate="reactos.cab"          ; reactos.cab
+.Set CabinetNameTemplate="system.cab"          ; .cab
 .Set InfFileName="reactos.inf"                  ; reactos.inf
 
 

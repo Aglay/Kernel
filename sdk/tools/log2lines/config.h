@@ -23,7 +23,7 @@
 #define UNZIP_FMT_7Z    "%s e -y %s -o%s > " DEV_NULL
 #define UNZIP_FMT       "%s x -y -r %s -o%s > " DEV_NULL
 #define UNZIP_FMT_CAB \
-"%s x -y -r %s" PATH_STR "reactos" PATH_STR "reactos.cab -o%s" \
+"%s x -y -r %s" PATH_STR "reactos" PATH_STR "system.cab -o%s" \
 PATH_STR "reactos" PATH_STR "reactos > " DEV_NULL
 
 /* When we can't use a normal path, because it gets cleaned,

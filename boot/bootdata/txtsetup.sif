@@ -126,7 +126,7 @@ buslogic = buslogic.sys
 disk = disk.sys
 
 [Cabinets]
-Cabinet=reactos.cab
+Cabinet=system.cab
 
 [SetupData]
 DefaultPath = \ReactOS

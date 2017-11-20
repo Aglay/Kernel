@@ -286,7 +286,7 @@ function(add_cd_file)
     #do we add it to bootcd?
     list(FIND _CD_FOR bootcd __cd)
     if(NOT __cd EQUAL -1)
-        #whether or not we should put it in reactos.cab or directly on cd
+        #whether or not we should put it in system.cab or directly on cd
         if(_CD_NO_CAB)
             #directly on cd
             foreach(item ${_CD_FILE})
@@ -307,7 +307,7 @@ function(add_cd_file)
                 add_dependencies(bootcd ${_CD_TARGET} registry_inf)
             endif()
         else()
-            #add it in reactos.cab
+            # add it in system.cab
             dir_to_num(${_CD_DESTINATION} _num)
             file(RELATIVE_PATH __relative_file ${REACTOS_SOURCE_DIR} ${_CD_FILE})
             file(APPEND ${REACTOS_BINARY_DIR}/boot/bootdata/packages/reactos.dff.dyn "\"${__relative_file}\" ${_num}\n")
@@ -360,7 +360,7 @@ function(add_cd_file)
     #do we add it to regtest?
     list(FIND _CD_FOR regtest __cd)
     if(NOT __cd EQUAL -1)
-        #whether or not we should put it in reactos.cab or directly on cd
+        #whether or not we should put it in system.cab or directly on cd
         if(_CD_NO_CAB)
             #directly on cd
             foreach(item ${_CD_FILE})
@@ -377,7 +377,7 @@ function(add_cd_file)
                 add_dependencies(bootcdregtest ${_CD_TARGET} registry_inf)
             endif()
         else()
-            #add it in reactos.cab
+            # add it in system.cab
             #dir_to_num(${_CD_DESTINATION} _num)
             #file(APPEND ${REACTOS_BINARY_DIR}/boot/bootdata/packages/reactos.dff.dyn "${_CD_FILE} ${_num}\n")
             #if(_CD_TARGET)
@@ -389,7 +389,7 @@ function(add_cd_file)
 endfunction()
 
 function(create_iso_lists)
-    # generate reactos.cab before anything else
+    # generate system.cab before anything else
     get_property(_filelist GLOBAL PROPERTY REACTOS_CAB_DEPENDS)
 
     # begin with reactos.inf. We want this command to be always executed, so we pretend it generates another file although it will never do.
@@ -399,16 +399,16 @@ function(create_iso_lists)
         DEPENDS ${REACTOS_BINARY_DIR}/boot/bootdata/packages/reactos.inf reactos_cab_inf)
 
     add_custom_command(
-        OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/reactos.cab
+        OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/system.cab
         COMMAND native-cabman -C ${REACTOS_BINARY_DIR}/boot/bootdata/packages/reactos.dff -RC ${CMAKE_CURRENT_BINARY_DIR}/reactos.inf -N -P ${REACTOS_SOURCE_DIR}
         DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/reactos.inf native-cabman ${_filelist})
 
-    add_custom_target(reactos_cab DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/reactos.cab)
+    add_custom_target(reactos_cab DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/system.cab)
     add_dependencies(reactos_cab reactos_cab_inf)
 
     add_cd_file(
         TARGET reactos_cab
-        FILE ${CMAKE_CURRENT_BINARY_DIR}/reactos.cab
+        FILE ${CMAKE_CURRENT_BINARY_DIR}/system.cab
         DESTINATION reactos
         NO_CAB FOR bootcd regtest)
 
