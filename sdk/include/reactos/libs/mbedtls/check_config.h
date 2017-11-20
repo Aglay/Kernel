@@ -57,8 +57,8 @@
 #endif
 
 #if defined(MBEDTLS_DEPRECATED_WARNING) && \
-    !defined(__GNUC__) && !defined(__clang__)
-#error "MBEDTLS_DEPRECATED_WARNING only works with GCC and Clang"
+    !defined(__GNUC__)
+#error "MBEDTLS_DEPRECATED_WARNING only works with GCC"
 #endif
 
 #if defined(MBEDTLS_HAVE_TIME_DATE) && !defined(MBEDTLS_HAVE_TIME)

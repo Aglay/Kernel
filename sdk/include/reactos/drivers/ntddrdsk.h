@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         Kernel
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            include/reactos/drivers/ntddrdsk.h
  * PURPOSE:         Constants and types for accessing the RAM disk device

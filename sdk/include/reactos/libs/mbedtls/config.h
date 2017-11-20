@@ -166,7 +166,7 @@
  * version. You can enable this to help you prepare the transition to a new
  * major version by making sure your code is not using these functions.
  *
- * This only works with GCC and Clang. With other compilers, you may want to
+ * This only works with GCC. With other compilers, you may want to
  * use MBEDTLS_DEPRECATED_REMOVED
  *
  * Uncomment to get warnings on using deprecated functions.

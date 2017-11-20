@@ -56,7 +56,7 @@
 #elif defined(_MSC_VER)
 # define __CRT_INLINE __inline
 #elif defined(__GNUC__)
-# if defined(__clang__) || ( __MINGW_GNUC_PREREQ(4, 3)  &&  __STDC_VERSION__ >= 199901L)
+# if __MINGW_GNUC_PREREQ(4, 3)  &&  __STDC_VERSION__ >= 199901L
 #  define __CRT_INLINE extern inline __attribute__((__always_inline__,__gnu_inline__))
 # else
 #  define __CRT_INLINE extern __inline__ __attribute__((__always_inline__))
@@ -217,8 +217,7 @@ allow GCC to optimize away some EH unwind code, at least in DW2 case.  */
 
 /* Define to a function attribute for Microsoft hotpatch assembly prefix. */
 #ifndef DECLSPEC_HOTPATCH
-#if defined(_MSC_VER) || defined(__clang__)
-/* FIXME: http://llvm.org/bugs/show_bug.cgi?id=20888 */
+#if defined(_MSC_VER)
 #define DECLSPEC_HOTPATCH
 #else
 #define DECLSPEC_HOTPATCH __attribute__((__ms_hook_prologue__))

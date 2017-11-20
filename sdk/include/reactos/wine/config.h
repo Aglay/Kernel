@@ -2,7 +2,7 @@
 
 /* Define to a function attribute for Microsoft hotpatch assembly prefix. */
 #ifndef DECLSPEC_HOTPATCH
-#if defined(_MSC_VER) || defined(__clang__)
+#if defined(_MSC_VER)
 /* FIXME: https://llvm.org/bugs/show_bug.cgi?id=10212 */
 #define DECLSPEC_HOTPATCH
 #else

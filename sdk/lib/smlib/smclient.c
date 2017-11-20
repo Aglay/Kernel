@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Windows-Compatible Session Manager
+ * PROJECT:         Windows-Compatible Session Manager
  * LICENSE:         BSD 2-Clause License
  * FILE:            lib/smlib/smclient.c
  * PURPOSE:         SMSS Client Library Stubs for calling SM APIs from a client

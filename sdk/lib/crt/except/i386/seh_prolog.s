@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       GNU GPL, see COPYING in the top level directory
- * PROJECT:         ReactOS CRT
+ * PROJECT:         CRT
  * FILE:            lib/sdk/crt/except/i386/seh_prolog.s
  * PURPOSE:         SEH Support for MSVC
  * PROGRAMMERS:     Timo Kreuzer

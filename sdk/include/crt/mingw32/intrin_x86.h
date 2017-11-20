@@ -140,8 +140,6 @@ __INTRIN_INLINE short _InterlockedCompareExchange16(volatile short * Destination
 	return __sync_val_compare_and_swap(Destination, Comperand, Exchange);
 }
 
-#ifndef __clang__
-
 __INTRIN_INLINE long _InterlockedCompareExchange(volatile long * Destination, long Exchange, long Comperand)
 {
 	return __sync_val_compare_and_swap(Destination, Comperand, Exchange);
@@ -151,8 +149,6 @@ __INTRIN_INLINE void * _InterlockedCompareExchangePointer(void * volatile * Dest
 {
 	return (void *)__sync_val_compare_and_swap(Destination, Comperand, Exchange);
 }
-
-#endif
 
 __INTRIN_INLINE char _InterlockedExchange8(volatile char * Target, char Value)
 {
@@ -168,8 +164,6 @@ __INTRIN_INLINE short _InterlockedExchange16(volatile short * Target, short Valu
 	return __sync_lock_test_and_set(Target, Value);
 }
 
-#ifndef __clang__
-
 __INTRIN_INLINE long _InterlockedExchange(volatile long * Target, long Value)
 {
 	/* NOTE: __sync_lock_test_and_set would be an acquire barrier, so we force a full barrier */
@@ -183,8 +177,6 @@ __INTRIN_INLINE void * _InterlockedExchangePointer(void * volatile * Target, voi
 	__sync_synchronize();
 	return (void *)__sync_lock_test_and_set(Target, Value);
 }
-
-#endif
 
 #if defined(__x86_64__)
 __INTRIN_INLINE long long _InterlockedExchange64(volatile long long * Target, long long Value)
@@ -205,12 +197,10 @@ __INTRIN_INLINE short _InterlockedExchangeAdd16(volatile short * Addend, short V
 	return __sync_fetch_and_add(Addend, Value);
 }
 
-#ifndef __clang__
 __INTRIN_INLINE long _InterlockedExchangeAdd(volatile long * Addend, long Value)
 {
 	return __sync_fetch_and_add(Addend, Value);
 }
-#endif
 
 #if defined(__x86_64__)
 __INTRIN_INLINE long long _InterlockedExchangeAdd64(volatile long long * Addend, long long Value)
@@ -285,7 +275,6 @@ __INTRIN_INLINE long long _InterlockedXor64(volatile long long * value, long lon
 }
 #endif
 
-#ifndef __clang__
 __INTRIN_INLINE long _InterlockedDecrement(volatile long * lpAddend)
 {
 	return __sync_sub_and_fetch(lpAddend, 1);
@@ -295,7 +284,6 @@ __INTRIN_INLINE long _InterlockedIncrement(volatile long * lpAddend)
 {
 	return __sync_add_and_fetch(lpAddend, 1);
 }
-#endif
 
 __INTRIN_INLINE short _InterlockedDecrement16(volatile short * lpAddend)
 {
@@ -1462,14 +1450,10 @@ __INTRIN_INLINE uintptr_t __readeflags(void)
 
 /*** Interrupts ***/
 
-#ifdef __clang__
-#define __debugbreak() __asm__("int $3")
-#else
 __INTRIN_INLINE void __debugbreak(void)
 {
 	__asm__("int $3");
 }
-#endif
 
 __INTRIN_INLINE void __ud2(void)
 {

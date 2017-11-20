@@ -337,7 +337,7 @@ extern "C" {
 
 #endif /* _CRT_ALGO_DEFINED */
 
-#if !defined(__GNUC__) && !defined(__clang__)
+#if !defined(__GNUC__)
 
   _Check_return_
   unsigned short
@@ -360,7 +360,7 @@ extern "C" {
     _In_ unsigned __int64 _Int64);
 #endif
 
-#endif /* !defined(__GNUC__) && !defined(__clang__) */
+#endif /* !defined(__GNUC__) */
 
   _Check_return_
   div_t
@@ -1193,7 +1193,7 @@ extern "C" {
   _putenv(
     _In_z_ const char *_EnvString);
 
-#if !defined(__GNUC__) && !defined(__clang__)
+#if !defined(__GNUC__)
 
   _Check_return_
   unsigned int
@@ -1229,7 +1229,7 @@ extern "C" {
     _In_ int _Shift);
 #endif
 
-#endif /* !defined(__GNUC__) && !defined(__clang__) */
+#endif /* !defined(__GNUC__) */
 
   _CRTIMP
   void

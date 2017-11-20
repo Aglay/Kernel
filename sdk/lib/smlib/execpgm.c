@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS system libraries
+ * PROJECT:         system libraries
  * FILE:            lib/smlib/execpgm.c
  * PURPOSE:         Call SM API SM_API_EXECPGM
  */

@@ -36,8 +36,6 @@
 static const ULONG BaseArray[] = {0, 0x3F8, 0x2F8, 0x3E8, 0x2E8};
 #elif defined(_M_PPC)
 static const ULONG BaseArray[] = {0, 0x800003F8};
-#elif defined(_M_MIPS)
-static const ULONG BaseArray[] = {0, 0x80006000, 0x80007000};
 #elif defined(_M_ARM)
 static const ULONG BaseArray[] = {0, 0xF1012000};
 #else

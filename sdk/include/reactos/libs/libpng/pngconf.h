@@ -339,33 +339,7 @@
    * version 1.2.41.  Disabling these removes the warnings but may also produce
    * less efficient code.
    */
-#  if defined(__clang__) && defined(__has_attribute)
-     /* Clang defines both __clang__ and __GNUC__. Check __clang__ first. */
-#    if !defined(PNG_USE_RESULT) && __has_attribute(__warn_unused_result__)
-#      define PNG_USE_RESULT __attribute__((__warn_unused_result__))
-#    endif
-#    if !defined(PNG_NORETURN) && __has_attribute(__noreturn__)
-#      define PNG_NORETURN __attribute__((__noreturn__))
-#    endif
-#    if !defined(PNG_ALLOCATED) && __has_attribute(__malloc__)
-#      define PNG_ALLOCATED __attribute__((__malloc__))
-#    endif
-#    if !defined(PNG_DEPRECATED) && __has_attribute(__deprecated__)
-#      define PNG_DEPRECATED __attribute__((__deprecated__))
-#    endif
-#    if !defined(PNG_PRIVATE)
-#      ifdef __has_extension
-#        if __has_extension(attribute_unavailable_with_message)
-#          define PNG_PRIVATE __attribute__((__unavailable__(\
-             "This function is not exported by libpng.")))
-#        endif
-#      endif
-#    endif
-#    ifndef PNG_RESTRICT
-#      define PNG_RESTRICT __restrict
-#    endif
-
-#  elif defined(__GNUC__)
+#  if defined(__GNUC__)
 #    ifndef PNG_USE_RESULT
 #      define PNG_USE_RESULT __attribute__((__warn_unused_result__))
 #    endif

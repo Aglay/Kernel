@@ -1,5 +1,5 @@
 /*
- * ReactOS Cancel-Safe Queue library
+ * Cancel-Safe Queue library
  * Copyright (c) 2004, Vizzini (vizzini@plasmic.com)
  * Licensed under the GNU GPL for the ReactOS project
  *

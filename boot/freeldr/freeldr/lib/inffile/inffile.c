@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2002,2003 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS text-mode setup
+ * PROJECT:         text-mode setup
  * FILE:            boot/freeldr/freeldr/lib/inffile/inffile.c
  * PURPOSE:         INF file parser that caches contents of INF file in memory
  * PROGRAMMER:      Royce Mitchell III

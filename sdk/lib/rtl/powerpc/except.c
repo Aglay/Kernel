@@ -1,5 +1,5 @@
 /* COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Runtime Library
+ * PROJECT:         Runtime Library
  * PURPOSE:         User-Mode Exception Support
  * FILE:            lib/rtl/powerpc/except.c
  * PROGRAMERS:      Alex Ionescu (alex@relsoft.net)

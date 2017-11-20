@@ -563,7 +563,7 @@
  *
  * On the other hand, -fomit-frame-pointer is implied by any -Ox options with
  * x !=0, which we can detect using __OPTIMIZE__ (which is also defined by
- * clang and armcc5 under the same conditions).
+ * armcc5 under the same conditions).
  *
  * So, only use the optimized assembly below for optimized build, which avoids
  * the build error and is pretty reasonable anyway.

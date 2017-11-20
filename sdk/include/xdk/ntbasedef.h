@@ -792,7 +792,7 @@ $endif(_WINNT_)
 /* Eliminate Microsoft C/C++ compiler warning 4715 */
 #if defined(_MSC_VER)
  #define DEFAULT_UNREACHABLE default: __assume(0)
-#elif defined(__clang__) || (defined(__GNUC__) && ((__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 5))))
+#elif defined(__GNUC__) && ((__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 5)))
  #define DEFAULT_UNREACHABLE default: __builtin_unreachable()
 #else
  #define DEFAULT_UNREACHABLE default: break

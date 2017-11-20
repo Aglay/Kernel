@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   LGPL - See COPYING in the top level directory
- * PROJECT:     ReactOS system libraries
+ * PROJECT:     system libraries
  * FILE:        lib/sdk/crt/conio/cputs.c
  * PURPOSE:     Writes a character to stdout
  * PROGRAMER:   Aleksey Bragin

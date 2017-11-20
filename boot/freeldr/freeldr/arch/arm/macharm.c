@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Boot Loader
+ * PROJECT:         Boot Loader
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            boot/freeldr/freeldr/arch/arm/macharm.c
  * PURPOSE:         Provides abstraction between the ARM Boot Loader and FreeLDR

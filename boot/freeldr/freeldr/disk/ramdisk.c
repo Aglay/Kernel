@@ -1,10 +1,10 @@
 /*
- * PROJECT:         ReactOS Boot Loader
+ * PROJECT:         Boot Loader
  * LICENSE:         BSD - See COPYING.ARM in the top level directory
  * FILE:            boot/freeldr/freeldr/disk/ramdisk.c
  * PURPOSE:         Implements routines to support booting from a RAM Disk
  * PROGRAMMERS:     ReactOS Portable Systems Group
- *                  Hervé Poussineau
+ *                  Hervï¿½ Poussineau
  */
 
 /* INCLUDES *******************************************************************/

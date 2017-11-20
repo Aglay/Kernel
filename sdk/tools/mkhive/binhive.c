@@ -1,5 +1,5 @@
 /*
- *  ReactOS kernel
+ *  kernel
  *  Copyright (C) 2006 ReactOS Team
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,10 +18,10 @@
  */
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS hive maker
+ * PROJECT:         hive maker
  * FILE:            tools/mkhive/binhive.c
  * PURPOSE:         Binary hive export code
- * PROGRAMMER:      Hervé Poussineau
+ * PROGRAMMER:      Hervï¿½ Poussineau
  */
 
 /* INCLUDES *****************************************************************/

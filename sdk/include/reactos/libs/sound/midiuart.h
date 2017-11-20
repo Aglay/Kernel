@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    Sound System
     MIDI UART support
 
     Author:

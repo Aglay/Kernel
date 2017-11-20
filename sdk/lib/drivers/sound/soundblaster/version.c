@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    Sound System
     Sound Blaster DSP support
     Version routine
 

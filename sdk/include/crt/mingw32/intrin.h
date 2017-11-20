@@ -30,11 +30,7 @@
 
 #ifndef RC_INVOKED
 
-#ifdef __clang__
-#define __ATTRIBUTE_ARTIFICIAL
-#else
 #define __ATTRIBUTE_ARTIFICIAL __attribute__((artificial))
-#endif
 
 #define __INTRIN_INLINE extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) __ATTRIBUTE_ARTIFICIAL
 

@@ -1,5 +1,4 @@
 /*
-  PROJECT:    ReactOS
   LICENSE:    GPL v2 or any later version
   FILE:       include/host/nls.h
   PURPOSE:    NLS definitions for host tools

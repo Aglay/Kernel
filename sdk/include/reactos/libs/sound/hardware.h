@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    Sound System
     Legacy support
     Hardware interaction helper
 

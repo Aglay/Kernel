@@ -161,8 +161,6 @@ LoadReactOSSetup(IN OperatingSystemItem* OperatingSystem,
         "I386\\",
 #elif defined(_M_MPPC)
         "PPC\\",
-#elif defined(_M_MRX000)
-        "MIPS\\",
 #endif
         "reactos\\",
         NULL

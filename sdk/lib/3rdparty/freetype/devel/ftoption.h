@@ -522,8 +522,8 @@ FT_BEGIN_HEADER
   /*   code will be used.                                                  */
   /*                                                                       */
   /*   Setting this macro is needed for systems that prohibit address      */
-  /*   fixups, such as BREW.  [Note that standard compilers like gcc or    */
-  /*   clang handle PIC generation automatically; you don't have to set    */
+  /*   fixups, such as BREW.  [Note that standard compilers like gcc       */
+  /*   handle PIC generation automatically; you don't have to set          */
   /*   FT_CONFIG_OPTION_PIC, which is only necessary for very special      */
   /*   compilers.]                                                         */
   /*                                                                       */

@@ -1,5 +1,5 @@
 /*
-    ReactOS Sound System
+    Sound System
     NT4 audio device and registry key names
 
     Author:

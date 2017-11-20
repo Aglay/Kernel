@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS system libraries
+ * PROJECT:         system libraries
  * LICENSE:         GNU GPL - See COPYING in the top level directory
  * PURPOSE:         Support library for PSEH3
  * PROGRAMMER:      Timo Kreuzer (timo.kreuzer@reactos.org)
@@ -53,9 +53,6 @@ C_ASSERT(SEH3_REGISTRATION_FRAME_AllocaFrame == FIELD_OFFSET(SEH3$_REGISTRATION_
 C_ASSERT(SEH3_REGISTRATION_FRAME_Ebx == FIELD_OFFSET(SEH3$_REGISTRATION_FRAME, Ebx));
 C_ASSERT(SEH3_REGISTRATION_FRAME_Esi == FIELD_OFFSET(SEH3$_REGISTRATION_FRAME, Esi));
 C_ASSERT(SEH3_REGISTRATION_FRAME_Edi == FIELD_OFFSET(SEH3$_REGISTRATION_FRAME, Edi));
-#endif
-#ifdef __clang__
-C_ASSERT(SEH3_REGISTRATION_FRAME_ReturnAddress == FIELD_OFFSET(SEH3$_REGISTRATION_FRAME, ReturnAddress));
 #endif
 C_ASSERT(SEH3_SCOPE_TABLE_Filter == FIELD_OFFSET(SEH3$_SCOPE_TABLE, Filter));
 C_ASSERT(SEH3_SCOPE_TABLE_Target == FIELD_OFFSET(SEH3$_SCOPE_TABLE, Target));
@@ -256,9 +253,7 @@ _SEH3$_CallRtlUnwind(
 
 EXCEPTION_DISPOSITION
 __cdecl
-#ifndef __clang__
 __attribute__ ((__target__ ("cld")))
-#endif
 _SEH3$_except_handler(
     struct _EXCEPTION_RECORD * ExceptionRecord,
     PSEH3$_REGISTRATION_FRAME EstablisherFrame,

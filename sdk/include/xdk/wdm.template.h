@@ -3,7 +3,7 @@
  *
  * Windows NT WDM Driver Developer Kit
  *
- * This file is part of the ReactOS DDK package.
+ * This file is part of the DDK package.
  *
  * Contributors:
  *   Amine Khaldi (amine.khaldi@reactos.org)

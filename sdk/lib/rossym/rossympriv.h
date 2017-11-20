@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS kernel
+ * PROJECT:         kernel
  * FILE:            lib/rossym/rossympriv.h
  * PURPOSE:         Private header for rossym
  *

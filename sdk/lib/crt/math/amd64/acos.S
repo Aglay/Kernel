@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:           ReactOS system libraries
+ * PROJECT:           system libraries
  * PURPOSE:           Implementation of acos
  * FILE:              lib/sdk/crt/math/amd64/acos.S
  * PROGRAMMER:        Timo Kreuzer (timo.kreuzer@reactos.org)

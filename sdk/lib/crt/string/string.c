@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS CRT library
+ * PROJECT:         CRT library
  * LICENSE:         LGPL - See COPYING in the top level directory
  * FILE:            lib/sdk/crt/string/string.c
  * PURPOSE:         string CRT functions

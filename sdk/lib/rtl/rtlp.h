@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS System Libraries
+ * PROJECT:         System Libraries
  * FILE:            lib/rtl/rtlp.h
  * PURPOSE:         Run-Time Libary Internal Header
  * PROGRAMMER:      Alex Ionescu

@@ -1,4 +1,4 @@
-/* ReactOS PSDK/DDK
+/* PSDK/DDK
 
 This file is in the public domain.
 

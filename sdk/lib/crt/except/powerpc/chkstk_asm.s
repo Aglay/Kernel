@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:           ReactOS kernel
+ * PROJECT:           kernel
  * PURPOSE:           Stack checker
  * FILE:              lib/sdk/crt/except/powerpc/chkstk_asm.s
  * PROGRAMER:         arty

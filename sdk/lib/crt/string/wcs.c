@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS CRT library
+ * PROJECT:         CRT library
  * LICENSE:         LGPL - See COPYING in the top level directory
  * FILE:            lib/sdk/crt/string/wcs.c
  * PURPOSE:         wcs* CRT functions

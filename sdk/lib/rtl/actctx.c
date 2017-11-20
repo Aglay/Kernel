@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:       See COPYING in the top level directory
- * PROJECT:         ReactOS Runtime Library
+ * PROJECT:         Runtime Library
  * PURPOSE:         Activation Context Support
  * FILE:            lib/rtl/actctx.c
  * PROGRAMERS:
@@ -9,7 +9,7 @@
  *                  Jacek Caban for CodeWeavers
  *                  Alexandre Julliard
  *                  Stefan Ginsberg (stefan.ginsberg@reactos.org)
- *                  Samuel Serapión
+ *                  Samuel Serapiï¿½n
  */
 
 /* Based on Wine Staging 1.7.37 */

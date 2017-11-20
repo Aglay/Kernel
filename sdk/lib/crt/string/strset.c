@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS system libraries
+ * PROJECT:     system libraries
  * FILE:        lib/sdk/crt/string/strset.c
  * PURPOSE:     Implementation of _strnset and _strset
  * PROGRAMER:   Unknown
@@ -8,7 +8,7 @@
  *              25/11/05: Added license header
  */
 
-#if defined(__GNUC__) && !defined(__clang__)
+#if defined(__GNUC__)
 #define __int64 long long
 #elif defined(_MSC_VER)
 #pragma warning(disable: 4164)

@@ -1,6 +1,6 @@
 /*
 * COPYRIGHT:       See COPYING in the top level directory
-* PROJECT:         ReactOS Kernel Streaming
+* PROJECT:         Kernel Streaming
 * FILE:            lib/drivers/sound/libusbaudio/libusbaudio.c
 * PURPOSE:         USB AUDIO Parser
 * PROGRAMMER:      Johannes Anderwald

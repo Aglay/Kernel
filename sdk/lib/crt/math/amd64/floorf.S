@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:         See COPYING in the top level directory
- * PROJECT:           ReactOS system libraries
+ * PROJECT:           system libraries
  * PURPOSE:           Implementation of floorf
  * FILE:              lib/sdk/crt/math/amd64/floorf.S
  * PROGRAMMER:        Timo Kreuzer (timo.kreuzer@reactos.org)

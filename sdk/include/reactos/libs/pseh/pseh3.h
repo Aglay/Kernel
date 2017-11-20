@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS system libraries
+ * PROJECT:         system libraries
  * LICENSE:         GNU GPL - See COPYING in the top level directory
  * PURPOSE:         Header for PSEH3
  * PROGRAMMER:      Timo Kreuzer (timo.kreuzer@reactos.org)
@@ -16,19 +16,12 @@
 extern "C" {
 #endif
 
-/* CLANG must safe non-volatiles, because it uses a return-twice algorithm */
-#if defined(__clang__) && !defined(_SEH3$_FRAME_ALL_NONVOLATILES)
-#define _SEH3$_FRAME_ALL_NONVOLATILES 1
-#endif
-
 enum
 {
     _SEH3$_NESTED_HANDLER = 0,
     _SEH3$_CPP_HANDLER = 1,
     _SEH3$_CLANG_HANDLER = 2,
-#ifdef __clang__
-    _SEH3$_HANDLER_TYPE = _SEH3$_CLANG_HANDLER,
-#elif defined(__cplusplus)
+#if defined(__cplusplus)
     _SEH3$_HANDLER_TYPE = _SEH3$_CPP_HANDLER,
 #else
     _SEH3$_HANDLER_TYPE = _SEH3$_NESTED_HANDLER,
@@ -77,9 +70,6 @@ typedef struct _SEH3$_REGISTRATION_FRAME
     unsigned long Esi;
     unsigned long Edi;
 #endif
-#ifdef __clang__
-    void *ReturnAddress;
-#endif
 } SEH3$_REGISTRATION_FRAME ,*PSEH3$_REGISTRATION_FRAME;
 
 /* Prevent gcc from inlining functions that use SEH. */
@@ -109,12 +99,10 @@ enum
     _SEH3$_TryLevel = 0,
 };
 
-#ifndef __clang__
 /* These are global dummy definitions, that get overwritten in the local context of __finally / __except blocks */
 int __cdecl __attribute__((error ("Can only be used inside a __finally block."))) _abnormal_termination(void);
 unsigned long __cdecl __attribute__((error("Can only be used inside an exception filter or __except block."))) _exception_code(void);
 void * __cdecl __attribute__((error("Can only be used inside an exception filter."))) _exception_info(void);
-#endif
 
 /* This attribute allows automatic cleanup of the registered frames */
 #define _SEH3$_AUTO_CLEANUP __attribute__((cleanup(_SEH3$_AutoCleanup)))
@@ -134,41 +122,6 @@ _SEH3$_RegisterTryLevelWithNonVolatiles(
     volatile SEH3$_REGISTRATION_FRAME* RegistrationFrame,
     const SEH3$_SCOPE_TABLE* ScopeTable,
     void* AllocaFrame);
-
-/* CLANG specific definitions! */
-#ifdef __clang__
-
-/* CLANG thinks it is smart and optimizes the alloca away if it is 0 and with it the use of a frame register */
-#define _SEH3$_EnforceFramePointer() asm volatile ("#\n" : : "m"(*(char*)__builtin_alloca(4)) : "%esp", "memory")
-
-/* CLANG doesn't have asm goto! */
-#define _SEH3$_ASM_GOTO(...)
-
-#define _SEH3$_RegisterFrame_(_TrylevelFrame, _DataTable) \
-    do { \
-        int result = _SEH3$_RegisterFrameWithNonVolatiles(_TrylevelFrame, _DataTable, __builtin_alloca(0)); \
-        if (__builtin_expect(result != 0, 0)) \
-        { \
-            if (result == 1) goto _SEH3$_l_FilterOrFinally; \
-            if (result == 2) goto _SEH3$_l_HandlerTarget; \
-            goto _SEH3$_l_BeforeFilterOrFinally; \
-        } \
-    } while(0)
-
-#define _SEH3$_RegisterTryLevel_(_TrylevelFrame, _DataTable) \
-    do { \
-        int result = _SEH3$_RegisterTryLevelWithNonVolatiles(_TrylevelFrame, _DataTable, __builtin_alloca(0)); \
-        if (__builtin_expect(result != 0, 0)) \
-        { \
-            if (result == 1) goto _SEH3$_l_FilterOrFinally; \
-            if (result == 2) goto _SEH3$_l_HandlerTarget; \
-            goto _SEH3$_l_BeforeFilterOrFinally; \
-        } \
-    } while(0)
-
-#define _SEH3$_SCARE_GCC()
-
-#else /* !__clang__ */
 
 /* This will make GCC use ebp, even if it was disabled by -fomit-frame-pointer */
 #define _SEH3$_EnforceFramePointer() asm volatile ("#\n" : : "m"(*(char*)__builtin_alloca(0)) : "%esp", "memory")
@@ -213,10 +166,8 @@ _SEH3$_RegisterTryLevelWithNonVolatiles(
                       : "ebx", "ecx", "edx", "esi", "edi", "flags", "memory" ); \
         goto _SEH3$_l_OnException;
 
-#endif /* __clang__ */
-
-/* Neither CLANG nor C++ support nested functions */
-#if defined(__cplusplus) || defined(__clang__)
+/* C++ does not support nested functions */
+#if defined(__cplusplus)
 
 /* Use the global unregister function */
 void
@@ -261,7 +212,7 @@ _SEH3$_AutoCleanup(
 #define _exception_code() (_SEH3$_TrylevelFrame.ExceptionCode)
 #define _exception_info() (_SEH3$_TrylevelFrame.ExceptionPointers)
 
-#else /* __cplusplus || __clang__ */
+#else /* __cplusplus */
 
 #define _SEH3$_DECLARE_EXCEPT_INTRINSICS() \
     inline __attribute__((always_inline, gnu_inline)) \
@@ -332,7 +283,7 @@ _Pragma("GCC diagnostic pop") \
         _SEH3$_FinallyFunction(1); \
     }
 
-#endif /* __cplusplus || __clang__ */
+#endif /* __cplusplus */
 
 
 

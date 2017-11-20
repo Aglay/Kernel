@@ -9,7 +9,7 @@
  *
  * USE NDK INSTEAD!
  *
- * This file is part of the ReactOS PSDK package.
+ * This file is part of the PSDK package.
  *
  * Contributors:
  *   Timo Kreuzer (timo.kreuzer@reactos.org)
