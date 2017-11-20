@@ -48,27 +48,8 @@ if(GCC_VERSION VERSION_GREATER 4.7)
     add_compile_flags("-mstackrealign")
 endif()
 
-if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
-    add_compile_flags_language("-std=gnu89 -Wno-microsoft" "C")
-    set(CMAKE_LINK_DEF_FILE_FLAG "")
-    set(CMAKE_STATIC_LIBRARY_SUFFIX ".a")
-    set(CMAKE_LINK_LIBRARY_SUFFIX "")
-    set(CMAKE_CREATE_WIN32_EXE "")
-    set(CMAKE_C_COMPILE_OPTIONS_PIC "")
-    set(CMAKE_CXX_COMPILE_OPTIONS_PIC "")
-    set(CMAKE_C_COMPILE_OPTIONS_PIE "")
-    set(CMAKE_CXX_COMPILE_OPTIONS_PIE "")
-    set(CMAKE_SHARED_LIBRARY_C_FLAGS "")
-    set(CMAKE_SHARED_LIBRARY_CXX_FLAGS "")
-    set(CMAKE_ASM_FLAGS_DEBUG "")
-    set(CMAKE_C_FLAGS_DEBUG "")
-    set(CMAKE_CXX_FLAGS_DEBUG "")
-endif()
-
 if(DBG)
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_compile_flags_language("-Wold-style-declaration" "C")
-    endif()
+    add_compile_flags_language("-Wold-style-declaration" "C")
     add_compile_flags_language("-Wdeclaration-after-statement" "C")
 endif()
 
@@ -78,11 +59,11 @@ add_compile_flags_language("-fno-rtti -fno-exceptions" "CXX")
 #file(TO_NATIVE_PATH ${REACTOS_SOURCE_DIR} REACTOS_SOURCE_DIR_NATIVE)
 #workaround
 set(REACTOS_SOURCE_DIR_NATIVE ${REACTOS_SOURCE_DIR})
- if(CMAKE_HOST_SYSTEM_NAME STREQUAL "Windows")
-string(REPLACE "/" "\\" REACTOS_SOURCE_DIR_NATIVE ${REACTOS_SOURCE_DIR})
+if(CMAKE_HOST_SYSTEM_NAME STREQUAL "Windows")
+    string(REPLACE "/" "\\" REACTOS_SOURCE_DIR_NATIVE ${REACTOS_SOURCE_DIR})
 endif()
 
-if((NOT CMAKE_C_COMPILER_ID STREQUAL "Clang") AND (NOT SEPARATE_DBG))
+if(NOT SEPARATE_DBG)
     add_compile_flags("-fdebug-prefix-map=\"${REACTOS_SOURCE_DIR_NATIVE}\"=ReactOS")
 endif()
 
@@ -92,13 +73,11 @@ if(NOT CMAKE_BUILD_TYPE STREQUAL "Release")
         add_compile_flags("-gdwarf-2 -ggdb")
     else()
         add_compile_flags("-gdwarf-2 -gstrict-dwarf")
-        if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-            add_compile_flags("-femit-struct-debug-detailed=none -feliminate-unused-debug-symbols")
-        endif()
+        add_compile_flags("-femit-struct-debug-detailed=none -feliminate-unused-debug-symbols")
     endif()
 endif()
 
-# For some reason, cmake sets -fPIC, and we don't want it
+# For some reason, cmake sets -fPIC, and we do not want it
 if(DEFINED CMAKE_SHARED_LIBRARY_ASM_FLAGS)
     string(REPLACE "-fPIC" "" CMAKE_SHARED_LIBRARY_ASM_FLAGS ${CMAKE_SHARED_LIBRARY_ASM_FLAGS})
 endif()
@@ -111,21 +90,17 @@ else()
 endif()
 
 # Warnings, errors
-if((NOT CMAKE_BUILD_TYPE STREQUAL "Release") AND (NOT CMAKE_C_COMPILER_ID STREQUAL "Clang"))
+if(NOT CMAKE_BUILD_TYPE STREQUAL "Release")
     add_compile_flags("-Werror")
 endif()
 
 add_compile_flags("-Wall -Wpointer-arith")
 add_compile_flags("-Wno-char-subscripts -Wno-multichar -Wno-unused-value")
 
-if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-    add_compile_flags("-Wno-maybe-uninitialized")
-endif()
+add_compile_flags("-Wno-maybe-uninitialized")
 
 if(ARCH STREQUAL "amd64")
     add_compile_flags("-Wno-format")
-elseif(ARCH STREQUAL "arm")
-    add_compile_flags("-Wno-attributes")
 endif()
 
 # Optimizations
@@ -157,10 +132,8 @@ endif()
 
 if(ARCH STREQUAL "i386")
     add_compile_flags("-fno-optimize-sibling-calls -fno-omit-frame-pointer")
-    if(NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
-        add_compile_flags("-mpreferred-stack-boundary=3 -fno-set-stack-executable")
-    endif()
-    # FIXME: this doesn't work. CMAKE_BUILD_TYPE is always "Debug"
+    add_compile_flags("-mpreferred-stack-boundary=3 -fno-set-stack-executable")
+    # FIXME: this does not work. CMAKE_BUILD_TYPE is always "Debug"
     if(NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
         add_compile_flags("-momit-leaf-frame-pointer")
     endif()
@@ -171,9 +144,7 @@ endif()
 # Other
 if(ARCH STREQUAL "amd64")
     add_definitions(-U_X86_ -UWIN32)
-elseif(ARCH STREQUAL "arm")
-    add_definitions(-U_UNICODE -UUNICODE)
-    add_definitions(-D__MSVCRT__) # DUBIOUS
+
 endif()
 
 add_definitions(-D_inline=__inline)
@@ -189,6 +160,7 @@ if(SEPARATE_DBG)
     # PDB style debug puts all dwarf debug info in a separate dbg file
     message(STATUS "Building separate debug symbols")
     file(MAKE_DIRECTORY ${REACTOS_BINARY_DIR}/symbols)
+
     if(CMAKE_GENERATOR STREQUAL "Ninja")
         set(SYMBOL_FILE <TARGET_PDB>)
     else()
@@ -231,7 +203,7 @@ else()
     else()
         get_target_property(RSYM native-rsym IMPORTED_LOCATION_NOCONFIG)
     endif()
-    
+
     set(CMAKE_C_LINK_EXECUTABLE
         "<CMAKE_C_COMPILER> ${CMAKE_C_FLAGS} <CMAKE_C_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>"
         "${RSYM} -s ${REACTOS_SOURCE_DIR} <TARGET> <TARGET>")
@@ -251,8 +223,7 @@ endif()
 set(CMAKE_EXE_LINKER_FLAGS "-nostdlib -Wl,--enable-auto-image-base,--disable-auto-import,--disable-stdcall-fixup")
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS_INIT} -Wl,--disable-stdcall-fixup")
 
-if((NOT CMAKE_C_COMPILER_ID STREQUAL "Clang") AND (NOT CMAKE_BUILD_TYPE STREQUAL "Release"))
-    # FIXME: Set this once Clang toolchain works with it
+if(NOT CMAKE_BUILD_TYPE STREQUAL "Release")
     set(_compress_debug_sections_flag "-Wa,--compress-debug-sections")
 endif()
 
@@ -305,7 +276,7 @@ function(set_module_type_toolchain MODULE TYPE)
             add_target_link_flags(${MODULE} "-Wl,--wdmdriver")
         endif()
     endif()
-    
+
     if(STACK_PROTECTOR)
         target_link_libraries(${MODULE} gcc_ssp)
     endif()
@@ -347,7 +318,7 @@ endfunction()
 set(CMAKE_IMPLIB_CREATE_STATIC_LIBRARY "${CMAKE_DLLTOOL} --def <OBJECTS> --kill-at --output-lib=<TARGET>")
 set(CMAKE_IMPLIB_DELAYED_CREATE_STATIC_LIBRARY "${CMAKE_DLLTOOL} --def <OBJECTS> --kill-at --output-delaylib=<TARGET>")
 function(spec2def _dllname _spec_file)
-    
+
     cmake_parse_arguments(__spec2def "ADD_IMPORTLIB;NO_PRIVATE_WARNINGS;WITH_RELAY" "" "" ${ARGN})
 
     # Get library basename
@@ -373,7 +344,7 @@ function(spec2def _dllname _spec_file)
         if(__spec2def_NO_PRIVATE_WARNINGS)
             set(_extraflags --no-private-warnings)
         endif()
-        
+
         generate_import_lib(lib${_file} ${_dllname} ${_spec_file} ${_extraflags})
     endif()
 endfunction()
@@ -401,7 +372,7 @@ if(PCH AND (NOT ENABLE_CCACHE) AND (NOT CMAKE_HOST_APPLE))
 
         # Build the precompiled header
         # HEADER_FILE_ONLY FALSE: force compiling the header
-        # EXTERNAL_SOURCE TRUE: don't use the .gch file when linking
+        # EXTERNAL_SOURCE TRUE: do not use the .gch file when linking
         set_source_files_properties(${_pch} PROPERTIES
             HEADER_FILE_ONLY FALSE
             LANGUAGE ${_pch_language}
@@ -441,7 +412,7 @@ function(CreateBootSectorTarget _target_name _asm_file _binary_file _base_addres
 endfunction()
 
 function(allow_warnings __module)
-    # We don't allow warnings in trunk, this needs to be reworked. See CORE-6959.
+    # We do not allow warnings in trunk, this needs to be reworked. See CORE-6959.
     #add_target_compile_flags(${__module} "-Wno-error")
 endfunction()
 
