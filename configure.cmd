@@ -20,10 +20,9 @@ set CMAKE_GENERATOR_HOST=!CMAKE_GENERATOR!
 REM Detect presence of cmake
 cmd /c cmake --version 2>&1 | find "cmake version" > NUL || goto cmake_notfound
 
-if defined GOS_ARCH (
-    echo Detected MinGW for %GOS_ARCH%
+if defined ARCH (
+    echo Detected MinGW for %ARCH%
     set BUILD_ENVIRONMENT=MinGW
-    set ARCH=%GOS_ARCH%
     set MINGW_TOOCHAIN_FILE=toolchain-gcc.cmake
 ) else (
     echo Error: Unable to detect build environment. Configure script failure.
@@ -90,11 +89,8 @@ if "%NEW_STYLE_BUILD%"=="0" (
     )
 
     set REACTOS_BUILD_TOOLS_DIR=!CD!
-
     cmake -G %CMAKE_GENERATOR% -DARCH:STRING=%ARCH% "%REACTOS_SOURCE_DIR%"
-
     cd..
-
 )
 
 echo Preparing...
