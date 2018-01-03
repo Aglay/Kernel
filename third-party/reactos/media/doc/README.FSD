@@ -1,0 +1,10 @@
+# ReactOS FSD porting/syncing reference file
+# Update this file when you port/sync a FSD from an external source.
+
+The following FSD are shared with: http://www.ext2fsd.com/
+
+reactos/drivers/filesystems/ext2            # Synced to 0.66
+
+The following FSD are shared with: http://www.acc.umu.se/~bosse/
+
+reactos/drivers/filesystems/ffs             # Synced to 0.5.2
