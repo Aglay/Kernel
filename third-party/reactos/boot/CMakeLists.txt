@@ -65,6 +65,13 @@ file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Start 
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Start Menu/Programs/Administrative Tools\n")
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Start Menu/Programs/StartUp\n")
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Templates\n")
+# Plus some more. ("if _WIN32_WINNT >= 0x0600")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/AppData/LocalLow\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Contacts\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Downloads\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Links\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Saved Games\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/livecd.lst "Profiles/Default User/Searches\n")
 
 add_custom_target(livecd
     COMMAND native-cdmake -j -m -bootdata:2\#p0,e,b${CMAKE_CURRENT_BINARY_DIR}/freeldr/bootsect/isoboot.bin\#pEF,e,b${CMAKE_CURRENT_BINARY_DIR}/efisys.bin @${CMAKE_CURRENT_BINARY_DIR}/livecd.lst GREENTEA ${REACTOS_BINARY_DIR}/livecd.iso
@@ -102,6 +109,13 @@ file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default Us
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Start Menu/Programs/Administrative Tools\n")
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Start Menu/Programs/StartUp\n")
 file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Templates\n")
+# Plus some more. ("if _WIN32_WINNT >= 0x0600")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/AppData/LocalLow\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Contacts\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Downloads\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Links\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Saved Games\n")
+file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst "livecd/Profiles/Default User/Searches\n")
 
 add_custom_target(hybridcd
     COMMAND native-cdmake -j -m -bootdata:2\#p0,e,b${CMAKE_CURRENT_BINARY_DIR}/freeldr/bootsect/isoboot.bin\#pEF,e,b${CMAKE_CURRENT_BINARY_DIR}/efisys.bin @${CMAKE_CURRENT_BINARY_DIR}/hybridcd.lst GREENTEA ${REACTOS_BINARY_DIR}/hybridcd.iso
