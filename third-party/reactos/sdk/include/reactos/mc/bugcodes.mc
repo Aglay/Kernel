@@ -67,7 +67,7 @@ Severity=Informational
 Facility=System
 SymbolicName=REACTOS_COPYRIGHT_NOTICE
 Language=English
-\n\nReactOS is free software, covered by the GNU General Public License,
+\n\nGreentea a free software, covered by the GNU General Public License,
  and you\n are welcome to change it and/or distribute copies of it under
  certain\n conditions. There is absolutely no warranty for Greentea OS.\n
 .
